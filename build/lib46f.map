@@ -1,0 +1,1461 @@
+Archive member included because of file (symbol)
+
+c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+                              (vexStartup)
+c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_util.c.obj)
+                              c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj) (vexStdlibVersionLinked)
+c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+                              c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj) (vexPrivateApiEnable)
+c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apiversions.c.obj)
+                              c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj) (vexSystemVersion)
+c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-fini.o)
+                              c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj) (__libc_fini_array)
+c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-impure.o)
+                              c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj) (_impure_ptr)
+c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-init.o)
+                              c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj) (__libc_init_array)
+build-lvgl\liblvgl.a(lvgl-main.o)
+                              c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj) (main)
+
+Allocating common symbols
+Common symbol       size              file
+
+__bss_end           0x4               c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+__vex_critical_section
+                    0x1               c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+__sbss_start        0x4               c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+__bss_start         0x4               c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+__stack             0x4               c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+__sbss_end          0x4               c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+ .data          0x00000000        0x0 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+ .bss           0x00000000        0x0 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+ .text.__cyg_profile_func_enter
+                0x00000000        0x4 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+ .text.__cyg_profile_func_exit
+                0x00000000        0x4 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+ .text._sbrk    0x00000000       0x54 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+ .text._exit    0x00000000       0x5c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+ .text.kill     0x00000000       0x1c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+ .text._kill    0x00000000       0x1c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+ .text.getpid   0x00000000        0x8 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+ .text._getpid  0x00000000        0x8 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+ .text.__cxa_atexit
+                0x00000000        0x8 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+ .text.__cxa_guard_acquire
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+ .text.__cxa_guard_release
+                0x00000000        0xc c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+ .text.__cxa_guard_abort
+                0x00000000        0x4 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+ .text.__cxa_pure_virtual
+                0x00000000        0x4 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+ .bss.__dso_handle
+                0x00000000        0x4 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+ .bss.heap.8509
+                0x00000000        0x4 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+ .text          0x00000000        0x0 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_util.c.obj)
+ .data          0x00000000        0x0 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_util.c.obj)
+ .bss           0x00000000        0x0 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_util.c.obj)
+ .text          0x00000000        0x0 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .data          0x00000000        0x0 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .bss           0x00000000        0x0 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexPrivateApiDisable
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexIntegrityCheck
+                0x00000000       0x4c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexGzipInflateBuffer
+                0x00000000       0x5c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexGzipInflateBufferRaw
+                0x00000000       0x5c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemFwUpdateRequest
+                0x00000000       0x4c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemErrorMessageSet
+                0x00000000       0x44 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexScratchMemoryPtr
+                0x00000000       0x30 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexScratchMemoryLock
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexScratchMemoryUnlock
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskAddWithPriority
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskAddSimple
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskAddSimpleWithPriority
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskStop
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskSuspend
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskResume
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskSuspendCurrent
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskResumeCurrent
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskProgramSuspend
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskProgramResume
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskPriorityGet
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskPrioritySet
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskYield
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskGetIndex
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskSleep
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSemaphoreInit
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSemaphoreLock
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSemaphoreUnlock
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSemaphoreGetOwner
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskGetCallback
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskWaitForExit
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskStateGet
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskStopAllUser
+                0x00000000       0x34 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskRemoveAllUser
+                0x00000000       0x34 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskHardwareConcurrency
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskAddWithArg
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskAddWithPriorityWithArg
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskStopWithId
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskSuspendWithId
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskResumeWithId
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskPriorityGetWithId
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskPrioritySetWithId
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskStateGetWithId
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskGetTaskIndexWithId
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskWaitForExitWithId
+                0x00000000       0x4c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskGet
+                0x00000000       0x3c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskGetCallbackAndId
+                0x00000000       0x54 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskStackSizeGet
+                0x00000000       0x34 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskStackDefaultSizeGet
+                0x00000000       0x34 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskStackUseGet
+                0x00000000       0x3c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskStackTopGet
+                0x00000000       0x40 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskFree
+                0x00000000       0x5c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskSetArgs
+                0x00000000       0x58 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexCriticalSection
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexBackgroundProcessing
+                0x00000000       0x1c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexEventBroadcast
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexEventBroadcastAndWait
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexEventAdd
+                0x00000000       0x34 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexEventUserIndexGet
+                0x00000000       0x1c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexEventAddWithArg
+                0x00000000       0x3c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexEventsDump
+                0x00000000       0x30 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexEventsCleanup
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexEventGetArg
+                0x00000000       0x4c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexEventsGetMax
+                0x00000000       0x34 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexEventsGetCount
+                0x00000000       0x34 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexBreak
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskBreakpointSet
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskBreakpointDump
+                0x00000000       0x1c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTaskGetArgs
+                0x00000000       0x80 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vex_printf
+                0x00000000       0x38 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vex_sprintf
+                0x00000000       0x40 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vex_snprintf
+                0x00000000       0x48 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vex_vsprintf
+                0x00000000       0x34 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vex_vsnprintf
+                0x00000000       0x3c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexGettime
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexGetdate
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemMemoryDump
+                0x00000000       0x1c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemDigitalIO
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemStartupOptions
+                0x00000000       0x1c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemHighResTimeGet
+                0x00000000       0x38 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemPowerupTimeGet
+                0x00000000       0x38 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemLinkAddrGet
+                0x00000000       0x34 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemTimerGet
+                0x00000000       0x3c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemTimerEnable
+                0x00000000       0x34 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemTimerDisable
+                0x00000000       0x34 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemUsbStatus
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text._write_user
+                0x00000000       0x40 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text._read_user
+                0x00000000       0x40 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text._open_user
+                0x00000000       0x40 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text._close_user
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text._lseek_user
+                0x00000000       0x40 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text._fstat_user
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text._fcntl_user
+                0x00000000       0x30 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text._isatty_user
+                0x00000000       0x28 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDevicesGetNumber
+                0x00000000       0x1c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDevicesGetNumberByType
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDevicesGet
+                0x00000000       0x1c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGetByIndex
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGetStatus
+                0x00000000       0x3c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGetTimestamp
+                0x00000000       0x3c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGetTimestampByIndex
+                0x00000000       0x18 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceButtonStateGet
+                0x00000000       0x38 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceTypeGetByIndex
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceTypeSetByIndex
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceValueGetByIndex
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceValueSetByIndex
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceDatarateSet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceTimerSet
+                0x00000000       0x34 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceTimerSetWithArg
+                0x00000000       0x58 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceTimerDump
+                0x00000000       0x30 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceFlagsGetByIndex
+                0x00000000       0x40 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexControllerGet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexControllerConnectionStatusGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexControllerTextSet
+                0x00000000       0x74 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceLedSet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceLedRgbSet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceLedGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceLedRgbGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAdiPortConfigSet
+                0x00000000       0x34 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAdiPortConfigGet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAdiValueSet
+                0x00000000       0x34 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAdiValueGet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAdiVoltageGet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAdiAddrLedSet
+                0x00000000       0x4c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceBumperGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGyroReset
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGyroHeadingGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGyroDegreesGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceSonarValueGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGenericValueGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorVelocitySet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorVelocityUpdate
+                0x00000000       0x40 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorVoltageSet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorVelocityGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorActualVelocityGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorDirectionGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorModeSet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorModeGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorPwmSet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorPwmGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorCurrentLimitSet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorCurrentLimitGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorVoltageLimitSet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorVoltageLimitGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorPositionPidSet
+                0x00000000       0x40 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorVelocityPidSet
+                0x00000000       0x40 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorCurrentGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorVoltageGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorPowerGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorTorqueGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorEfficiencyGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorTemperatureGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorOverTempFlagGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorCurrentLimitFlagGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorFaultsGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorZeroVelocityFlagGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorZeroPositionFlagGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorFlagsGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorReverseFlagSet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorReverseFlagGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorEncoderUnitsSet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorEncoderUnitsGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorBrakeModeSet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorBrakeModeGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorPositionSet
+                0x00000000       0x34 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorPositionGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorPositionRawGet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorPositionReset
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorTargetGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorServoTargetSet
+                0x00000000       0x34 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorAbsoluteTargetSet
+                0x00000000       0x3c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorRelativeTargetSet
+                0x00000000       0x3c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorGearingSet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorGearingGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMotorExternalProfileSet
+                0x00000000       0x3c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceVisionModeSet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceVisionModeGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceVisionObjectCountGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceVisionObjectGet
+                0x00000000       0x34 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceVisionSignatureSet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceVisionSignatureGet
+                0x00000000       0x34 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceVisionBrightnessSet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceVisionBrightnessGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceVisionWhiteBalanceModeSet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceVisionWhiteBalanceModeGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceVisionWhiteBalanceSet
+                0x00000000       0x30 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceVisionWhiteBalanceGet
+                0x00000000       0x50 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceVisionLedModeSet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceVisionLedModeGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceVisionLedBrigntnessSet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceVisionLedBrigntnessGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceVisionLedColorSet
+                0x00000000       0x30 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceVisionLedColorGet
+                0x00000000       0x50 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceVisionWifiModeSet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceVisionWifiModeGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceImuReset
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceImuHeadingGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceImuDegreesGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceImuQuaternionGet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceImuAttitudeGet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceImuRawGyroGet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceImuRawAccelGet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceImuStatusGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceImuTemperatureGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceImuDebugGet
+                0x00000000       0x34 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceImuModeSet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceImuModeGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceImuCollisionDataGet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceImuDataRateSet
+                0x00000000       0x40 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceRangeValueGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceRadioUserDataReceive
+                0x00000000       0x34 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceRadioModeSet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAbsEncReset
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAbsEncPositionSet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAbsEncPositionGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAbsEncVelocityGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAbsEncAngleGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAbsEncReverseFlagSet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAbsEncReverseFlagGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAbsEncStatusGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAbsEncTemperatureGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAbsEncDebugGet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAbsEncModeSet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAbsEncModeGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAbsEncOffsetSet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAbsEncOffsetGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAbsEncDataRateSet
+                0x00000000       0x40 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceOpticalHueGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceOpticalSatGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceOpticalBrightnessGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceOpticalProximityGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceOpticalRgbGet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceOpticalLedPwmSet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceOpticalLedPwmGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceOpticalStatusGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceOpticalRawGet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceOpticalDebugGet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceOpticalModeSet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceOpticalModeGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceOpticalGestureGet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceOpticalGestureEnable
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceOpticalGestureDisable
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceOpticalProximityThreshold
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceOpticalGainSet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceOpticalMatrixSet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceOpticalMatrixGet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceOpticalIntegrationTimeSet
+                0x00000000       0x34 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceOpticalIntegrationTimeGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMagnetPowerSet
+                0x00000000       0x34 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMagnetPowerGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMagnetPickup
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMagnetDrop
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMagnetTemperatureGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMagnetCurrentGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMagnetStatusGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMagnetDebugGet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMagnetModeSet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceMagnetModeGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceDistanceDistanceGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceDistanceConfidenceGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceDistanceObjectSizeGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceDistanceObjectVelocityGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceDistanceStatusGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceDistanceDebugGet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceDistanceModeSet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceDistanceModeGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGpsReset
+                0x00000000       0x38 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGpsHeadingGet
+                0x00000000       0x44 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGpsDegreesGet
+                0x00000000       0x44 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGpsQuaternionGet
+                0x00000000       0xd8 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGpsAttitudeGet
+                0x00000000      0x198 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGpsRawGyroGet
+                0x00000000       0xd0 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGpsRawAccelGet
+                0x00000000       0xd0 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGpsStatusGet
+                0x00000000       0x40 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGpsTemperatureGet
+                0x00000000       0x44 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGpsDebugGet
+                0x00000000       0xe0 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGpsModeSet
+                0x00000000       0x40 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGpsModeGet
+                0x00000000       0x40 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGpsDataRateSet
+                0x00000000       0x40 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGpsOriginSet
+                0x00000000       0x50 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGpsOriginGet
+                0x00000000       0x6c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGpsRotationSet
+                0x00000000       0x48 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGpsRotationGet
+                0x00000000       0x44 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGpsInitialPositionSet
+                0x00000000       0x58 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGpsErrorGet
+                0x00000000       0x44 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGpsTestDataSet
+                0x00000000       0x6c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAicamReset
+                0x00000000       0x38 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAicamHeadingGet
+                0x00000000       0x44 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAicamDegreesGet
+                0x00000000       0x44 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAicamAttitudeGet
+                0x00000000       0xb8 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAicamRawGyroGet
+                0x00000000       0xd0 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAicamRawAccelGet
+                0x00000000       0xd0 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAicamStatusGet
+                0x00000000       0x40 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAicamTemperatureGet
+                0x00000000       0x44 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAicamDebugGet
+                0x00000000       0xe0 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAicamModeSet
+                0x00000000       0x40 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAicamModeGet
+                0x00000000       0x40 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAicamDataRateSet
+                0x00000000       0x40 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAicamObjectCountGet
+                0x00000000       0x40 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAicamObjectGet
+                0x00000000       0x50 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAicamWriteChar
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAicamWriteFree
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAicamTransmit
+                0x00000000       0x34 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAicamReadChar
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAicamPeekChar
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAicamReceiveAvail
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAicamReceive
+                0x00000000       0x34 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceAicamFlush
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayOffsetSet
+                0x00000000       0x1c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayForegroundColor
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayBackgroundColor
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayForegroundColorGet
+                0x00000000       0x1c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayBackgroundColorGet
+                0x00000000       0x1c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayErase
+                0x00000000       0x1c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayScroll
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayScrollRect
+                0x00000000       0x54 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayCopyRect
+                0x00000000       0x5c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayPixelSet
+                0x00000000       0x38 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayPixelClear
+                0x00000000       0x38 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayLineDraw
+                0x00000000       0x4c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayLineClear
+                0x00000000       0x4c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayRectDraw
+                0x00000000       0x4c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayRectClear
+                0x00000000       0x4c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayRectFill
+                0x00000000       0x4c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayCircleDraw
+                0x00000000       0x40 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayCircleClear
+                0x00000000       0x40 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayCircleFill
+                0x00000000       0x40 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayPrintf
+                0x00000000       0x68 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayVPrintf
+                0x00000000       0x50 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayString
+                0x00000000       0x40 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayVString
+                0x00000000       0x34 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayStringAt
+                0x00000000       0x54 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayVStringAt
+                0x00000000       0x48 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayBigString
+                0x00000000       0x40 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayVBigString
+                0x00000000       0x34 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayBigStringAt
+                0x00000000       0x54 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayVBigStringAt
+                0x00000000       0x48 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplaySmallStringAt
+                0x00000000       0x54 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayVSmallStringAt
+                0x00000000       0x48 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayCenteredString
+                0x00000000       0x40 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayVCenteredString
+                0x00000000       0x34 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayBigCenteredString
+                0x00000000       0x40 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayVBigCenteredString
+                0x00000000       0x34 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayTextSmoothing
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayTextReference
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayScreenGrab
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayTextSize
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayTextSpacing
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayFontNamedSet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayStringWidthGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayStringHeightGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayPenSizeSet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayPenSizeGet
+                0x00000000       0x1c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayFontCustomSet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexFileMountSD
+                0x00000000       0x1c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexFileDirectoryGet
+                0x00000000       0x34 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexFileOpen
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexFileOpenWrite
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexFileOpenCreate
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexFileClose
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexFileRead
+                0x00000000       0x3c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexFileWrite
+                0x00000000       0x3c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexFileSize
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexFileSeek
+                0x00000000       0x34 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexFileDriveStatus
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexFileTell
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexFileSync
+                0x00000000       0x38 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexFileStatus
+                0x00000000       0x40 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSerialWriteChar
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSerialWriteBuffer
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSerialReadChar
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSerialPeekChar
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSerialEnableRemoteConsole
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSerialWriteFree
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemTimerStop
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemTimerClearInterrupt
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemTimerReinitForRtos
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemApplicationIRQHandler
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemWatchdogReinitRtos
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemWatchdogGet
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemTimerCallbackInstall
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemVSyncCallbackInstall
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemBoot
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemUndefinedException
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemFIQInterrupt
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemIRQInterrupt
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemSWInterrupt
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemDataAbortInterrupt
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemPrefetchAbortInterrupt
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemUserWriteInstall
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemSysWriteInstall
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemSysReadInstall
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemSysOpenInstall
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemSysCloseInstall
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemSysLseekInstall
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemSysFstatInstall
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemSysFcntlInstall
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemSysIsattyInstall
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemFileReopen
+                0x00000000       0x4c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemStdlibImpurePtrAddr
+                0x00000000       0x28 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTouchUserCallbackSet
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexTouchDataGet
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexAssetsFind
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexAssetsDump
+                0x00000000       0x1c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayOrientation
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayLanguageSet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayStringGet
+                0x00000000       0x34 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexImageBmpRead
+                0x00000000       0x3c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexImagePngRead
+                0x00000000       0x44 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayClearVsyncState
+                0x00000000       0x1c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayGetVsyncState
+                0x00000000       0x1c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayClipRegionSet
+                0x00000000       0x4c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayClipRegionClear
+                0x00000000       0x14 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayRotateFlagGet
+                0x00000000       0x1c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayThemeIdGet
+                0x00000000       0x38 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayRender
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayDoubleBufferDisable
+                0x00000000       0x1c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDisplayClipRegionSetWithIndex
+                0x00000000       0x6c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemPdataSet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemPdataGet
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemPdataIdGet
+                0x00000000       0x38 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemAppDataIdGet
+                0x00000000        0x4 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemPdataFlagsGet
+                0x00000000       0x38 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemAppDataFlagsGet
+                0x00000000        0x4 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemAppDataOptionsGet
+                0x00000000       0x38 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemAppDataLinkAddrGet
+                0x00000000       0x38 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemAppDataRes1Get
+                0x00000000       0x38 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemAppExtendedDataGet
+                0x00000000       0x48 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexSystemAppDebugDataGet
+                0x00000000       0x48 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexCompetitionStatus
+                0x00000000       0x1c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexCompetitionControl
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexBatteryVoltageGet
+                0x00000000       0x1c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexBatteryCurrentGet
+                0x00000000       0x1c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexBatteryTemperatureGet
+                0x00000000       0x1c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexBatteryCapacityGet
+                0x00000000       0x1c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexBatteryDataGet
+                0x00000000       0x1c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexBatteryDataSet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceEventMaskSet
+                0x00000000       0x48 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceEventMaskGet
+                0x00000000       0x3c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceEventDataSet
+                0x00000000       0x48 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceEventDataGet
+                0x00000000       0x3c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceEventBitsSet
+                0x00000000       0x48 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceEventBitsGet
+                0x00000000       0x3c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGenericSerialEnable
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGenericSerialBaudrate
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGenericSerialWriteChar
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGenericSerialWriteFree
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGenericSerialTransmit
+                0x00000000       0x34 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGenericSerialReadChar
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGenericSerialPeekChar
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGenericSerialReceiveAvail
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGenericSerialReceive
+                0x00000000       0x34 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGenericSerialFlush
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGenericSerialDisableAll
+                0x00000000       0x1c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGenericSerialCdcRead
+                0x00000000       0x3c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGenericRadioEnable
+                0x00000000       0x44 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGenericRadioDebugGet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGenericRadioConnection
+                0x00000000       0x3c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGenericRadioWriteChar
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGenericRadioWriteFree
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGenericRadioTransmit
+                0x00000000       0x34 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGenericRadioReadChar
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGenericRadioPeekChar
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGenericRadioReceiveAvail
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGenericRadioReceive
+                0x00000000       0x34 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGenericRadioFlush
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGenericRadioLinkStatus
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGenericCdcEnable
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGenericCdcDebugGet
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGenericCdcConnection
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGenericCdcWriteChar
+                0x00000000       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGenericCdcWriteFree
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGenericCdcTransmit
+                0x00000000       0x34 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGenericCdcReadChar
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGenericCdcPeekChar
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGenericCdcReceiveAvail
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGenericCdcReceive
+                0x00000000       0x34 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGenericCdcFlush
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexDeviceGenericCdcLinkStatus
+                0x00000000       0x24 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexCdc2Command
+                0x00000000       0x44 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexCdc2ReplyWithoutPacket
+                0x00000000       0x44 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexCdc2SendSimpleMessage
+                0x00000000       0x3c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text.vexCdc2SendExtMessage
+                0x00000000       0x44 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .bss.__xoff    0x00000000        0x4 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .data.__yoff   0x00000000        0x4 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .rodata.str1.1
+                0x00000000        0xe c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .bss.lastTime.9835
+                0x00000000        0x4 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .text          0x00000000        0x0 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apiversions.c.obj)
+ .data          0x00000000        0x0 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apiversions.c.obj)
+ .bss           0x00000000        0x0 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apiversions.c.obj)
+ .text.vexSdkVersion
+                0x00000000        0xc c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apiversions.c.obj)
+ .text.vexVexosVersion
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apiversions.c.obj)
+ .text.vexCpu0Version
+                0x00000000       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apiversions.c.obj)
+ .text          0x00000000        0x0 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-fini.o)
+ .data          0x00000000        0x0 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-fini.o)
+ .bss           0x00000000        0x0 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-fini.o)
+ .text          0x00000000        0x0 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-impure.o)
+ .data          0x00000000        0x0 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-impure.o)
+ .bss           0x00000000        0x0 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-impure.o)
+ .rodata._global_impure_ptr
+                0x00000000        0x4 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-impure.o)
+ .text          0x00000000        0x0 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-init.o)
+ .data          0x00000000        0x0 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-init.o)
+ .bss           0x00000000        0x0 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-init.o)
+ .llvm_addrsig  0x00000000        0x0 build-lvgl\liblvgl.a(lvgl-main.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ps7_ddr_0_S_AXI_BASEADDR 0x03800000         0x04800000
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+                0x00a00000                _HEAP_SIZE = 0xa00000
+                0x00002000                _STACK_SIZE = DEFINED (_STACK_SIZE)?_STACK_SIZE:0x2000
+                0x00100000                _HEAP_SIZE = DEFINED (_HEAP_SIZE)?_HEAP_SIZE:0x100000
+                0x00000400                _ABORT_STACK_SIZE = DEFINED (_ABORT_STACK_SIZE)?_ABORT_STACK_SIZE:0x400
+                0x00000800                _SUPERVISOR_STACK_SIZE = DEFINED (_SUPERVISOR_STACK_SIZE)?_SUPERVISOR_STACK_SIZE:0x800
+                0x00000400                _IRQ_STACK_SIZE = DEFINED (_IRQ_STACK_SIZE)?_IRQ_STACK_SIZE:0x400
+                0x00000400                _FIQ_STACK_SIZE = DEFINED (_FIQ_STACK_SIZE)?_FIQ_STACK_SIZE:0x400
+                0x00000400                _UNDEF_STACK_SIZE = DEFINED (_UNDEF_STACK_SIZE)?_UNDEF_STACK_SIZE:0x400
+
+.text           0x03800000      0x4a0
+ *(.vectors)
+ *(.boot_data)
+ .boot_data     0x03800000       0x20 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+                0x03800000                vexCodeSig
+                0x00000020                . = 0x20
+ *(.boot)
+ .boot          0x03800020       0xbc c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+                0x03800020                vexStartup
+                0x03800100                . = ALIGN (0x40)
+ *fill*         0x038000dc       0x24 
+ *(.freertos_vectors)
+ *(.text)
+ .text          0x03800100       0x1c build-lvgl\liblvgl.a(lvgl-main.o)
+                0x03800100                main
+ *(.text.*)
+ .text.vexMain  0x0380011c       0xb0 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+                0x0380011c                vexMain
+ .text.__vex_function_prolog
+                0x038001cc       0x18 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+                0x038001cc                __vex_function_prolog
+ .text._init    0x038001e4        0x4 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+                0x038001e4                _init
+ .text._fini    0x038001e8        0x4 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+                0x038001e8                _fini
+ .text.vexStdlibVersionLinked
+                0x038001ec        0xc c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_util.c.obj)
+                0x038001ec                vexStdlibVersionLinked
+ .text.vexStdlibVersionVerify
+                0x038001f8       0x30 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_util.c.obj)
+                0x038001f8                vexStdlibVersionVerify
+ .text.vexPrivateApiEnable
+                0x03800228       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+                0x03800228                vexPrivateApiEnable
+ .text.vexStdlibMismatchError
+                0x03800238       0x3c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+                0x03800238                vexStdlibMismatchError
+ .text.vexTaskAdd
+                0x03800274       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+                0x03800274                vexTaskAdd
+ .text.vexTasksRun
+                0x03800284       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+                0x03800284                vexTasksRun
+ .text.vexTaskCheckTimeslice
+                0x03800294       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+                0x03800294                vexTaskCheckTimeslice
+ .text.vexTasksDump
+                0x038002a4       0x1c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+                0x038002a4                vexTasksDump
+ .text.vexTaskGetTaskIndex
+                0x038002c0       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+                0x038002c0                vexTaskGetTaskIndex
+ .text.vexTaskStopAll
+                0x038002d0       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+                0x038002d0                vexTaskStopAll
+ .text.vexTaskCompletionIdSet
+                0x038002e0       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+                0x038002e0                vexTaskCompletionIdSet
+ .text.vexDebug
+                0x038002f0       0x38 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+                0x038002f0                vexDebug
+ .text.vexSystemTimeGet
+                0x03800328       0x1c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+                0x03800328                vexSystemTimeGet
+ .text.vexSystemExitRequest
+                0x03800344       0x1c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+                0x03800344                vexSystemExitRequest
+ .text.vexSystemStdlibImpureDataAddr
+                0x03800360       0x28 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+                0x03800360                vexSystemStdlibImpureDataAddr
+ .text.vexSystemStdlibImpureDataSize
+                0x03800388       0x28 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+                0x03800388                vexSystemStdlibImpureDataSize
+ .text.vexSystemSaveUserData
+                0x038003b0       0x3c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+                0x038003b0                vexSystemSaveUserData
+ .text.vexSystemVersion
+                0x038003ec       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apiversions.c.obj)
+                0x038003ec                vexSystemVersion
+ .text.vexStdlibVersion
+                0x038003fc       0x10 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apiversions.c.obj)
+                0x038003fc                vexStdlibVersion
+ .text.__libc_fini_array
+                0x0380040c       0x30 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-fini.o)
+                0x0380040c                __libc_fini_array
+ .text.__libc_init_array
+                0x0380043c       0x58 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-init.o)
+                0x0380043c                __libc_init_array
+ *fill*         0x03800494        0x4 
+ .text.__libc_init_array.__stub
+                0x03800498        0x8 linker stubs
+ *(.gnu.linkonce.t.*)
+ *(.plt)
+ *(.gnu_warning)
+ *(.gcc_except_table)
+ *(.glue_7)
+ .glue_7        0x00000000        0x0 linker stubs
+ *(.glue_7t)
+ .glue_7t       0x00000000        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+ *(.ARM.extab)
+ *(.gnu.linkonce.armextab.*)
+
+.v4_bx          0x038004a0        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x038004a0        0x0
+ .iplt          0x00000000        0x0 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+
+.init
+ *(.init)
+
+.fini
+ *(.fini)
+
+.rodata         0x038004a0       0x5c
+                0x038004a0                __rodata_start = .
+ *(.rodata)
+ *(.rodata.*)
+ .rodata.str1.1
+                0x038004a0       0x2e c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+ *fill*         0x038004ce        0x2 
+ .rodata.str1.4
+                0x038004d0        0x4 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-impure.o)
+                                  0x2 (size before relaxing)
+ .rodata.str1.1
+                0x038004d4       0x28 build-lvgl\liblvgl.a(lvgl-main.o)
+ *(.gnu.linkonce.r.*)
+                0x038004fc                __rodata_end = .
+
+.rodata1        0x038004fc        0x0
+                0x038004fc                __rodata1_start = .
+ *(.rodata1)
+ *(.rodata1.*)
+                0x038004fc                __rodata1_end = .
+
+.sdata2         0x038004fc        0x0
+                0x038004fc                __sdata2_start = .
+ *(.sdata2)
+ *(.sdata2.*)
+ *(.gnu.linkonce.s2.*)
+                0x038004fc                __sdata2_end = .
+
+.sbss2          0x038004fc        0x0
+                0x038004fc                __sbss2_start = .
+ *(.sbss2)
+ *(.sbss2.*)
+ *(.gnu.linkonce.sb2.*)
+                0x038004fc                __sbss2_end = .
+
+.data           0x03800500      0x434
+                0x03800500                __data_start = .
+ *(.data)
+ *(.data.*)
+ .data.appRunning
+                0x03800500        0x4 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+                0x03800500                appRunning
+ *fill*         0x03800504        0x4 
+ .data.impure_data
+                0x03800508      0x428 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x03800930        0x4 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-impure.o)
+                0x03800930                _impure_ptr
+ *(.gnu.linkonce.d.*)
+ *(.jcr)
+ *(.got)
+ *(.got.plt)
+                0x03800934                __data_end = .
+
+.igot.plt       0x03800934        0x0
+ .igot.plt      0x00000000        0x0 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+
+.data1          0x03800934        0x0
+                0x03800934                __data1_start = .
+ *(.data1)
+ *(.data1.*)
+                0x03800934                __data1_end = .
+
+.got
+ *(.got)
+
+.ctors          0x03800934        0x0
+                0x03800934                __CTOR_LIST__ = .
+                0x03800934                ___CTORS_LIST___ = .
+ *crtbegin.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+                0x03800934                __CTOR_END__ = .
+                0x03800934                ___CTORS_END___ = .
+
+.dtors          0x03800934        0x0
+                0x03800934                __DTOR_LIST__ = .
+                0x03800934                ___DTORS_LIST___ = .
+ *crtbegin.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+                0x03800934                __DTOR_END__ = .
+                0x03800934                ___DTORS_END___ = .
+
+.fixup          0x03800934        0x0
+                0x03800934                __fixup_start = .
+ *(.fixup)
+                0x03800934                __fixup_end = .
+
+.eh_frame
+ *(.eh_frame)
+
+.eh_framehdr    0x03800934        0x0
+                0x03800934                __eh_framehdr_start = .
+ *(.eh_framehdr)
+                0x03800934                __eh_framehdr_end = .
+
+.gcc_except_table
+ *(.gcc_except_table)
+
+.mmu_tbl        0x03804000        0x0
+                0x03804000                __mmu_tbl_start = .
+ *(.mmu_tbl)
+                0x03804000                __mmu_tbl_end = .
+
+.ARM.exidx      0x03800934        0x8
+                0x03800934                __exidx_start = .
+ *(.ARM.exidx*)
+ .ARM.exidx     0x03800934        0x8 build-lvgl\liblvgl.a(lvgl-main.o)
+ *(.gnu.linkonce.armexidix.*.*)
+                0x0380093c                __exidx_end = .
+
+.rel.dyn        0x0380093c        0x0
+ .rel.iplt      0x00000000        0x0 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+
+.preinit_array  0x0380093c        0x0
+                0x0380093c                __preinit_array_start = .
+ *(SORT(.preinit_array.*))
+ *(.preinit_array)
+                0x0380093c                __preinit_array_end = .
+
+.init_array     0x0380093c        0x0
+                0x0380093c                __init_array_start = .
+ *(SORT(.init_array.*))
+ *(.init_array)
+                0x0380093c                __init_array_end = .
+
+.fini_array     0x0380093c        0x0
+                0x0380093c                __fini_array_start = .
+ *(SORT(.fini_array.*))
+ *(.fini_array)
+                0x0380093c                __fini_array_end = .
+
+.ARM.attributes
+                0x0380093c       0x39
+                0x0380093c                __ARM.attributes_start = .
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x0380093c       0x35 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+ .ARM.attributes
+                0x03800971       0x35 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_util.c.obj)
+ .ARM.attributes
+                0x038009a6       0x35 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .ARM.attributes
+                0x038009db       0x35 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apiversions.c.obj)
+ .ARM.attributes
+                0x03800a10       0x2b c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-fini.o)
+ .ARM.attributes
+                0x03800a3b       0x2b c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-impure.o)
+ .ARM.attributes
+                0x03800a66       0x2b c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-init.o)
+ .ARM.attributes
+                0x03800a91       0x3a build-lvgl\liblvgl.a(lvgl-main.o)
+                0x03800acb                __ARM.attributes_end = .
+
+.sdata          0x0380093c        0x0
+                0x0380093c                __sdata_start = .
+ *(.sdata)
+ *(.sdata.*)
+ *(.gnu.linkonce.s.*)
+                0x0380093c                __sdata_end = .
+
+.sbss           0x0380093c        0x0
+                0x0380093c                __sbss_start = .
+ *(.sbss)
+ *(.sbss.*)
+ *(.gnu.linkonce.sb.*)
+                0x0380093c                __sbss_end = .
+
+.tdata          0x0380093c        0x0
+                0x0380093c                __tdata_start = .
+ *(.tdata)
+ *(.tdata.*)
+ *(.gnu.linkonce.td.*)
+                0x0380093c                __tdata_end = .
+
+.tbss           0x0380093c        0x0
+                0x0380093c                __tbss_start = .
+ *(.tbss)
+ *(.tbss.*)
+ *(.gnu.linkonce.tb.*)
+                0x0380093c                __tbss_end = .
+
+.bss            0x0380093c       0x18
+                0x0380093c                __bss_start = .
+ *(.bss)
+ *(.bss.*)
+ *(.gnu.linkonce.b.*)
+ *(COMMON)
+ COMMON         0x0380093c       0x18 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+                0x03800940                __vex_critical_section
+                0x03800954                __bss_end = .
+                0x0380093c                _SDA_BASE_ = (__sdata_start + ((__sbss_end - __sdata_start) / 0x2))
+                0x038004fc                _SDA2_BASE_ = (__sdata2_start + ((__sbss2_end - __sdata2_start) / 0x2))
+
+.heap           0x03800954   0xa0000c
+                0x03800960                . = ALIGN (0x10)
+ *fill*         0x03800954        0xc 
+                0x03800960                _heap = .
+                0x03800960                HeapBase = .
+                0x03800960                _heap_start = .
+                0x04200960                . = (. + _HEAP_SIZE)
+ *fill*         0x03800960   0xa00000 
+                0x04200960                _heap_end = .
+                0x04200960                HeapLimit = .
+
+.stack          0x04200960     0x3800
+                0x04200960                . = ALIGN (0x10)
+                0x04200960                _stack_end = .
+                0x04202960                . = (. + _STACK_SIZE)
+ *fill*         0x04200960     0x2000 
+                0x04202960                . = ALIGN (0x10)
+                0x04202960                _stack = .
+                0x04202960                __stack = _stack
+                0x04202960                . = ALIGN (0x10)
+                0x04202960                _irq_stack_end = .
+                0x04202d60                . = (. + _IRQ_STACK_SIZE)
+ *fill*         0x04202960      0x400 
+                0x04202d60                . = ALIGN (0x10)
+                0x04202d60                __irq_stack = .
+                0x04202d60                _supervisor_stack_end = .
+                0x04203560                . = (. + _SUPERVISOR_STACK_SIZE)
+ *fill*         0x04202d60      0x800 
+                0x04203560                . = ALIGN (0x10)
+                0x04203560                __supervisor_stack = .
+                0x04203560                _abort_stack_end = .
+                0x04203960                . = (. + _ABORT_STACK_SIZE)
+ *fill*         0x04203560      0x400 
+                0x04203960                . = ALIGN (0x10)
+                0x04203960                __abort_stack = .
+                0x04203960                _fiq_stack_end = .
+                0x04203d60                . = (. + _FIQ_STACK_SIZE)
+ *fill*         0x04203960      0x400 
+                0x04203d60                . = ALIGN (0x10)
+                0x04203d60                __fiq_stack = .
+                0x04203d60                _undef_stack_end = .
+                0x04204160                . = (. + _UNDEF_STACK_SIZE)
+ *fill*         0x04203d60      0x400 
+                0x04204160                . = ALIGN (0x10)
+                0x04204160                __undef_stack = .
+                0x04204160                _end = .
+LOAD c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/stdlib_0.lib
+START GROUP
+LOAD c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a
+LOAD c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libstdc++.a
+LOAD c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a
+LOAD c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libm.a
+LOAD c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libgcc.a
+LOAD build-lvgl\liblvgl.a
+END GROUP
+OUTPUT(build/lib46f.elf elf32-littlearm)
+
+.comment        0x00000000       0x9d
+ .comment       0x00000000       0x70 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+                                 0x71 (size before relaxing)
+ .comment       0x00000000       0x71 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_util.c.obj)
+ .comment       0x00000000       0x71 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+ .comment       0x00000000       0x71 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apiversions.c.obj)
+ .comment       0x00000070       0x2d build-lvgl\liblvgl.a(lvgl-main.o)
+                                 0x2e (size before relaxing)
+
+.note.GNU-stack
+                0x00000000        0x0
+ .note.GNU-stack
+                0x00000000        0x0 build-lvgl\liblvgl.a(lvgl-main.o)
+
+.debug_frame    0x00000000       0x60
+ .debug_frame   0x00000000       0x34 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-fini.o)
+ .debug_frame   0x00000034       0x2c c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-init.o)

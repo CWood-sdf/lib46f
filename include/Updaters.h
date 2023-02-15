@@ -1,9 +1,7 @@
-﻿#include "ClassBaseFns.h"
+﻿#include "robot-config.h"
 #ifdef MAKE
 
 void microWait(uint);
-void executeThreads();
-void updatePos();
 #else
 void microWait(uint time)
 {
@@ -15,28 +13,4 @@ void microWait(uint time)
     }
 }
 
-void executeThreads()
-{
-
-    // Execute autonomous functions
-    while (1)
-    {
-        if (threadFns.size() > 0)
-        {
-            threadFns.front()();
-            threadFns.pop_front();
-        }
-        else
-        {
-            this_thread::sleep_for(10);
-        }
-    }
-}
-void updatePos()
-{
-    while (1)
-    {
-        positioner.update();
-    }
-}
 #endif
