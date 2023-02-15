@@ -13,8 +13,69 @@
 #endif
 // The basic wheel controller
 class RamseteController;
-class BasicPidController;
+class PidController;
 class PurePursuitController;
+class PathFollowSettings
+{
+    typedef PathFollowSettings& chain_method;
+
+public:
+    enum class exitMode
+    {
+        normal,
+        hold = normal,
+        coast,
+        nothing
+    };
+    bool useDistToGoal = true;
+    bool turnAtStart = true;
+    double virtualPursuitDist = 5.0;
+    double exitDist = 1.0;
+    exitMode brakeMode = exitMode::normal;
+    double pathRadius = 1.0;
+    double followPathDist = 16.0;
+    int maxTimeIn = 10;
+    chain_method setUseDistToGoal(bool v)
+    {
+        useDistToGoal = v;
+        return *this;
+    }
+    chain_method setTurnAtStart(bool v)
+    {
+        turnAtStart = v;
+        return *this;
+    }
+    chain_method setVirtualPursuitDist(double v)
+    {
+        virtualPursuitDist = v;
+        return *this;
+    }
+    chain_method setExitDist(double v)
+    {
+        exitDist = v;
+        return *this;
+    }
+    chain_method setBrakeMode(exitMode v)
+    {
+        brakeMode = v;
+        return *this;
+    }
+    chain_method setPathRadius(double v)
+    {
+        pathRadius = v;
+        return *this;
+    }
+    chain_method setFollowPathDist(double v)
+    {
+        followPathDist = v;
+        return *this;
+    }
+    chain_method setMaxTimeIn(int v)
+    {
+        maxTimeIn = v;
+        return *this;
+    }
+};
 class WheelController
 {
 protected: // PID variables + other random things
@@ -38,14 +99,14 @@ public: // Some variables
     std::function<void()> afterTurn = []() {};
     RamseteController* defaultRamsete;
     PurePursuitController* defaultPurePursuit;
-    BasicPidController* defaultPid;
+    PidController* defaultPid;
 
 public: // Constructor
     WheelController(
         Chassis* c,
         RamseteController* defRamsete,
         PurePursuitController* defPurePursuit,
-        BasicPidController* defPid,
+        PidController* defPid,
         std::function<PVector(PVector)> reversePos,
         std::function<double(double)> reverseAngle,
         PID turnCtrl,
@@ -93,7 +154,7 @@ private: // turnTo, with re-updating function
 
 public: // TurnTo
     virtual void turnTo(double angle);
-    enum class exitMode;
+    typedef PathFollowSettings::exitMode exitMode;
 
 private: // followPath vars
     PVector lastTarget;
@@ -115,14 +176,6 @@ private: // followPath vars
     int followPathMaxTimeIn = 5;
 
 public: // exitMode
-    enum class exitMode
-    {
-        normal,
-        hold = normal,
-        coast,
-        nothing
-    };
-
 public: // followPath var editors
     bool isMoving();
     double getPathRadius();
@@ -150,82 +203,29 @@ public:
     virtual void faceTarget(PVector target);
     virtual void ramseteFollow(VectorArr arr, bool isNeg);
     virtual void purePursuitFollow(VectorArr arr, bool isNeg);
-    class PathFollowSettings
-    {
-        typedef PathFollowSettings& chain_method;
 
-    public:
-        bool useDistToGoal = true;
-        bool turnAtStart = true;
-        double virtualPursuitDist = 5.0;
-        double exitDist = 1.0;
-        exitMode brakeMode = exitMode::normal;
-        double pathRadius = 1.0;
-        double followPathDist = 16.0;
-        int maxTimeIn = 10;
-        chain_method setUseDistToGoal(bool v)
-        {
-            useDistToGoal = v;
-            return *this;
-        }
-        chain_method setTurnAtStart(bool v)
-        {
-            turnAtStart = v;
-            return *this;
-        }
-        chain_method setVirtualPursuitDist(double v)
-        {
-            virtualPursuitDist = v;
-            return *this;
-        }
-        chain_method setExitDist(double v)
-        {
-            exitDist = v;
-            return *this;
-        }
-        chain_method setBrakeMode(exitMode v)
-        {
-            brakeMode = v;
-            return *this;
-        }
-        chain_method setPathRadius(double v)
-        {
-            pathRadius = v;
-            return *this;
-        }
-        chain_method setFollowPathDist(double v)
-        {
-            followPathDist = v;
-            return *this;
-        }
-        chain_method setMaxTimeIn(int v)
-        {
-            maxTimeIn = v;
-            return *this;
-        }
-    };
     // PathFollowSettings getDefaults(){
 private:
     void generalFollowTurnAtStart(VectorArr& arr, double& purePursuitDist, bool& isNeg);
-    PVector generalFollowGetVirtualPursuit(PVector& pursuit, Controller* controller);
-    double generalFollowGetDist(int& bezierIndex, Controller* controller, PVector& pursuit);
+    PVector generalFollowGetVirtualPursuit(PVector& pursuit, SpeedController* controller);
+    double generalFollowGetDist(int& bezierIndex, SpeedController* controller, PVector& pursuit);
 
 public:
     // }
-    virtual void generalFollow(VectorArr&& arr, Controller* controller, bool isNeg)
+    virtual void generalFollow(VectorArr&& arr, SpeedController* controller, bool isNeg)
     {
         generalFollow(arr, controller, isNeg);
     }
-    virtual void generalFollow(VectorArr& arr, Controller* controller, bool isNeg);
-    virtual void followPath(Controller* controller, VectorArr arr)
+    virtual void generalFollow(VectorArr& arr, SpeedController* controller, bool isNeg);
+    virtual void followPath(SpeedController* controller, VectorArr arr)
     {
         generalFollow(arr, controller, false);
     }
-    virtual void backwardsFollow(Controller* controller, VectorArr arr)
+    virtual void backwardsFollow(SpeedController* controller, VectorArr arr)
     {
         generalFollow(arr, controller, true);
     }
-    void generalDriveDistance(double dist, bool isNeg, BasicPidController* pid);
+    void generalDriveDistance(double dist, bool isNeg, PidController* pid);
     void driveDistance(double dist);
     void backwardsDriveDistance(double dist);
     bool isRed();
@@ -240,7 +240,7 @@ public: // Import variables + constructor
     // MechWheelController(motor& BL, motor& BR, posTp&, gps&) = delete;
     MechWheelController(
         Chassis* c,
-        RamseteController* ramsete, PurePursuitController* purePursuit, BasicPidController* defPid,
+        RamseteController* ramsete, PurePursuitController* purePursuit, PidController* defPid,
         std::function<PVector(PVector)> reversePos, std::function<double(double)> reverseAngle,
         PID tc, double kConst = 1.0)
       : WheelController(c, ramsete, purePursuit, defPid, reversePos, reverseAngle, tc, kConst)

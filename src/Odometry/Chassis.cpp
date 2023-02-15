@@ -10,12 +10,12 @@ double Chassis::botAngle()
 {
     return pos.heading();
 }
-Chassis::Chassis(MotorGroup& left, MotorGroup& right, Positioner& p, double trackWidth, double gearRatio, double wheelRad, gearSetting cartridge) : leftWheels(left), rightWheels(right), pos(p)
+Chassis::Chassis(MotorGroup& left, MotorGroup& right, Positioner& p, double trackWidth, double gearRatio, double wheelDiameter, gearSetting cartridge) : leftWheels(left), rightWheels(right), pos(p)
 {
 
     this->trackWidth = trackWidth;
     this->gearRatio = gearRatio;
-    this->wheelRad = wheelRad;
+    this->wheelRad = wheelDiameter / 2.0;
 }
 
 void Chassis::turnRight(double speed)
@@ -26,13 +26,13 @@ void Chassis::turnLeft(double speed)
 {
     driveFromDiff(0, -speed);
 }
-void Chassis::moveRightSide(double speed, directionType d)
+void Chassis::moveRightSide(double speed)
 {
-    rightWheels.spinVolt(d, speed);
+    rightWheels.spinVolt(speed > 0 ? fwd : vex::reverse, abs(speed));
 }
-void Chassis::moveLeftSide(double speed, directionType d)
+void Chassis::moveLeftSide(double speed)
 {
-    leftWheels.spinVolt(d, speed);
+    leftWheels.spinVolt(speed > 0 ? fwd : vex::reverse, abs(speed));
 }
 void Chassis::holdBrake()
 {
@@ -43,16 +43,6 @@ void Chassis::coastBrake()
 {
     leftWheels.stop(coast);
     rightWheels.stop(coast);
-}
-Chassis::chain_method Chassis::setMaxAcc(double v)
-{
-    maxAcc = v;
-    CHAIN
-}
-Chassis::chain_method Chassis::setMaxDAcc(double v)
-{
-    maxDAcc = v;
-    CHAIN
 }
 Chassis::chain_method Chassis::setSpeedLimit(double v)
 {
@@ -79,23 +69,17 @@ void Chassis::driveFromAngular(double speed, double vel)
 // Speed is in pct, curvature is 1/in
 void Chassis::driveFromCurvature(double speed, double curvature)
 {
-    double realSpeed, leftSpeed, rightSpeed;
-    int count = 0;
-TOP:
-    realSpeed = pctToReal(speed);
-    leftSpeed = realToPct(realSpeed * (2.0 + curvature * trackWidth) / 2.0);
-    rightSpeed = realToPct(realSpeed * (2.0 - curvature * trackWidth) / 2.0);
-    if ((abs(leftSpeed) > 100 || abs(rightSpeed) > 100) && realToPct(abs(curvature * trackWidth)) < 100 && count++ < 5)
+    double targetRobotVel = pctToReal(speed);
+    double rightExtra = realToPct(curvature * (getTrackWidth() + 1.0) * targetRobotVel / 2.0);
+    while (abs(rightExtra) + abs(speed) > 100.0)
     {
-        double max = std::max(leftSpeed, rightSpeed);
-        if (max < 100)
-        {
-            max = std::min(leftSpeed, rightSpeed);
-        }
-        speed *= 100 / max;
-        goto TOP;
+        speed = (abs(speed) - 1.0) * sign(speed);
+        targetRobotVel = pctToReal(speed);
+        rightExtra = realToPct(curvature * (getTrackWidth() + 1.0) * targetRobotVel / 2.0);
+        if (abs(speed) < 1.0)
+            break;
     }
-    driveFromLR(leftSpeed, rightSpeed);
+    driveFromDiff(speed, rightExtra);
 }
 void Chassis::driveFromLR(double left, double right)
 {

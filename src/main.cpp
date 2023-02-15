@@ -14,11 +14,10 @@
 */
 // main.cpp
 #define MAKE
-#include "BrainOS/ConnectionTest.h"
-#include "BrainOS/VariableConfig.h"
-#include "ButtonLatch.h"
-#include "DriveController.h"
-
+#include "lib46f_inc.h"
+brain Brain;
+// This class allows a button latch to exist
 int main()
 {
+    cout << "Wrong main function" << endl;
 }

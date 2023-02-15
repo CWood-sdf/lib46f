@@ -72,7 +72,7 @@ int LineCounter::rawData()
     return sensor->reflectivity();
 }
 
-const KillThread LineCounter::updater = thread([]()
+const thread LineCounter::updater = thread([]()
     {
     if(LineCounter::instances.size() == 0){
         cout << "No Line Counter instances exist, exiting thread" << endl;
@@ -84,3 +84,41 @@ const KillThread LineCounter::updater = thread([]()
         }
         s(10);
   } });
+
+LineCounter::LineCounter(line& se, bool throughPolycarb) : sensor(&se)
+{
+    instances.push_back(this);
+    if (throughPolycarb)
+    {
+        threshold = startThreshold = highThresholdPolycarb;
+        lowThreshold = lowThresholdPolycarb;
+    }
+}
+LineCounter::LineCounter(triport::port& p, bool throughPolycarb) : sensor(new line(p))
+{
+    instances.push_back(this);
+    if (throughPolycarb)
+    {
+        threshold = startThreshold = highThresholdPolycarb;
+        lowThreshold = lowThresholdPolycarb;
+    }
+}
+
+void LineCounter::setCount(int count)
+{
+    countOut = count;
+    countIn = count;
+    if (pressing())
+    {
+        countIn++;
+    }
+}
+void LineCounter::listVals(bool)
+{
+    int i = 0;
+    Brain.Screen.clearScreen(black);
+    for (LineCounter* l : instances)
+    {
+        Brain.Screen.printAt(20, i * 20 + 20, "R: %d, Ci: %d, Co: %d, A: %d", l->rawData(), l->getCountIn(), l->getCountOut(), l->active());
+    }
+}

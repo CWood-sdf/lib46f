@@ -19,7 +19,7 @@ $(BUILD)/$(PROJECT).elf: $(OBJ)
 	$(Q)$(SIZE) $@
 
 # create binary 
-$(BUILD)/$(PROJECT).bin: $(BUILD)/$(PROJECT).elf
+$(BUILD)/$(PROJECT).bin: $(BUILD)/$(PROJECT).elf $(BUILD)/$(PROJECTLIB).a
 	$(Q)$(OBJCOPY) -O binary $(BUILD)/$(PROJECT).elf $(BUILD)/$(PROJECT).bin
 
 # create archive

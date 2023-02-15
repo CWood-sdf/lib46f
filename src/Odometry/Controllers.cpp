@@ -3,9 +3,10 @@
 #include <cstdint>
 #include <iomanip>
 // That should be a sufficient path generator
-void Path::setK(double s)
+Path::chain_method Path::setK(double s)
 {
     kConst = s;
+    CHAIN
 }
 double clamp(double val, double high, double low)
 {
@@ -62,7 +63,7 @@ void Path::make(VectorArr& arr, Chassis* chassis)
     {
         // I think this math of converting inches to percent works
         double d = (bezier)[i].dist2D((bezier)[i - 1]);
-        double a = chassis->getMaxAcc();
+        double a = getMaxAcc();
         targetSpeeds[i] = abs(targetSpeeds[i]);
         if (startVel < targetSpeeds[i] && i != bezier.size() - 1)
         {
@@ -79,7 +80,7 @@ void Path::make(VectorArr& arr, Chassis* chassis)
             {
                 startVel = targetSpeeds[i];
                 i--;
-                double a = chassis->getMaxDAcc();
+                double a = getMaxDAcc();
                 double d = (bezier)[i].dist2D((bezier)[i + 1]);
                 startVel = targetSpeeds[i] = clamp(chassis->realToPct(sqrt(pow(chassis->pctToReal(startVel), 2) + 2.0 * a * d)), abs(targetSpeeds[i]), 0);
             } while (i != 0 && startVel < targetSpeeds[i - 1]);
@@ -142,12 +143,21 @@ Path::El& Path::operator[](int index)
 {
     return path[index];
 }
-void Controller::init()
+Path::chain_method Path::setMaxAcc(double maxAcc)
+{
+    this->maxAcc = maxAcc;
+    return *this;
+}
+Path::chain_method Path::setMaxDAcc(double maxDAcc)
+{
+    this->maxDAcc = maxDAcc;
+    return *this;
+}
+void SpeedController::init()
 {
 }
-void Controller::deInit()
+void SpeedController::deInit()
 {
-    turnAtStart = defaultTurn;
 }
 PurePursuitController::followToRet PurePursuitController::followTo(Input& input)
 {
@@ -176,10 +186,10 @@ void PurePursuitController::init()
 {
     ctrl.setTarget(0);
 }
-PurePursuitController::PurePursuitController(PID input) : PurePursuitController(input, WheelController::PathFollowSettings())
+PurePursuitController::PurePursuitController(PID input) : PurePursuitController(input, PathFollowSettings())
 {
 }
-PurePursuitController::PurePursuitController(PID input, WheelController::PathFollowSettings settings)
+PurePursuitController::PurePursuitController(PID input, PathFollowSettings settings)
 {
     ctrl = input;
     this->settings = settings;
@@ -208,26 +218,26 @@ RamseteController::followToRet RamseteController::followTo(Input& input)
     double turnVel = Wd + k * eTheta + beta * vd * sin(eTheta) / (eTheta + eTheta == 0 ? 0.00001 : 0) * error(0, 0);
     return {{speed, ForwardVel::inps}, {turnVel, AngularVel::radps}};
 }
-RamseteController::RamseteController(double beta, double zeta, WheelController::PathFollowSettings settings) : Controller()
+RamseteController::RamseteController(double beta, double zeta, PathFollowSettings settings) : SpeedController()
 {
     this->beta = beta;
     this->zeta = zeta;
     this->settings = settings;
 }
-RamseteController::RamseteController(double beta, double zeta) : RamseteController(beta, zeta, WheelController::PathFollowSettings())
+RamseteController::RamseteController(double beta, double zeta) : RamseteController(beta, zeta, PathFollowSettings())
 {
 }
-BasicPidController::BasicPidController(PID ctrl, PID slave, WheelController::PathFollowSettings settings) : Controller()
+PidController::PidController(PID ctrl, PID slave, PathFollowSettings settings) : SpeedController()
 {
     this->ctrl = ctrl;
     this->slave = slave;
     this->settings = settings;
 }
-BasicPidController::BasicPidController(PID ctrl, PID slave) : BasicPidController(ctrl, slave, WheelController::PathFollowSettings())
+PidController::PidController(PID ctrl, PID slave) : PidController(ctrl, slave, PathFollowSettings())
 {
 }
 
-BasicPidController::followToRet BasicPidController::followTo(Input& input)
+PidController::followToRet PidController::followTo(Input& input)
 {
     double dist = input.dist;
     double normAngle = posNeg180(input.angleTarget - input.currentAngle);
@@ -239,9 +249,9 @@ BasicPidController::followToRet BasicPidController::followTo(Input& input)
     // }
     double turnVel = slave.getVal(posNeg180(normAngle));
 
-    return {{fwdVel * 0.8, Controller::ForwardVel::pct}, {turnVel * 2.0, Controller::AngularVel::pctDiff}};
+    return {{fwdVel * 0.8, SpeedController::ForwardVel::pct}, {turnVel * 2.0, SpeedController::AngularVel::pctDiff}};
 }
-void BasicPidController::init()
+void PidController::init()
 {
     ctrl.setTarget(0);
     slave.setTarget(0);

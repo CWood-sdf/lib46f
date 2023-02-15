@@ -16,80 +16,21 @@ class Encoder
 public:
     // The constructor, only enable if the type has been mapped
     template <class Sensor>
-    Encoder(Sensor* e, decltype(&Sensor::resetPosition) = nullptr)
-    {
-        cout << "Init encoder" << endl;
-        getValue = [e](rotationUnits units)
-        {
-            return e->position(units);
-        };
-        resetter = [e]()
-        {
-            e->resetPosition();
-        };
-    }
+    Encoder(Sensor* e, decltype(&Sensor::resetPosition) = nullptr);
     template <class Sensor>
-    Encoder(Sensor* e, decltype(&Sensor::resetRotation) = nullptr)
-    {
-        getValue = [e](rotationUnits units)
-        {
-            return e->position(units);
-        };
-        resetter = [e]()
-        {
-            e->resetRotation();
-        };
-    }
+    Encoder(Sensor* e, decltype(&Sensor::resetRotation) = nullptr);
     template <class Sensor>
-    Encoder(Sensor* e, std::function<void()> f)
-    {
-        getValue = [e](rotationUnits units)
-        {
-            return e->position(units);
-        };
-        resetter = f;
-    }
+    Encoder(Sensor* e, std::function<void()> f);
     // Constructor that just takes the functions
-    Encoder(std::function<double(rotationUnits)> f, std::function<void()> r)
-    {
-        getValue = f;
-        resetter = r;
-    }
+    Encoder(std::function<double(rotationUnits)> f, std::function<void()> r);
     template <class Sensor>
-    Encoder(Sensor& e) : Encoder(&e)
-    {
-    }
-    Encoder()
-    {
-        getValue = [](rotationUnits units)
-        {
-            return 0;
-        };
-        resetter = [](void) {
-
-        };
-    }
+    Encoder(Sensor& e);
+    Encoder();
     // Make the position method
-    double position(rotationUnits units)
-    {
-        return getValue(units);
-    }
-    void resetPosition()
-    {
-        resetter();
-    }
-    Encoder& operator=(const Encoder& other)
-    {
-        getValue = other.getValue;
-        resetter = other.resetter;
-        return *this;
-    }
-    Encoder& operator=(Encoder&& other)
-    {
-        getValue = other.getValue;
-        resetter = other.resetter;
-        return *this;
-    }
+    double position(rotationUnits units);
+    void resetPosition();
+    Encoder& operator=(const Encoder& other);
+    Encoder& operator=(Encoder&& other);
 };
 
 #endif // ENCODER_H

@@ -5,7 +5,7 @@
 #include "PID.h"
 
 struct Chassis;
-class Controller;
+class SpeedController;
 class Path
 {
 public:
@@ -22,27 +22,65 @@ public:
     };
 
 private:
+    double maxAcc = 100; // in/s^2
+    double maxDAcc = 80; // in/s^2
     typedef Path& chain_method;
     vector<El> path;
     VectorArr arr;
     double kConst;
 
 public:
-    void setK(double s);
+    chain_method setK(double s);
     void make(VectorArr& arr, Chassis* chassis);
     void remake(Chassis* chassis);
     VectorArr getBezier();
     int size();
     El& last();
     El& operator[](int index);
+    /**
+     * @brief Returns the maximum accelleration
+     *
+     * @return double
+     */
+    double getMaxAcc()
+    {
+        return maxAcc;
+    }
+    /**
+     * @brief Returns the maximum deaccelleration
+     *
+     * @return double
+     */
+    double getMaxDAcc()
+    {
+        return maxDAcc;
+    }
+    /**
+     * @brief Sets the max accelleration
+     *
+     * @param v The new max acc value
+     * @return chain_method
+     */
+    chain_method setMaxAcc(double v);
+    /**
+     * @brief Set the Max decelleration
+     *
+     * @param v The new max deacc value
+     * @return chain_method
+     */
+    chain_method setMaxDAcc(double v);
+    /**
+     * @brief Set the speed limit
+     *
+     * @param v The new speed limit value
+     * @return chain_method
+     */
 };
 struct Chassis
 {
 private:
     typedef Chassis& chain_method;
     double speedLimit = 100;
-    double maxAcc = 100; // in/s^2
-    double maxDAcc = 80; // in/s^2
     MotorGroup& leftWheels;
     MotorGroup& rightWheels;
     double trackWidth = 0.0;
@@ -200,16 +238,14 @@ public:
      * @brief Moves the left side at the given speed and direction
      *
      * @param speed The speed to move in percent
-     * @param d The direction to move
      */
-    void moveLeftSide(double speedPct, directionType d);
+    void moveLeftSide(double speedPct);
     /**
      * @brief Moves the right side at the given speed and direction
      *
      * @param speed The speed to move in percent
-     * @param d The direction to move
      */
-    void moveRightSide(double speed, directionType d);
+    void moveRightSide(double speedPct);
     /**
      * @brief Returns the speed limit
      *
@@ -220,44 +256,12 @@ public:
         return speedLimit;
     }
     /**
-     * @brief Returns the maximum accelleration
+     * @brief Set the Speed Limit
      *
-     * @return double
-     */
-    double getMaxAcc()
-    {
-        return maxAcc;
-    }
-    /**
-     * @brief Returns the maximum deaccelleration
-     *
-     * @return double
-     */
-    double getMaxDAcc()
-    {
-        return maxDAcc;
-    }
-    /**
-     * @brief Sets the max accelleration
-     *
-     * @param v The new max acc value
+     * @param v The speed limit
      * @return chain_method
      */
-    chain_method setMaxAcc(double v);
-    /**
-     * @brief Set the Max decelleration
-     *
-     * @param v The new max deacc value
-     * @return chain_method
-     */
-    chain_method setMaxDAcc(double v);
-    /**
-     * @brief Set the speed limit
-     *
-     * @param v The new speed limit value
-     * @return chain_method
-     */
-    chain_method setSpeedLimit(double v);
+    chain_method setSpeedLimit(double speedLimitPct);
     /**
      * @brief Construct a new Chassis object
      *
@@ -266,9 +270,9 @@ public:
      * @param p The odometry system
      * @param trackWidth The distance from the middle of the left wheel to the middle of the right wheel
      * @param gearRatio The gear ratio (input/output)
-     * @param wheelRad The radius of the wheels
+     * @param wheelDiameter The radius of the wheels
      * @param cartridge The motor cartridge
      */
-    Chassis(MotorGroup& left, MotorGroup& right, Positioner& p, double trackWidth, double gearRatio, double wheelRad, gearSetting cartridge);
+    Chassis(MotorGroup& left, MotorGroup& right, Positioner& p, double trackWidth, double gearRatio, double wheelDiameter, gearSetting cartridge);
 };
 #endif

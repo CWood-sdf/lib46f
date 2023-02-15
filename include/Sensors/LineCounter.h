@@ -2,7 +2,7 @@
 #ifndef LINECOUNTER_H
 #define LINECOUNTER_H
 
-#include "Sensors/KillThread.h"
+#include "Sensors/PotDial.h"
 // Oh, this lovely class
 // It just always works (unless there's a sun there)
 
@@ -10,7 +10,7 @@
 class LineCounter
 {
 
-    static const KillThread updater;
+    static const thread updater;
     friend class LineGroup;
     line* sensor;
     bool isActive = false;
@@ -29,24 +29,8 @@ class LineCounter
 public:
     static inline vector<LineCounter*> instances = {};
     LineCounter(const LineCounter&) = delete;
-    LineCounter(line& se, bool throughPolycarb = false) : sensor(&se)
-    {
-        instances.push_back(this);
-        if (throughPolycarb)
-        {
-            threshold = startThreshold = highThresholdPolycarb;
-            lowThreshold = lowThresholdPolycarb;
-        }
-    }
-    LineCounter(triport::port& p, bool throughPolycarb = false) : sensor(new line(p))
-    {
-        instances.push_back(this);
-        if (throughPolycarb)
-        {
-            threshold = startThreshold = highThresholdPolycarb;
-            lowThreshold = lowThresholdPolycarb;
-        }
-    }
+    LineCounter(line& se, bool throughPolycarb = false);
+    LineCounter(triport::port& p, bool throughPolycarb = false);
     // Return true if its the first time called after a hit
     bool firstHit();
     // Return true if obj near
@@ -64,24 +48,8 @@ public:
     // Returns raw line tracker value
     int rawData();
     // Sets the count to a specific value
-    void setCount(int count)
-    {
-        countOut = count;
-        countIn = count;
-        if (pressing())
-        {
-            countIn++;
-        }
-    }
-    static void listVals(bool)
-    {
-        int i = 0;
-        Brain.Screen.clearScreen(black);
-        for (LineCounter* l : instances)
-        {
-            Brain.Screen.printAt(20, i * 20 + 20, "R: %d, Ci: %d, Co: %d, A: %d", l->rawData(), l->getCountIn(), l->getCountOut(), l->active());
-        }
-    }
+    void setCount(int count);
+    static void listVals(bool);
 };
 
 #endif // LINECOUNTER_H

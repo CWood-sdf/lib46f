@@ -48,17 +48,17 @@ struct Ref
 // //Each encoder is used for each dimension
 // //Positioner<2, 2> has four encoders total 2x, 2y
 // template<uint encodersX, uint encodersY>
-class Port
-{
-    const int32_t port;
+// class Port
+// {
+//     const int32_t port;
 
-public:
-    Port(int32_t p) : port(p) {}
-    int32_t getPort()
-    {
-        return port;
-    }
-};
+// public:
+//     Port(int32_t p) : port(p) {}
+//     int32_t getPort()
+//     {
+//         return port;
+//     }
+// };
 
 #ifndef WINDOWS
 struct AddDevice

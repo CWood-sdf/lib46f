@@ -7,39 +7,36 @@ VERBOSE = 0
 include lvgl-mk/mkenv.mk
 
 # location of the project source cpp and c files
-SRC_C = $(wildcard src-lvgl/lvgl-main.cpp)
-SRC_C += $(wildcard src-lvgl/*.c)
-SRC_C += $(wildcard src-lvgl/*/*.c)
+SRC_C = $(wildcard src/lvgl-main.cpp)
+SRC_C += $(wildcard src/*.c)
+SRC_C += $(wildcard src/*/*.c)
 SRC_C += $(wildcard include/lvgl/src/*.c) 
-SRC_C += $(wildcard lvgl/src/*/*.c) 
-SRC_C += $(wildcard lvgl/src/*/*/*.c) 
-SRC_C += $(wildcard lvgl/src/*/*/*/*.c)
-SRC_C += $(wildcard lvgl/src/*/*/*/*/*.c)  
+SRC_C += $(wildcard include/lvgl/src/*/*.c) 
+SRC_C += $(wildcard include/lvgl/src/*/*/*.c) 
+SRC_C += $(wildcard include/lvgl/src/*/*/*/*.c)
+SRC_C += $(wildcard include/lvgl/src/*/*/*/*/*.c)  
 
 OBJA = $(addprefix $(BUILD)/, $(addsuffix .o, $(basename $(SRC_C))) )
 OBJ = $(addprefix $(BUILD)/, $(addsuffix .o, $(basename $(SRC_C))) )
 
 # location of include files that c and cpp files depend on
-SRC_H  = $(wildcard lvgl/*.h)
-SRC_H += $(wildcard lvgl/*/*.h)
-SRC_H += $(wildcard lvgl/*/*/*.h)
-SRC_H += $(wildcard lvgl/*/*/*/*.h)
-SRC_H += $(wildcard lvgl/*/*/*/*/*.h)
+SRC_H  = $(wildcard include/*.h)
+SRC_H += $(wildcard include/*/*.h)
+SRC_H += $(wildcard include/*/*/*.h)
+SRC_H += $(wildcard include/*/*/*/*.h)
+SRC_H += $(wildcard include/*/*/*/*/*.h)
 
 # additional dependancies
 SRC_A  = makefile
 
 # project header file locations
-INC_F  = include . lvgl lvgl/src
+INC_F  = include . include/lvgl include/lvgl/src
 
 # headers needed to use library
-LV_SRC_H  = $(wildcard lvgl/lvgl.h) 
-LV_SRC_H += $(wildcard lvgl/src/*.h) 
-LV_SRC_H += $(wildcard lvgl/src/*/*.h)
-LV_SRC_H += $(wildcard lvgl/src/*/*/*.h)
-LV_SRC_H += $(wildcard lvgl/src/*/*/*/*.h)
-LV_SRC_H += $(wildcard lvgl/src/*/*/*/*/*.h)
-LV_SRC_H += lv_conf.h
+LV_SRC_H += $(wildcard include/lvgl/lvgl.h) 
+LV_SRC_H += $(wildcard include/lvgl/src/*.h) 
+LV_SRC_H += $(wildcard include/lvgl/src/*/*.h)
+LV_SRC_H += include/lv_conf.h
 LV_SRC_H += lvgl_inc.h
 
 LV_DST_H = $(addprefix $(BUILD)/include/, $(LV_SRC_H) )
@@ -49,7 +46,7 @@ $(BUILD)/include/%: %
 	$(Q)$(MKDIR)
 	$(Q) $(call copyfile,$^, $@)
 
-vpath %.h lvgl/
+vpath %.h include/lvgl/ include/
 
 # override proj name
 PROJECTLIB = liblvgl
