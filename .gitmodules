@@ -1,3 +1,4 @@
 [submodule "Libs"]
 	path = Libs
 	url = https://github.com/CWood-sdf/Libs.git
+	branch = master
