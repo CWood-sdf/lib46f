@@ -4,4 +4,4 @@
 #include "BrainOS/VariableConfig.h"
 #include "ButtonLatch.h"
 #include "DriveController.h"
-#include "connection.h"
+#include "Connection.h"
