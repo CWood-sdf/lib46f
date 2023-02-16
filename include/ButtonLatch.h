@@ -1,6 +1,6 @@
 ﻿#ifndef BUTTONLATCH_H
 #define BUTTONLATCH_H
-#include "vex.h"
+#include "stuff.h"
 class ButtonLatch
 {
     // Is true when the button is held down

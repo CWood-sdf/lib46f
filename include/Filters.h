@@ -1,6 +1,6 @@
 ﻿#ifndef EMA_FILTER_H
 #define EMA_FILTER_H
-#include "vex.h"
+#include "stuff.h"
 template <class G, class T>
 G converter_def(T val);
 template <class Get_T, class T = Get_T, Get_T (*converter)(T) = converter_def>

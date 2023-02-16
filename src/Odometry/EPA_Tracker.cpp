@@ -7,18 +7,18 @@ TrackingWheel::TrackingWheel(bool reverse, double wheelDiameter)
 TrackingWheel::TrackingWheel(int32_t port, bool reverse, double wheelDiameter) : TrackingWheel(reverse, wheelDiameter)
 {
     rotation* rot = new rotation(port);
-    encoder = new Encoder(rot);
+    encoder = new Encoder(*rot);
     encoder->resetPosition();
     this->rot = rot;
 }
 TrackingWheel::TrackingWheel(vex::triport::port port, bool reverse, double wheelDiameter) : TrackingWheel(reverse, wheelDiameter)
 {
     class encoder* rot = new class encoder(port);
-    encoder = new Encoder(rot);
+    encoder = new Encoder(*rot);
 }
 TrackingWheel::TrackingWheel(motor& m, bool reverse, double gearRatio, double wheelDiameter) : TrackingWheel(reverse, wheelDiameter / gearRatio)
 {
-    encoder = new Encoder(&m);
+    encoder = new Encoder(m);
 }
 TrackingWheel::TrackingWheel(Encoder& encoder, bool reverse, double wheelDiameter) : TrackingWheel(reverse, wheelDiameter)
 {

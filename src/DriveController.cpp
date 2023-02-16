@@ -1,6 +1,6 @@
 #include "DriveController.h"
 
-double DriveController::getPctSpeed(controller::axis& joystick)
+double DriveController::getPctSpeed(const controller::axis& joystick)
 {
     double joystickValue = abs(joystick.value()) > threshold ? joystick.value() : 0;
     joystickValue /= 1.27;
@@ -42,7 +42,7 @@ DriveController& DriveController::useQuadraticSpeedCurve()
     };
     CHAIN
 }
-DriveController& DriveController::driveArcade(controller::axis& forwardAxis, controller::axis& turnAxis, bool reverseForward, bool reverseTurn)
+DriveController& DriveController::driveArcade(const controller::axis& forwardAxis, const controller::axis& turnAxis, bool reverseForward, bool reverseTurn)
 {
     chassis->setSpeedLimit(100);
     double forward = (reverseForward * -2 + 1) * joystickSpeedCurve(getPctSpeed(forwardAxis));
@@ -50,7 +50,7 @@ DriveController& DriveController::driveArcade(controller::axis& forwardAxis, con
     chassis->driveFromDiff(forward, turn);
     CHAIN
 }
-DriveController& DriveController::driveTank(controller::axis& leftAxis, controller::axis& rightAxis)
+DriveController& DriveController::driveTank(const controller::axis& leftAxis, const controller::axis& rightAxis)
 {
     chassis->setSpeedLimit(100);
     double left = joystickSpeedCurve(getPctSpeed(leftAxis));

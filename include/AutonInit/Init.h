@@ -1,6 +1,6 @@
 ﻿#include "BrainOS/VariableConfig.h"
 #include "Sensors/PotDial.h"
-#include "vex.h"
+#include "stuff.h"
 class Auton
 {
     static inline size_t idSet = 0;

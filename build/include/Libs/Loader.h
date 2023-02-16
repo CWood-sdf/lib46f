@@ -36,5 +36,5 @@ void windowsLoader(bool)
     }
 }
 #else
-void windowsLoader();
+void windowsLoader(bool);
 #endif

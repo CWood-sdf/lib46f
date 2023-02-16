@@ -7,6 +7,10 @@
 #include "Odometry/Controllers.h"
 #include "Sensors/Wrappers/Encoder.h"
 
+extern std::vector<tuple<string, vex::device*, bool, bool>> connectedDevices;
+#define TestDevice(device) AddDevice device##AddDevice(#device, &device);
+#define TestDriveMotor(device) AddDevice device##AddDevice(#device, &device, true);
+
 void testDriveConfiguration();
 
 void testDeviceConnection();
