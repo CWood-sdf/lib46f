@@ -2442,7 +2442,7 @@ Discarded input sections
  .ARM.exidx.text._ZN7PVector8rotateXYEd
                 0x00000000        0x8 build/src/Odometry/EPA_Wheel_Control.o
  .text._ZN15WheelController13generalFollowER9VectorArrP15SpeedControllerb
-                0x00000000      0xd7c build/src/Odometry/EPA_Wheel_Control.o
+                0x00000000      0xd50 build/src/Odometry/EPA_Wheel_Control.o
  .ARM.exidx.text._ZN15WheelController13generalFollowER9VectorArrP15SpeedControllerb
                 0x00000000        0x8 build/src/Odometry/EPA_Wheel_Control.o
  .group         0x00000000        0xc build/src/Odometry/EPA_Wheel_Control.o

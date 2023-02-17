@@ -512,9 +512,6 @@ void WheelController::generalFollow(VectorArr& arr, SpeedController* controller,
         // Angle of robot to target
         double angle = baseAngle(botPos().angleTo(virtualPursuit));
 
-        // The angle that it needs to travel at
-        double normAngle = posNeg180(angle - botAngle() + 180 * isNeg);
-
         // Input to speed controller
         SpeedController::Input input = SpeedController::Input();
         input.angleTarget = angle;

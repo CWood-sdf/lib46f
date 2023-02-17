@@ -3,5 +3,6 @@
 #include "BrainOS/ConnectionTest.h"
 #include "BrainOS/VariableConfig.h"
 #include "ButtonLatch.h"
-#include "DriveController.h"
 #include "Connection.h"
+#include "DriveController.h"
+#include "Sensors/LineCounter.h"
