@@ -30,12 +30,50 @@ private:
     double kConst;
 
 public:
+    /**
+     * @brief Set the K constant
+     *
+     * @param s The new k value
+     * @return chain_method
+     */
     chain_method setK(double s);
+    /**
+     * @brief make a new path
+     *
+     * @param arr the control point array
+     * @param chassis the chassis
+     */
     void make(VectorArr& arr, Chassis* chassis);
+    /**
+     * @brief remake the path
+     *
+     * @param chassis the chassis
+     */
     void remake(Chassis* chassis);
+    /**
+     * @brief Returns the bezier curve
+     *
+     * @return VectorArr
+     */
     VectorArr getBezier();
+    /**
+     * @brief Returns the length of the path
+     *
+     * @return int
+     */
     int size();
+    /**
+     * @brief Returns the last element of the path
+     *
+     * @return El&
+     */
     El& last();
+    /**
+     * @brief Returns the element at the index
+     *
+     * @param index
+     * @return El&
+     */
     El& operator[](int index);
     /**
      * @brief Returns the maximum accelleration
@@ -123,7 +161,7 @@ public:
      */
     double revToInches(double rotation)
     {
-        return rotation * 2.0 * M_PI * wheelRad / gearRatio;
+        return rotation * 2.0 * M_PI * wheelRad * gearRatio;
     }
     /**
      * @brief Convert inches to revolutions
@@ -133,7 +171,7 @@ public:
      */
     double inchesToRev(double inches)
     {
-        return inches * gearRatio / 2.0 / M_PI / wheelRad;
+        return inches / gearRatio / 2.0 / M_PI / wheelRad;
     }
     /**
      * @brief Convert pct to in/s
@@ -157,7 +195,7 @@ public:
             motorVel = 600;
             break;
         }
-        return motorVel * speedPct / 100.0 / gearRatio * 2.0 * M_PI / 60.0 /*rad/s*/
+        return motorVel * speedPct / 100.0 * gearRatio * 2.0 * M_PI / 60.0 /*rad/s*/
                * wheelRad;
     }
     /**
@@ -182,7 +220,7 @@ public:
             motorVel = 600;
             break;
         }
-        return speed / motorVel * 100.0 * gearRatio / 2.0 / M_PI * 60.0 / wheelRad;
+        return speed / motorVel * 100.0 / gearRatio / 2.0 / M_PI * 60.0 / wheelRad;
     }
     /**
      * @brief Drives the robot at the speed and curvature

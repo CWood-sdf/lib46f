@@ -8,7 +8,7 @@ class DriveController
         return v;
     };
     int threshold = 20;
-    double getPctSpeed(controller::axis& joystick);
+    double getPctSpeed(const controller::axis& joystick);
 
 public:
     DriveController(Chassis* chassis);
@@ -18,6 +18,6 @@ public:
     DriveController& setSpeedCurve(std::function<double(double)> speedCurve);
     DriveController& setThreshold(int theshold);
     DriveController& useQuadraticSpeedCurve();
-    DriveController& driveArcade(controller::axis& forwardAxis, controller::axis& turnAxis, bool reverseForward = false, bool reverseTurn = false);
-    DriveController& driveTank(controller::axis& leftAxis, controller::axis& rightAxis);
+    DriveController& driveArcade(const controller::axis& forwardAxis, const controller::axis& turnAxis, bool reverseForward = false, bool reverseTurn = false);
+    DriveController& driveTank(const controller::axis& leftAxis, const controller::axis& rightAxis);
 };

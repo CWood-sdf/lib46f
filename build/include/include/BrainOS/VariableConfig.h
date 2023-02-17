@@ -1,6 +1,6 @@
 ﻿#ifndef VARIABLE_CONFIG_H
 #define VARIABLE_CONFIG_H
-#include "vex.h"
+#include "stuff.h"
 #include <functional>
 class VariableConfig
 {
