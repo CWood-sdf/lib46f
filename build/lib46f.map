@@ -375,6 +375,35 @@ Discarded input sections
                 0x00000000       0x40 build/src/Filters.o
  .ARM.exidx.text._ZN3SMAaSERKS_
                 0x00000000        0x8 build/src/Filters.o
+ .text._ZN12WeightFilterC2Ejj
+                0x00000000       0x44 build/src/Filters.o
+ .ARM.exidx.text._ZN12WeightFilterC2Ejj
+                0x00000000        0x8 build/src/Filters.o
+ .text._ZN12WeightFilterC2Ejjd
+                0x00000000       0xa8 build/src/Filters.o
+ .ARM.exidx.text._ZN12WeightFilterC2Ejjd
+                0x00000000        0x8 build/src/Filters.o
+ .text._ZN12WeightFilter4seedEd
+                0x00000000       0x60 build/src/Filters.o
+ .ARM.exidx.text._ZN12WeightFilter4seedEd
+                0x00000000        0x8 build/src/Filters.o
+ .text._ZN12WeightFilter6updateEd
+                0x00000000       0x74 build/src/Filters.o
+ .ARM.exidx.text._ZN12WeightFilter6updateEd
+                0x00000000        0x8 build/src/Filters.o
+ .text._ZN12WeightFilter5valueEv
+                0x00000000      0x20c build/src/Filters.o
+ .ARM.exidx.text._ZN12WeightFilter5valueEv
+                0x00000000        0x8 build/src/Filters.o
+ .group         0x00000000        0xc build/src/Filters.o
+ .text._ZN15BasicLinkedListIdRdPddE10popCurrentEv
+                0x00000000       0xc8 build/src/Filters.o
+ .ARM.exidx.text._ZN15BasicLinkedListIdRdPddE10popCurrentEv
+                0x00000000        0x8 build/src/Filters.o
+ .text._ZN12WeightFiltercvdEv
+                0x00000000        0x4 build/src/Filters.o
+ .ARM.exidx.text._ZN12WeightFiltercvdEv
+                0x00000000        0x8 build/src/Filters.o
  .group         0x00000000        0xc build/src/Filters.o
  .text._ZNSt8_Rb_treeIPN3vex5motorESt4pairIKS2_St6vectorIP10MotorGroupSaIS7_EEESt10_Select1stISA_ESt4lessIS2_ESaISA_EE8_M_eraseEPSt13_Rb_tree_nodeISA_E
                 0x00000000       0x50 build/src/Filters.o
@@ -394,6 +423,11 @@ Discarded input sections
  .text._ZN15BasicLinkedListIdRdPddE9basicPushILb0EEEvS0_
                 0x00000000       0x6c build/src/Filters.o
  .ARM.exidx.text._ZN15BasicLinkedListIdRdPddE9basicPushILb0EEEvS0_
+                0x00000000        0x8 build/src/Filters.o
+ .group         0x00000000        0xc build/src/Filters.o
+ .text._ZN15BasicLinkedListIdRdPddE6popEndEv
+                0x00000000       0x80 build/src/Filters.o
+ .ARM.exidx.text._ZN15BasicLinkedListIdRdPddE6popEndEv
                 0x00000000        0x8 build/src/Filters.o
  .group         0x00000000        0xc build/src/Filters.o
  .bss._ZN10MotorGroup9ptoMotorsE

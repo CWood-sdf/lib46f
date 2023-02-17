@@ -52,4 +52,18 @@ public:
     SMA& operator=(const SMA& input);
 };
 
+class WeightFilter
+{
+    size_t size;
+    LinkedList<double> vals = {};
+    double stdDev;
+
+public:
+    WeightFilter(size_t size, size_t stdDev);
+    WeightFilter(size_t size, size_t stdDev, double val);
+    void update(double sensorVal);
+    double value();
+    operator double();
+    void seed(double value);
+};
 #endif
