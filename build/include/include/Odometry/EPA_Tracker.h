@@ -76,12 +76,6 @@ class TrackingWheel
     double wheelDiameter;
     TrackingWheel(bool reverse, double wheelDiameter);
     rotation* rot = NULL;
-
-public:
-    TrackingWheel(int32_t port, bool reverse, double wheelDiameter);
-    TrackingWheel(vex::triport::port port, bool reverset, double wheelDiameter);
-    TrackingWheel(motor& m, bool reverse, double gearRatio, double wheelDiameter);
-    TrackingWheel(Encoder& e, bool reverse, double wheelDiameter);
     Encoder* operator->()
     {
         return encoder;
@@ -94,6 +88,34 @@ public:
     {
         return wheelDiameter / 2.0;
     }
+
+public:
+    /**
+     * @brief Construct a new Tracking Wheel object with a rotation sensor
+     *
+     * @param port the port of the rotation sensor
+     * @param reverse Whether to reverse the wheel's direction
+     * @param wheelDiameter The tracking wheel diameter
+     */
+    TrackingWheel(int32_t port, bool reverse, double wheelDiameter);
+    /**
+     * @brief Construct a new Tracking Wheel object with a shaft encoder
+     *
+     * @param port The port of the shaft encoder
+     * @param reverse Whether to reverse the wheel's direction
+     * @param wheelDiameter The tracking wheel diameter
+     */
+    TrackingWheel(vex::triport::port& port, bool reverse, double wheelDiameter);
+    /**
+     * @brief Construct a new Tracking Wheel object with a motor
+     *
+     * @param m The motor to use
+     * @param reverse Whether to reverse the wheel's direction
+     * @param gearRatio
+     * @param wheelDiameter
+     */
+    TrackingWheel(motor& m, bool reverse, double gearRatio, double wheelDiameter);
+    TrackingWheel(Encoder& e, bool reverse, double wheelDiameter);
 };
 class Inertial
 {

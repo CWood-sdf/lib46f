@@ -105,7 +105,7 @@ public:
      * @param reverse Whether to reverse the wheel's direction
      * @param wheelDiameter The tracking wheel diameter
      */
-    TrackingWheel(vex::triport::port port, bool reverse, double wheelDiameter);
+    TrackingWheel(vex::triport::port& port, bool reverse, double wheelDiameter);
     /**
      * @brief Construct a new Tracking Wheel object with a motor
      *

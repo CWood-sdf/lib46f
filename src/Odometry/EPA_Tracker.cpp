@@ -11,7 +11,7 @@ TrackingWheel::TrackingWheel(int32_t port, bool reverse, double wheelDiameter) :
     encoder->resetPosition();
     this->rot = rot;
 }
-TrackingWheel::TrackingWheel(vex::triport::port port, bool reverse, double wheelDiameter) : TrackingWheel(reverse, wheelDiameter)
+TrackingWheel::TrackingWheel(vex::triport::port& port, bool reverse, double wheelDiameter) : TrackingWheel(reverse, wheelDiameter)
 {
     class encoder* rot = new class encoder(port);
     encoder = new Encoder(*rot);

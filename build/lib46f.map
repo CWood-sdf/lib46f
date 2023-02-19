@@ -1757,9 +1757,9 @@ Discarded input sections
                 0x00000000       0xcc build/src/Odometry/EPA_Tracker.o
  .ARM.exidx.text._ZN7EncoderC2IN3vex8rotationEEERT_DTadsrS3_13resetPositionE
                 0x00000000        0x8 build/src/Odometry/EPA_Tracker.o
- .text._ZN13TrackingWheelC2EN3vex7triport4portEbd
+ .text._ZN13TrackingWheelC2ERN3vex7triport4portEbd
                 0x00000000       0x7c build/src/Odometry/EPA_Tracker.o
- .ARM.exidx.text._ZN13TrackingWheelC2EN3vex7triport4portEbd
+ .ARM.exidx.text._ZN13TrackingWheelC2ERN3vex7triport4portEbd
                 0x00000000        0x8 build/src/Odometry/EPA_Tracker.o
  .text._ZN13TrackingWheelC2ERN3vex5motorEbdd
                 0x00000000       0x50 build/src/Odometry/EPA_Tracker.o
