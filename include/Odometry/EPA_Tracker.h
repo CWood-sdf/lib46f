@@ -115,6 +115,13 @@ public:
      * @param wheelDiameter
      */
     TrackingWheel(motor& m, bool reverse, double gearRatio, double wheelDiameter);
+    /**
+     * @brief Construct a new Tracking Wheel object with an encoder
+     *
+     * @param e The encoder to use
+     * @param reverse Whether to reverse the wheel's direction
+     * @param wheelDiameter The tracking wheel diameter
+     */
     TrackingWheel(Encoder& e, bool reverse, double wheelDiameter);
 };
 class Inertial
@@ -129,16 +136,59 @@ class Inertial
     void update();
 
 public:
+    /**
+     * @brief Construct a new Inertial object
+     *
+     * @param port The inertial sensor's port
+     * @param fullTurnNeg The value that the sensor returns when it is turned 360 degrees in the negative direction (ie from 360 to 0 or counter-clockwise)
+     * @param fullTurnPos The value that the sensor returns when it is turned 360 degrees in the positive direction (ie from 0 to 360 or clockwise)
+     */
     Inertial(int32_t port, double fullTurnNeg, double fullTurnPos);
+    /**
+     * @brief Construct a new Inertial object
+     *
+     * @param sensor The inertial sensor
+     * @param fullTurnNeg The value that the sensor returns when it is turned 360 degrees in the negative direction (ie from 360 to 0 or counter-clockwise)
+     * @param fullTurnPos The value that the sensor returns when it is turned 360 degrees in the positive direction (ie from 0 to 360 or clockwise)
+     */
     Inertial(inertial& sensor, double fullTurnNeg, double fullTurnPos);
+    /**
+     * @brief Get the current heading of the robot
+     *
+     * @return double
+     */
     double heading();
-    double avgHeading();
+    /**
+     * @brief Get the average value between the current and last update
+     *
+     * @return double
+     */
+    double avgDeltaHeading();
+    /**
+     * @brief Get the last heading of the robot
+     *
+     * @return double
+     */
     double lastHeading();
-    double deltaAngle();
+    /**
+     * @brief Get the change in heading since the last update
+     *
+     * @return double
+     */
+    double deltaHeading();
+    /**
+     * @brief Calibrate the sensor
+     *
+     */
     void init()
     {
         gyroInit(*sensor);
     }
+    /**
+     * @brief Set the angle
+     *
+     * @param a
+     */
     void setAngle(double a)
     {
         offset += a - heading();

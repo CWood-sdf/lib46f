@@ -1,4 +1,4 @@
-#include "Filters.h"
+﻿#include "Filters.h"
 template <class G, class T>
 G converter_def(T val)
 {

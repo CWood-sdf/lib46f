@@ -53,7 +53,7 @@ double Inertial::heading()
 {
     return currentAngle;
 }
-double Inertial::avgHeading()
+double Inertial::avgDeltaHeading()
 {
     return (currentAngle + lastAngle) / 2.0;
 }
@@ -61,7 +61,7 @@ double Inertial::lastHeading()
 {
     return lastAngle;
 }
-double Inertial::deltaAngle()
+double Inertial::deltaHeading()
 {
     return posNeg180(currentAngle - lastAngle);
 }
@@ -187,19 +187,19 @@ PVector Positioner::update()
     }
     PVector deltaAngles;
 
-    if (angleSensor.deltaAngle() != 0.0)
+    if (angleSensor.deltaHeading() != 0.0)
     {
-        double deltaAngle = angleSensor.deltaAngle() * DEG_TO_RAD;
+        double deltaAngle = angleSensor.deltaHeading() * DEG_TO_RAD;
         double sin2 = 2.0 * sin(deltaAngle / 2.0);
         double x = (angles.x / deltaAngle) * sin2;
         double y = (angles.y / deltaAngle) * sin2;
         deltaAngles = {x, y};
-        deltaAngles.rotate(angleSensor.avgHeading());
+        deltaAngles.rotate(angleSensor.avgDeltaHeading());
     }
     else
     {
         deltaAngles = angles;
-        deltaAngles.rotate(angleSensor.avgHeading());
+        deltaAngles.rotate(angleSensor.avgDeltaHeading());
     }
 
     // Get the change in the position

@@ -63,7 +63,7 @@
 
 #define CHAIN return *this;
 //
-//   #define DRIVE_MECHANUM \
+//    #define DRIVE_MECHANUM \
 //double Y1 = abs(Greg.Axis3.value()) > sensitivity? Greg.Axis3.value() : 0;  \
 //double Y2 = abs(Greg.Axis2.value()) > sensitivity? Greg.Axis2.value() : 0;  \
 //double X1 = abs(Greg.Axis4.value()) > sensitivity? Greg.Axis4.value() : 0;  \
@@ -82,7 +82,7 @@
 //}       \
 //;
 //
-//   #define DRIVE_MECHANUM2 \
+//    #define DRIVE_MECHANUM2 \
 //double Y1 = abs(Greg.Axis3.value()) > sensitivity? Greg.Axis3.value() : 0;  \
 //double Y2 = abs(Greg.Axis2.value()) > sensitivity? Greg.Axis2.value() : 0;  \
 //double X1 = abs(Greg.Axis4.value()) > sensitivity? Greg.Axis4.value() : 0;  \
@@ -112,7 +112,7 @@
 //}       \
 //;
 //
-//   #define DRIVE_OMNI2 \
+//    #define DRIVE_OMNI2 \
 //double Y1 = abs(Greg.Axis3.value()) > sensitivity? Greg.Axis3.value() : 0;  \
 //double Y2 = abs(Greg.Axis2.value()) > sensitivity? Greg.Axis2.value() : 0;  \
 //double X1 = abs(Greg.Axis4.value()) > sensitivity? Greg.Axis4.value() : 0;  \
@@ -124,7 +124,7 @@
 //;
 //
 //
-//   #define DRIVE_OMNI \
+//    #define DRIVE_OMNI \
 //double Y1 = abs(Greg.Axis3.value()) > sensitivity? Greg.Axis3.value() : 0;  \
 //double Y2 = abs(Greg.Axis2.value()) > sensitivity? Greg.Axis2.value() : 0;  \
 //if(Y1 != 0 || Y2 != 0){    \

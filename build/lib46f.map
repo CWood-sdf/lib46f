@@ -1777,17 +1777,17 @@ Discarded input sections
                 0x00000000        0xc build/src/Odometry/EPA_Tracker.o
  .ARM.exidx.text._ZN8Inertial7headingEv
                 0x00000000        0x8 build/src/Odometry/EPA_Tracker.o
- .text._ZN8Inertial10avgHeadingEv
+ .text._ZN8Inertial15avgDeltaHeadingEv
                 0x00000000       0x1c build/src/Odometry/EPA_Tracker.o
- .ARM.exidx.text._ZN8Inertial10avgHeadingEv
+ .ARM.exidx.text._ZN8Inertial15avgDeltaHeadingEv
                 0x00000000        0x8 build/src/Odometry/EPA_Tracker.o
  .text._ZN8Inertial11lastHeadingEv
                 0x00000000        0xc build/src/Odometry/EPA_Tracker.o
  .ARM.exidx.text._ZN8Inertial11lastHeadingEv
                 0x00000000        0x8 build/src/Odometry/EPA_Tracker.o
- .text._ZN8Inertial10deltaAngleEv
+ .text._ZN8Inertial12deltaHeadingEv
                 0x00000000       0x14 build/src/Odometry/EPA_Tracker.o
- .ARM.exidx.text._ZN8Inertial10deltaAngleEv
+ .ARM.exidx.text._ZN8Inertial12deltaHeadingEv
                 0x00000000        0x8 build/src/Odometry/EPA_Tracker.o
  .text._ZN10PositionerC2ESt6vectorI13TrackingWheelSaIS1_EES3_8Inertial7PVector
                 0x00000000      0x3f0 build/src/Odometry/EPA_Tracker.o

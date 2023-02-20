@@ -1,4 +1,4 @@
-#include "Sensors/Wrappers/Encoder.h"
+﻿#include "Sensors/Wrappers/Encoder.h"
 
 // Constructor that just takes the functions
 Encoder::Encoder(std::function<double(rotationUnits)> f, std::function<void()> r)
