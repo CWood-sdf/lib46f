@@ -16,7 +16,7 @@ TrackingWheel::TrackingWheel(vex::triport::port& port, bool reverse, double whee
     class encoder* rot = new class encoder(port);
     encoder = new Encoder(*rot);
 }
-TrackingWheel::TrackingWheel(motor& m, bool reverse, double gearRatio, double wheelDiameter) : TrackingWheel(reverse, wheelDiameter / gearRatio)
+TrackingWheel::TrackingWheel(motor& m, bool reverse, double gearRatio, double wheelDiameter) : TrackingWheel(reverse, wheelDiameter * gearRatio)
 {
     encoder = new Encoder(m);
 }
