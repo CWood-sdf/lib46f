@@ -67,11 +67,10 @@ public:
     }
 };
 class WheelController {
-protected: // PID variables + other random things
+private: // PID variables + other random things
     typedef WheelController& chain_method;
 
     map<double, std::function<void()>> distFns, oldFns;
-    LinkedList<PidAdder> customPidsTurn;
     bool callingInDrive = false;
     std::function<PVector(PVector)> autonReversePosition;
     std::function<double(double)> autonReverseAngle;
@@ -81,9 +80,6 @@ public: // Some variables
     // A public path for drawing
     VectorArr publicPath;
     bool drawArr = false;
-
-    // Is true if afterTurn exists
-    bool hasFn = false;
     // Function to be called between turning and driving
     std::function<void()> afterTurn = []() {};
     RamseteController* defaultRamsete;
@@ -129,24 +125,19 @@ public: // Some Functions
     void addDistFn(double dist, std::function<void()> fn);
     // Reuse the old map
     void reuseDistFns();
-    void setFn(std::function<void()> fn);
-    void callFn();
-    void reuseFn();
-
+    void setAfterTurnFn(std::function<void()> fn);
     void setOldDistFns();
-    void useDistFns(double dist);
 
 private: // turnTo, with re-updating function
+    void useDistFns(double dist);
     virtual void turnTo(std::function<double()> angleCalc);
 
 public: // TurnTo
     virtual void turnTo(double angle);
-    typedef PathFollowSettings::exitMode exitMode;
 
 private: // followPath vars
     PVector lastTarget;
     double exitDist = 0.0;
-    exitMode BrakeMode = exitMode::normal;
     // Set to true by external threads to stop the robot
     bool exitEarly = false;
     // Is true when auto needs to be reversed
@@ -155,29 +146,17 @@ private: // followPath vars
     bool moving = false;
     // Set to true to prevent a stop exit
     bool stopExitPrev = false;
-    // The radius of the path
-    double pathRadius = 1.0;
     // Distance following the path
     double followPathDist = 16.0;
-    // the time before exit
-    int followPathMaxTimeIn = 5;
 
-public: // exitMode
 public: // followPath var editors
     bool isMoving();
-    double getPathRadius();
-    double getFollowPathDist();
-    chain_method setFollowPathDist(double dist);
-    chain_method setFollowPathMaxTimeIn(int time);
-    int getFollowPathMaxTimeIn();
     // chain_method setPathRadius(double r);
     chain_method estimateStartPos(PVector v, double a);
     chain_method forceEarlyExit();
-    chain_method setExitMode(exitMode m);
     chain_method setExitDist(double v);
     PVector getLastTarget();
     chain_method prevStopExit();
-    chain_method setPathRadius(double r);
 
 private: // General path follower
     Chassis* chassis;
@@ -196,22 +175,28 @@ private:
     void generalFollowTurnAtStart(VectorArr& arr, double& purePursuitDist, bool& isNeg);
     PVector generalFollowGetVirtualPursuit(PVector& pursuit, SpeedController* controller);
     double generalFollowGetDist(int& bezierIndex, SpeedController* controller, PVector& pursuit);
-
-public:
-    // }
     virtual void generalFollow(VectorArr&& arr, SpeedController* controller, bool isNeg) {
         generalFollow(arr, controller, isNeg);
     }
     virtual void generalFollow(VectorArr& arr, SpeedController* controller, bool isNeg);
+    void generalDriveDistance(double dist, bool isNeg, PidController* pid);
+
+public:
     virtual void followPath(SpeedController* controller, VectorArr arr) {
         generalFollow(arr, controller, false);
     }
     virtual void backwardsFollow(SpeedController* controller, VectorArr arr) {
         generalFollow(arr, controller, true);
     }
-    void generalDriveDistance(double dist, bool isNeg, PidController* pid);
     void driveDistance(double dist);
     void backwardsDriveDistance(double dist);
+
+    void driveDistance(double dist, PidController* pid) {
+        generalDriveDistance(dist, false, pid);
+    }
+    void backwardsDriveDistance(double dist, PidController* pid) {
+        generalDriveDistance(dist, true, pid);
+    }
     bool isRed();
     bool isBlue();
     void setRed();

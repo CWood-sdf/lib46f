@@ -2389,14 +2389,6 @@ Discarded input sections
                 0x00000000        0xc build/src/Odometry/EPA_Wheel_Control.o
  .ARM.exidx.text._ZN15WheelController14forceEarlyExitEv
                 0x00000000        0x8 build/src/Odometry/EPA_Wheel_Control.o
- .text._ZN15WheelController11setExitModeEN18PathFollowSettings8exitModeE
-                0x00000000        0x8 build/src/Odometry/EPA_Wheel_Control.o
- .ARM.exidx.text._ZN15WheelController11setExitModeEN18PathFollowSettings8exitModeE
-                0x00000000        0x8 build/src/Odometry/EPA_Wheel_Control.o
- .text._ZN15WheelController11setExitDistEd
-                0x00000000        0xc build/src/Odometry/EPA_Wheel_Control.o
- .ARM.exidx.text._ZN15WheelController11setExitDistEd
-                0x00000000        0x8 build/src/Odometry/EPA_Wheel_Control.o
  .text._ZN15WheelController13getLastTargetEv
                 0x00000000       0x10 build/src/Odometry/EPA_Wheel_Control.o
  .ARM.exidx.text._ZN15WheelController13getLastTargetEv
@@ -2404,30 +2396,6 @@ Discarded input sections
  .text._ZN15WheelController12prevStopExitEv
                 0x00000000        0xc build/src/Odometry/EPA_Wheel_Control.o
  .ARM.exidx.text._ZN15WheelController12prevStopExitEv
-                0x00000000        0x8 build/src/Odometry/EPA_Wheel_Control.o
- .text._ZN15WheelController13setPathRadiusEd
-                0x00000000        0xc build/src/Odometry/EPA_Wheel_Control.o
- .ARM.exidx.text._ZN15WheelController13setPathRadiusEd
-                0x00000000        0x8 build/src/Odometry/EPA_Wheel_Control.o
- .text._ZN15WheelController13getPathRadiusEv
-                0x00000000        0xc build/src/Odometry/EPA_Wheel_Control.o
- .ARM.exidx.text._ZN15WheelController13getPathRadiusEv
-                0x00000000        0x8 build/src/Odometry/EPA_Wheel_Control.o
- .text._ZN15WheelController17setFollowPathDistEd
-                0x00000000        0xc build/src/Odometry/EPA_Wheel_Control.o
- .ARM.exidx.text._ZN15WheelController17setFollowPathDistEd
-                0x00000000        0x8 build/src/Odometry/EPA_Wheel_Control.o
- .text._ZN15WheelController17getFollowPathDistEv
-                0x00000000        0xc build/src/Odometry/EPA_Wheel_Control.o
- .ARM.exidx.text._ZN15WheelController17getFollowPathDistEv
-                0x00000000        0x8 build/src/Odometry/EPA_Wheel_Control.o
- .text._ZN15WheelController22setFollowPathMaxTimeInEi
-                0x00000000        0x8 build/src/Odometry/EPA_Wheel_Control.o
- .ARM.exidx.text._ZN15WheelController22setFollowPathMaxTimeInEi
-                0x00000000        0x8 build/src/Odometry/EPA_Wheel_Control.o
- .text._ZN15WheelController22getFollowPathMaxTimeInEv
-                0x00000000        0x8 build/src/Odometry/EPA_Wheel_Control.o
- .ARM.exidx.text._ZN15WheelController22getFollowPathMaxTimeInEv
                 0x00000000        0x8 build/src/Odometry/EPA_Wheel_Control.o
  .text._ZN15WheelController13ramseteFollowE9VectorArrb
                 0x00000000       0x24 build/src/Odometry/EPA_Wheel_Control.o
@@ -2468,7 +2436,7 @@ Discarded input sections
  .ARM.exidx.text._ZN15WheelController10getNearestI4PathEEjT_7PVectorj
                 0x00000000        0x8 build/src/Odometry/EPA_Wheel_Control.o
  .text._ZN15WheelController20generalDriveDistanceEdbP13PidController
-                0x00000000      0x6f0 build/src/Odometry/EPA_Wheel_Control.o
+                0x00000000      0x6f8 build/src/Odometry/EPA_Wheel_Control.o
  .ARM.exidx.text._ZN15WheelController20generalDriveDistanceEdbP13PidController
                 0x00000000        0x8 build/src/Odometry/EPA_Wheel_Control.o
  .text._ZN15WheelController13driveDistanceEd
@@ -2726,7 +2694,7 @@ Discarded input sections
                 0x00000000       0x34 build/src/Odometry/EPA_Wheel_Control.o
  .rodata._ZStL19piecewise_construct
                 0x00000000        0x1 build/src/Odometry/EPA_Wheel_Control.o
- .llvm_addrsig  0x00000000       0x10 build/src/Odometry/EPA_Wheel_Control.o
+ .llvm_addrsig  0x00000000        0xf build/src/Odometry/EPA_Wheel_Control.o
  .text          0x00000000        0x0 build/src/Odometry/PID.o
  .group         0x00000000        0xc build/src/Odometry/PID.o
  .text._ZNSt3mapIPN3vex5motorESt6vectorIP10MotorGroupSaIS5_EESt4lessIS2_ESaISt4pairIKS2_S7_EEED2Ev

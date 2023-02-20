@@ -141,12 +141,10 @@ private: // turnTo, with re-updating function
 
 public: // TurnTo
     virtual void turnTo(double angle);
-    typedef PathFollowSettings::exitMode exitMode;
 
 private: // followPath vars
     PVector lastTarget;
     double exitDist = 0.0;
-    exitMode BrakeMode = exitMode::normal;
     // Set to true by external threads to stop the robot
     bool exitEarly = false;
     // Is true when auto needs to be reversed
@@ -155,29 +153,17 @@ private: // followPath vars
     bool moving = false;
     // Set to true to prevent a stop exit
     bool stopExitPrev = false;
-    // The radius of the path
-    double pathRadius = 1.0;
     // Distance following the path
     double followPathDist = 16.0;
-    // the time before exit
-    int followPathMaxTimeIn = 5;
 
-public: // exitMode
 public: // followPath var editors
     bool isMoving();
-    double getPathRadius();
-    double getFollowPathDist();
-    chain_method setFollowPathDist(double dist);
-    chain_method setFollowPathMaxTimeIn(int time);
-    int getFollowPathMaxTimeIn();
     // chain_method setPathRadius(double r);
     chain_method estimateStartPos(PVector v, double a);
     chain_method forceEarlyExit();
-    chain_method setExitMode(exitMode m);
     chain_method setExitDist(double v);
     PVector getLastTarget();
     chain_method prevStopExit();
-    chain_method setPathRadius(double r);
 
 private: // General path follower
     Chassis* chassis;
