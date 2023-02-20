@@ -33,18 +33,8 @@ void WheelController::addDistFn(double dist, std::function<void()> fn) {
 void WheelController::reuseDistFns() {
     distFns = oldFns;
 }
-void WheelController::setFn(std::function<void()> fn) {
+void WheelController::setAfterTurnFn(std::function<void()> fn) {
     afterTurn = fn;
-    hasFn = true;
-}
-void WheelController::callFn() {
-    if (hasFn) {
-        afterTurn();
-    }
-    hasFn = false;
-}
-void WheelController::reuseFn() {
-    hasFn = true;
 }
 
 // A hard brake
@@ -161,16 +151,6 @@ WheelController::chain_method WheelController::forceEarlyExit() {
     exitEarly = true;
     CHAIN;
 }
-
-WheelController::chain_method WheelController::setExitMode(exitMode m) {
-    BrakeMode = m;
-    CHAIN;
-}
-
-WheelController::chain_method WheelController::setExitDist(double v) {
-    exitDist = v;
-    CHAIN;
-}
 PVector WheelController::getLastTarget() {
     return lastTarget;
 }
@@ -178,27 +158,7 @@ WheelController::chain_method WheelController::prevStopExit() {
     stopExitPrev = true;
     CHAIN
 }
-WheelController::chain_method WheelController::setPathRadius(double r) {
-    pathRadius = r;
-    CHAIN
-}
-double WheelController::getPathRadius() {
-    return pathRadius;
-}
-WheelController::chain_method WheelController::setFollowPathDist(double d) {
-    followPathDist = d;
-    CHAIN;
-}
-double WheelController::getFollowPathDist() {
-    return followPathDist;
-}
-WheelController::chain_method WheelController::setFollowPathMaxTimeIn(int t) {
-    followPathMaxTimeIn = t;
-    CHAIN;
-}
-int WheelController::getFollowPathMaxTimeIn() {
-    return followPathMaxTimeIn;
-}
+
 template <class Arr>
 size_t WheelController::getNearest(Arr arr, PVector obj) {
     size_t i = 0;
@@ -512,14 +472,14 @@ void WheelController::generalFollow(VectorArr& arr, SpeedController* controller,
         // Set the last target for external stuff
         lastTarget = bezier.last();
         // Stop the bot
-        switch (BrakeMode) {
-        case exitMode::normal:
+        switch (controller->settings.brakeMode) {
+        case PathFollowSettings::exitMode::normal:
             chassis->holdBrake();
             break;
-        case exitMode::coast:
+        case PathFollowSettings::exitMode::coast:
             chassis->coastBrake();
             break;
-        case exitMode::nothing:
+        case PathFollowSettings::exitMode::nothing:
             break;
         }
         this->drawArr = false;
@@ -649,14 +609,14 @@ void WheelController::generalDriveDistance(double targetDist, bool isNeg, PidCon
     // De-init code
     {
         // Stop the bot
-        switch (BrakeMode) {
-        case exitMode::normal:
+        switch (pid->settings.brakeMode) {
+        case PathFollowSettings::exitMode::normal:
             chassis->holdBrake();
             break;
-        case exitMode::coast:
+        case PathFollowSettings::exitMode::coast:
             chassis->coastBrake();
             break;
-        case exitMode::nothing:
+        case PathFollowSettings::exitMode::nothing:
             break;
         }
         this->drawArr = false;
