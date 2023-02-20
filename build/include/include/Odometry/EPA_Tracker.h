@@ -176,7 +176,7 @@ public:
      *
      * @param a
      */
-    void setAngle(double a) {
+    void setHeading(double a) {
         offset += a - heading();
         lastAngle = currentAngle = a;
     }

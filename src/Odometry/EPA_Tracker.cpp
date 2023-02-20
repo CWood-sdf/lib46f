@@ -74,7 +74,7 @@ Positioner::Positioner(encoderArr xArr, encoderArr yArr, Inertial s, PVector fro
 }
 void Positioner::setPos(PVector pos, double a) {
     this->pos = pos;
-    angleSensor.setAngle(a);
+    angleSensor.setHeading(a);
     PVector newP = position();
     PVector dir = newP - pos;
     this->pos = pos + dir;
