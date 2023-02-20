@@ -1,6 +1,6 @@
 ﻿#include "BrainOS/VariableConfig.h"
-Button VariableConfig::confirm = Button(Brain, 0, 0, BRAIN_WIDTH / 2, BRAIN_HEIGHT, color(0, 255, 0), color(0, 200, 0), "Confirm");
-Button VariableConfig::deny = Button(Brain, BRAIN_WIDTH / 2, 0, BRAIN_WIDTH / 2, BRAIN_HEIGHT, color(255, 0, 0), color(200, 0, 0), "Deny");
+Button VariableConfig::confirm = Button(/*Brain, */ 0, 0, BRAIN_WIDTH / 2, BRAIN_HEIGHT, color(0, 255, 0), color(0, 200, 0), "Confirm");
+Button VariableConfig::deny = Button(/*Brain, */ BRAIN_WIDTH / 2, 0, BRAIN_WIDTH / 2, BRAIN_HEIGHT, color(255, 0, 0), color(200, 0, 0), "Deny");
 VariableConfig::VariableConfig(vector<string> options, string title)
 {
     optionNames = options;
@@ -94,11 +94,12 @@ bool VariableConfig::draw()
         // Make new buttons
         for (int i = 0; i < optionNames.size(); i++)
         {
-            buttons.push_back(new Button(Brain, (i / 2) * buttonWidth + 40, (i % 2) * buttonHeight, buttonWidth, buttonHeight, vex::blue, vex::purple, optionNames[i], -30, -30));
+            buttons.push_back(new Button(/*Brain, */ (i / 2) * buttonWidth + 40, (i % 2) * buttonHeight, buttonWidth, buttonHeight, vex::blue, vex::purple, optionNames[i], -30, -30));
         }
     }
     // Background
-    Brain.Screen.clearScreen(black);
+    vexDisplayBackgroundColor(black);
+    // Brain.Screen.clearScreen(black);
     // If the user has not selected an option
     if (!selected)
     {
@@ -117,8 +118,10 @@ bool VariableConfig::draw()
     {
         confirm.draw();
         deny.draw();
-        Brain.Screen.setFillColor(black);
-        Brain.Screen.printAt(BRAIN_WIDTH / 2 - 20, BRAIN_HEIGHT / 2, optionNames[index].data());
+        // Brain.Screen.setFillColor(black);
+        vexDisplayBackgroundColor(black);
+        // Brain.Screen.printAt(BRAIN_WIDTH / 2 - 20, BRAIN_HEIGHT / 2, optionNames[index].data());
+        vexDisplayPrintf(BRAIN_WIDTH / 2 - 20, BRAIN_HEIGHT / 2, 0, optionNames[index].data());
         // Deny first as an extra layer of safety
         if (deny.released())
         {

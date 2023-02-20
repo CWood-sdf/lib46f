@@ -10,7 +10,7 @@ namespace vex
 struct Button
 {
 protected:
-    vex::brain& Brain;
+    // vex::brain& Brain;
     int x;
     int y;
     int width;
@@ -36,8 +36,8 @@ public:
      * @param xOff the x offset of the label
      * @param yOff the y offset of the label
      */
-    explicit Button(vex::brain& Brain, int x, int y, int width, int height, vex::color fill, string label, int xOff = 0, int yOff = 0)
-      : Brain(Brain),
+    explicit Button(/*vex::brain& Brain, */ int x, int y, int width, int height, vex::color fill, string label, int xOff = 0, int yOff = 0)
+      : // Brain(Brain),
         x(x),
         y(y),
         width(width),
@@ -63,8 +63,8 @@ public:
      * @param xOff the x offset of the label
      * @param yOff the y offset of the label
      */
-    explicit Button(vex::brain& Brain, int x, int y, int width, int height, vex::color fill, vex::color fill2, string label, int xOff = 0, int yOff = 0)
-      : Brain(Brain),
+    explicit Button(/*vex::brain& Brain, */ int x, int y, int width, int height, vex::color fill, vex::color fill2, string label, int xOff = 0, int yOff = 0)
+      : // Brain(Brain),
         x(x),
         y(y),
         width(width),
@@ -79,20 +79,32 @@ public:
     void draw()
     {
         // fill(this.fill);
-        Brain.Screen.setFillColor(this->fill);
+        // Brain.Screen.setFillColor(this->fill);
+        // if (pressing())
+        // {
+        //     Brain.Screen.setFillColor(this->fill2);
+        // }
+        // Brain.Screen.drawRectangle(x, y, width, height);
         if (pressing())
         {
-            Brain.Screen.setFillColor(this->fill2);
+            vexDisplayForegroundColor(this->fill2);
         }
-        Brain.Screen.drawRectangle(x, y, width, height);
+        else
+        {
+            vexDisplayForegroundColor(this->fill);
+        }
+        vexDisplayRectFill(x, y, width + x, height + y);
 
-        Brain.Screen.printAt(x + 50 + xOff, y + 50 + yOff, this->label.data());
+        vexDisplayStringAt(x + 50 + xOff, y + 50 + yOff, this->label.data());
+        // Brain.Screen.printAt(x + 50 + xOff, y + 50 + yOff, this->label.data());
     }
     bool pressing()
     {
-        int mouseX = Brain.Screen.xPosition();
-        int mouseY = Brain.Screen.yPosition();
-        if (Brain.Screen.pressing() && mouseX > x &&
+        V5_TouchStatus status;
+        vexTouchDataGet(&status);
+        int mouseX = status.lastXpos;
+        int mouseY = status.lastYpos;
+        if (status.lastEvent == kTouchEventPress && mouseX > x &&
             mouseX < x + width &&
             mouseY > y &&
             mouseY < y + height)
@@ -107,8 +119,10 @@ public:
         if (pressing())
         {
 
-            while (Brain.Screen.pressing())
+            V5_TouchStatus status;
+            while (status.lastEvent == kTouchEventPress)
             {
+                vexTouchDataGet(&status);
                 draw();
                 task::sleep(10);
             }
@@ -121,7 +135,7 @@ public:
     {
         // Return true when pressing() is false but lastPressed is true
         bool p = pressing();
-        if (!p && !Brain.Screen.pressing() && pressedLast)
+        if (!p && pressedLast)
         {
             pressedLast = false;
             return true;
@@ -143,38 +157,38 @@ public:
     }
 };
 
-struct MovingButton : public Button
-{
-private:
-    bool clickedLast = false;
+// struct MovingButton : public Button
+// {
+// private:
+//     bool clickedLast = false;
 
-public:
-    explicit MovingButton(vex::brain& Brain, int x, int y, int width, int height, vex::color fill, string label)
-      : Button(Brain, x, y, width, height, fill, label)
-    {
-    }
-    explicit MovingButton(vex::brain& Brain, int x, int y, int width, int height, vex::color fill, string label, int xOff, int yOff)
-      : Button(Brain, x, y, width, height, fill, label, xOff, yOff)
-    {
-    }
-    explicit MovingButton(vex::brain& Brain, int x, int y, int width, int height, vex::color fill, vex::color fill2, string label, int xOff, int yOff)
-      : Button(Brain, x, y, width, height, fill, fill2, label, xOff, yOff)
-    {
-    }
-    void draw()
-    {
-        // fill(this.fill);
-        bool p = pressing();
-        Brain.Screen.setFillColor(p ? this->fill2 : this->fill);
-        Brain.Screen.drawRectangle(x, y, width, height);
+// public:
+//     explicit MovingButton(vex::brain& Brain, int x, int y, int width, int height, vex::color fill, string label)
+//       : Button(/*Brain, */ x, y, width, height, fill, label)
+//     {
+//     }
+//     explicit MovingButton(vex::brain& Brain, int x, int y, int width, int height, vex::color fill, string label, int xOff, int yOff)
+//       : Button(/*Brain, */ x, y, width, height, fill, label, xOff, yOff)
+//     {
+//     }
+//     explicit MovingButton(vex::brain& Brain, int x, int y, int width, int height, vex::color fill, vex::color fill2, string label, int xOff, int yOff)
+//       : Button(/*Brain, */ x, y, width, height, fill, fill2, label, xOff, yOff)
+//     {
+//     }
+//     void draw()
+//     {
+//         // fill(this.fill);
+//         bool p = pressing();
+//         Brain.Screen.setFillColor(p ? this->fill2 : this->fill);
+//         Brain.Screen.drawRectangle(x, y, width, height);
 
-        Brain.Screen.setCursor(2, 1);
-        Brain.Screen.printAt(x + 50 + xOff, y + 50 + yOff, this->label.data());
-        if (p || (clickedLast && Brain.Screen.pressing()))
-        {
-            x = Brain.Screen.xPosition();
-            y = Brain.Screen.yPosition();
-        }
-        clickedLast = p;
-    }
-};
+//         Brain.Screen.setCursor(2, 1);
+//         Brain.Screen.printAt(x + 50 + xOff, y + 50 + yOff, this->label.data());
+//         if (p || (clickedLast && Brain.Screen.pressing()))
+//         {
+//             x = Brain.Screen.xPosition();
+//             y = Brain.Screen.yPosition();
+//         }
+//         clickedLast = p;
+//     }
+// };

@@ -15,7 +15,6 @@ AddDevice::AddDevice(string name, vex::motor* device, bool drive)
 }
 #define TestDevice(device) AddDevice device##AddDevice(#device, &device);
 #define TestDriveMotor(device) AddDevice device##AddDevice(#device, &device, true);
-// Make a brain
 
 #define TEST_MOT(m, n) \
     cout << n << endl; \

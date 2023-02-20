@@ -79,8 +79,8 @@ void BosFn::runBrainOS()
         // HACK:
         *((bool*)(((uint32_t*)&buttonColor) + 1)) = true;
     }
-    Button screenLeft = Button(Brain, 0, BRAIN_HEIGHT - 60, 40, 40, buttonColor, buttonColorPress, "<", -40, -30);
-    Button screenRight = Button(Brain, BRAIN_WIDTH - 40, BRAIN_HEIGHT - 60, 40, 40, buttonColor, buttonColorPress, ">", -40, -30);
+    Button screenLeft = Button(/*Brain, */ 0, BRAIN_HEIGHT - 60, 40, 40, buttonColor, buttonColorPress, "<", -40, -30);
+    Button screenRight = Button(/*Brain, */ BRAIN_WIDTH - 40, BRAIN_HEIGHT - 60, 40, 40, buttonColor, buttonColorPress, ">", -40, -30);
     int emptyCount = 0;
     while (bosFns.empty())
     {

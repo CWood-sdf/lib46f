@@ -34,9 +34,6 @@
 using namespace vex;
 using namespace std;
 
-// Make a brain
-extern brain Brain;
-
 #define V5_SENSOR_REFRESH 10 /*msec*/
 
 #include "lvgl_inc.h"

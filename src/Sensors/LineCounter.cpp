@@ -116,9 +116,11 @@ void LineCounter::setCount(int count)
 void LineCounter::listVals(bool)
 {
     int i = 0;
-    Brain.Screen.clearScreen(black);
+    vexDisplayBackgroundColor(black);
+    // Brain.Screen.clearScreen(black);
     for (LineCounter* l : instances)
     {
-        Brain.Screen.printAt(20, i * 20 + 20, "R: %d, Ci: %d, Co: %d, A: %d", l->rawData(), l->getCountIn(), l->getCountOut(), l->active());
+        // Brain.Screen.printAt(20, i * 20 + 20, "R: %d, Ci: %d, Co: %d, A: %d", l->rawData(), l->getCountIn(), l->getCountOut(), l->active());
+        vexDisplayPrintf(20, i * 20 + 20, 0, "R: %d, Ci: %d, Co: %d, A: %d", l->rawData(), l->getCountIn(), l->getCountOut(), l->active());
     }
 }
