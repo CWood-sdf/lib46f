@@ -1811,7 +1811,7 @@ Discarded input sections
  .ARM.exidx.text._Z9baseAngled
                 0x00000000        0x8 build/src/Odometry/EPA_Tracker.o
  .text._ZN10Positioner6updateEv
-                0x00000000      0x488 build/src/Odometry/EPA_Tracker.o
+                0x00000000      0x478 build/src/Odometry/EPA_Tracker.o
  .ARM.exidx.text._ZN10Positioner6updateEv
                 0x00000000        0x8 build/src/Odometry/EPA_Tracker.o
  .group         0x00000000        0xc build/src/Odometry/EPA_Tracker.o
@@ -1819,13 +1819,13 @@ Discarded input sections
                 0x00000000       0xcc build/src/Odometry/EPA_Tracker.o
  .ARM.exidx.text._ZN7PVectoraSESt16initializer_listIdE
                 0x00000000        0x8 build/src/Odometry/EPA_Tracker.o
- .text._ZN10Positioner9xPositionEN3vex13distanceUnitsE
+ .text._ZN10Positioner9xPositionEv
                 0x00000000       0x28 build/src/Odometry/EPA_Tracker.o
- .ARM.exidx.text._ZN10Positioner9xPositionEN3vex13distanceUnitsE
+ .ARM.exidx.text._ZN10Positioner9xPositionEv
                 0x00000000        0x8 build/src/Odometry/EPA_Tracker.o
- .text._ZN10Positioner9yPositionEN3vex13distanceUnitsE
+ .text._ZN10Positioner9yPositionEv
                 0x00000000       0x28 build/src/Odometry/EPA_Tracker.o
- .ARM.exidx.text._ZN10Positioner9yPositionEN3vex13distanceUnitsE
+ .ARM.exidx.text._ZN10Positioner9yPositionEv
                 0x00000000        0x8 build/src/Odometry/EPA_Tracker.o
  .text._ZN10Positioner7headingEv
                 0x00000000        0xc build/src/Odometry/EPA_Tracker.o
@@ -1835,17 +1835,9 @@ Discarded input sections
                 0x00000000       0x40 build/src/Odometry/EPA_Tracker.o
  .ARM.exidx.text._ZN10Positioner7fullPosEv
                 0x00000000        0x8 build/src/Odometry/EPA_Tracker.o
- .text._ZN10Positioner6movingEv
-                0x00000000       0x58 build/src/Odometry/EPA_Tracker.o
- .ARM.exidx.text._ZN10Positioner6movingEv
-                0x00000000        0x8 build/src/Odometry/EPA_Tracker.o
  .text._ZN10Positioner8velocityEv
                 0x00000000        0xc build/src/Odometry/EPA_Tracker.o
  .ARM.exidx.text._ZN10Positioner8velocityEv
-                0x00000000        0x8 build/src/Odometry/EPA_Tracker.o
- .text._ZN10Positioner9clearMoveEv
-                0x00000000        0x8 build/src/Odometry/EPA_Tracker.o
- .ARM.exidx.text._ZN10Positioner9clearMoveEv
                 0x00000000        0x8 build/src/Odometry/EPA_Tracker.o
  .group         0x00000000        0xc build/src/Odometry/EPA_Tracker.o
  .text._ZNSt8_Rb_treeIPN3vex5motorESt4pairIKS2_St6vectorIP10MotorGroupSaIS7_EEESt10_Select1stISA_ESt4lessIS2_ESaISA_EE8_M_eraseEPSt13_Rb_tree_nodeISA_E

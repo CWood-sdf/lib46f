@@ -186,10 +186,8 @@ class Positioner {
 public:
     typedef vector<TrackingWheel> encoderArr;
 
-    double speed = 0.0;
-    // const double size = encodersX + encodersY;
-    // Private variables
 private:
+    double speed = 0.0;
     double encXAmnt;
     double encYAmnt;
     Inertial angleSensor;
@@ -203,28 +201,76 @@ private:
     encoderArr xEncoders; // Make the x encoder array
     encoderArr yEncoders;
 
-private:
     PVector pos = PVector(0.0, 0.0); // Make a vector to store the current position
 
 public:
+    /**
+     * @brief Sets the position of the robot
+     *
+     * @param pos The position to set the robot to
+     * @param a The angle to set the robot to
+     */
     void setPos(PVector pos, double a);
-    // The constructors
 
+    /**
+     * @brief Construct a new Positioner object
+     *
+     * @param encodersX The tracking wheels in the x direction
+     * @param encodersY The tracking wheels in the y direction
+     * @param angler The inertial sensor
+     * @param fromCenter The distance from the tracking wheels to the center of the robot
+     */
     Positioner(encoderArr encodersX, encoderArr encodersY, Inertial angler, PVector fromCenter = PVector(0.0, 0.0));
     Positioner() = delete;
-    // Function that updates the position
-    // 80+ lines of trig, vector math, and some sensor stuff
-    PVector update();
+    /**
+     * @brief Updates the position of the robot
+     *
+     * @return PVector
+     */
+    void update();
+    /**
+     * @brief Get the current position of the robot
+     *
+     * @return PVector
+     */
     PVector position();
-    double xPosition(distanceUnits = inches);
-    double yPosition(distanceUnits = inches);
+    /**
+     * @brief Get the current x position of the robot
+     *
+     * @return double
+     */
+    double xPosition();
+    /**
+     * @brief Get the current y position of the robot
+     *
+     * @return double
+     */
+    double yPosition();
+    /**
+     * @brief Get the current heading of the robot
+     *
+     * @return double
+     */
     double heading();
+    /**
+     * @brief Get the current position of the robot as a FieldCoord
+     *
+     * @return FieldCoord
+     */
     FieldCoord fullPos();
-    bool moving();
+    /**
+     * @brief Get an estimate of the robot's velocity
+     *
+     * @return double
+     */
     double velocity();
-    void clearMove();
+    /**
+     * @brief Initialize the positioner
+     *
+     */
     void init() {
         angleSensor.init();
+        setPos({0, 0}, 0);
     }
 };
 #endif

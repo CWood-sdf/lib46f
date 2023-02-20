@@ -103,7 +103,7 @@ double posNeg180(double ang) {
 #ifndef WINDOWS
 // Function that updates the position
 // 80+ lines of trig, vector math, and some sensor stuff
-PVector Positioner::update() {
+void Positioner::update() {
 
     angleSensor.update();
     // Vector of the wheel angles
@@ -173,7 +173,6 @@ PVector Positioner::update() {
     time.reset();
     pos += deltaPos; // Add deltaPos to pos
     s(V5_SENSOR_REFRESH);
-    return pos; // Return pos so it can be used
 }
 PVector Positioner::position() {
     PVector fromCenterCopy = fromCenter;
@@ -183,10 +182,10 @@ PVector Positioner::position() {
     posCopy += fromCenterCopy;
     return posCopy;
 }
-double Positioner::xPosition(distanceUnits) {
+double Positioner::xPosition() {
     return position().x;
 }
-double Positioner::yPosition(distanceUnits) {
+double Positioner::yPosition() {
     return position().y;
 }
 double Positioner::heading() {
@@ -195,16 +194,7 @@ double Positioner::heading() {
 FieldCoord Positioner::fullPos() {
     return FieldCoord(position(), heading());
 }
-bool Positioner::moving() {
-    // If the velocity is greater than 0.01 in/s or
-    // its been less a second since the last call to clearMove
-    return abs(speed) > 0.01 ||
-           time.time(timeUnits::sec) < 1;
-}
 double Positioner::velocity() {
     return speed;
-}
-void Positioner::clearMove() {
-    time.clear();
 }
 #endif
