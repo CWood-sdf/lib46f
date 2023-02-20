@@ -30,7 +30,6 @@ public:
     double virtualPursuitDist = 5.0;
     double exitDist = 1.0;
     exitMode brakeMode = exitMode::normal;
-    double pathRadius = 1.0;
     double followPathDist = 16.0;
     int maxTimeIn = 10;
     chain_method setUseDistToGoal(bool v) {
@@ -53,10 +52,6 @@ public:
         brakeMode = v;
         return *this;
     }
-    chain_method setPathRadius(double v) {
-        pathRadius = v;
-        return *this;
-    }
     chain_method setFollowPathDist(double v) {
         followPathDist = v;
         return *this;
@@ -67,11 +62,10 @@ public:
     }
 };
 class WheelController {
-protected: // PID variables + other random things
+private: // PID variables + other random things
     typedef WheelController& chain_method;
 
     map<double, std::function<void()>> distFns, oldFns;
-    LinkedList<PidAdder> customPidsTurn;
     bool callingInDrive = false;
     std::function<PVector(PVector)> autonReversePosition;
     std::function<double(double)> autonReverseAngle;
@@ -81,9 +75,6 @@ public: // Some variables
     // A public path for drawing
     VectorArr publicPath;
     bool drawArr = false;
-
-    // Is true if afterTurn exists
-    bool hasFn = false;
     // Function to be called between turning and driving
     std::function<void()> afterTurn = []() {};
     RamseteController* defaultRamsete;
@@ -129,14 +120,11 @@ public: // Some Functions
     void addDistFn(double dist, std::function<void()> fn);
     // Reuse the old map
     void reuseDistFns();
-    void setFn(std::function<void()> fn);
-    void callFn();
-    void reuseFn();
-
+    void setAfterTurnFn(std::function<void()> fn);
     void setOldDistFns();
-    void useDistFns(double dist);
 
 private: // turnTo, with re-updating function
+    void useDistFns(double dist);
     virtual void turnTo(std::function<double()> angleCalc);
 
 public: // TurnTo
@@ -182,22 +170,28 @@ private:
     void generalFollowTurnAtStart(VectorArr& arr, double& purePursuitDist, bool& isNeg);
     PVector generalFollowGetVirtualPursuit(PVector& pursuit, SpeedController* controller);
     double generalFollowGetDist(int& bezierIndex, SpeedController* controller, PVector& pursuit);
-
-public:
-    // }
     virtual void generalFollow(VectorArr&& arr, SpeedController* controller, bool isNeg) {
         generalFollow(arr, controller, isNeg);
     }
     virtual void generalFollow(VectorArr& arr, SpeedController* controller, bool isNeg);
+    void generalDriveDistance(double dist, bool isNeg, PidController* pid);
+
+public:
     virtual void followPath(SpeedController* controller, VectorArr arr) {
         generalFollow(arr, controller, false);
     }
     virtual void backwardsFollow(SpeedController* controller, VectorArr arr) {
         generalFollow(arr, controller, true);
     }
-    void generalDriveDistance(double dist, bool isNeg, PidController* pid);
     void driveDistance(double dist);
     void backwardsDriveDistance(double dist);
+
+    void driveDistance(double dist, PidController* pid) {
+        generalDriveDistance(dist, false, pid);
+    }
+    void backwardsDriveDistance(double dist, PidController* pid) {
+        generalDriveDistance(dist, true, pid);
+    }
     bool isRed();
     bool isBlue();
     void setRed();

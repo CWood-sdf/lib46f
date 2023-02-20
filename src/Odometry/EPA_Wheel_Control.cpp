@@ -212,7 +212,6 @@ void WheelController::backInto(double x, double y) {
  *  - virtual pursuit distance
  *  - exit distance
  *  - exit mode
- *  - path radius
  *  - follow path distance
  *  - max time in
  */

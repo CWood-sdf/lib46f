@@ -30,7 +30,6 @@ public:
     double virtualPursuitDist = 5.0;
     double exitDist = 1.0;
     exitMode brakeMode = exitMode::normal;
-    double pathRadius = 1.0;
     double followPathDist = 16.0;
     int maxTimeIn = 10;
     chain_method setUseDistToGoal(bool v) {
@@ -51,10 +50,6 @@ public:
     }
     chain_method setBrakeMode(exitMode v) {
         brakeMode = v;
-        return *this;
-    }
-    chain_method setPathRadius(double v) {
-        pathRadius = v;
         return *this;
     }
     chain_method setFollowPathDist(double v) {
