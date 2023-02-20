@@ -4,11 +4,9 @@
 #include "Odometry/EPA_Tracker.h"
 typedef triport::port port;
 class PotDial;
-class SelectorArr
-{
+class SelectorArr {
     typedef function<void()> FnTp;
-    static inline FnTp emptyFn = []()
-    { cout << "SelectorArr: Empty function called" << endl; };
+    static inline FnTp emptyFn = []() { cout << "SelectorArr: Empty function called" << endl; };
     static inline vector<PotDial*> boundDials = {};
     static inline map<vector<int>, FnTp> toVal = {};
     vector<int> count;
@@ -22,39 +20,32 @@ public:
     void attachFn(FnTp fn);
     static FnTp getVal();
 };
-class PotDial
-{
+class PotDial {
     const int ticks;
     pot* sensor;
     double baseVal = 0.0;
     int range = 250;
 
-    PotDial(int tickAmnt, bool addToSelector) : ticks(tickAmnt)
-    {
-        if (addToSelector)
-        {
+    PotDial(int tickAmnt, bool addToSelector) : ticks(tickAmnt) {
+        if (addToSelector) {
             SelectorArr::addDial(this);
         }
     }
-    PotDial(int tickAmnt, int rng, bool addToSelector) : PotDial(tickAmnt, addToSelector)
-    {
+    PotDial(int tickAmnt, int rng, bool addToSelector) : PotDial(tickAmnt, addToSelector) {
         range = rng;
     }
-    PotDial(int tickAmnt, int rng, double baseVal, bool addToSelector = true) : PotDial(tickAmnt, rng, addToSelector)
-    {
+    PotDial(int tickAmnt, int rng, double baseVal, bool addToSelector = true) : PotDial(tickAmnt, rng, addToSelector) {
         this->baseVal = baseVal;
     }
 
 public:
 public:
     template <typename... Args>
-    PotDial(pot& sensor, Args... otherArgs) : PotDial(otherArgs...)
-    {
+    PotDial(pot& sensor, Args... otherArgs) : PotDial(otherArgs...) {
         this->sensor = &sensor;
     }
     template <typename... Args>
-    PotDial(port& p, Args... args) : PotDial(args...)
-    {
+    PotDial(port& p, Args... args) : PotDial(args...) {
         sensor = new pot(p);
     }
     int getAmnt();

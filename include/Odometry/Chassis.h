@@ -6,17 +6,14 @@
 
 struct Chassis;
 class SpeedController;
-class Path
-{
+class Path {
 public:
-    struct El
-    {
+    struct El {
         PVector bezierPt;
         double targetSpeed;
         double targetAngle;
         double curvature;
-        operator PVector()
-        {
+        operator PVector() {
             return bezierPt;
         }
     };
@@ -80,8 +77,7 @@ public:
      *
      * @return double
      */
-    double getMaxAcc()
-    {
+    double getMaxAcc() {
         return maxAcc;
     }
     /**
@@ -89,8 +85,7 @@ public:
      *
      * @return double
      */
-    double getMaxDAcc()
-    {
+    double getMaxDAcc() {
         return maxDAcc;
     }
     /**
@@ -114,8 +109,7 @@ public:
      * @return chain_method
      */
 };
-struct Chassis
-{
+struct Chassis {
 private:
     typedef Chassis& chain_method;
     double speedLimit = 100;
@@ -137,8 +131,7 @@ public:
      *
      * @return double
      */
-    double getTrackWidth()
-    {
+    double getTrackWidth() {
         return trackWidth;
     }
     /**
@@ -159,8 +152,7 @@ public:
      * @param rotation The rotations of the wheels
      * @return double The distance in inches
      */
-    double revToInches(double rotation)
-    {
+    double revToInches(double rotation) {
         return rotation * 2.0 * M_PI * wheelRad * gearRatio;
     }
     /**
@@ -169,8 +161,7 @@ public:
      * @param inches The inches that the robot has moved
      * @return double The distance in revolutions
      */
-    double inchesToRev(double inches)
-    {
+    double inchesToRev(double inches) {
         return inches / gearRatio / 2.0 / M_PI / wheelRad;
     }
     /**
@@ -179,12 +170,10 @@ public:
      * @param speedPct The speed in percent
      * @return double The speed in in/s
      */
-    double pctToReal(double speedPct)
-    {
+    double pctToReal(double speedPct) {
         // rpm
         double motorVel;
-        switch (cartridge)
-        {
+        switch (cartridge) {
         case vex::gearSetting::ratio18_1:
             motorVel = 200;
             break;
@@ -204,12 +193,10 @@ public:
      * @param speed The speed in in/s
      * @return double The speed in pct
      */
-    double realToPct(double speed)
-    {
+    double realToPct(double speed) {
         // rpm
         double motorVel;
-        switch (cartridge)
-        {
+        switch (cartridge) {
         case vex::gearSetting::ratio18_1:
             motorVel = 200;
             break;
@@ -289,8 +276,7 @@ public:
      *
      * @return double
      */
-    double getSpeedLimit()
-    {
+    double getSpeedLimit() {
         return speedLimit;
     }
     /**

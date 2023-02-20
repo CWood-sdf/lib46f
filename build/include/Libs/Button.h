@@ -2,13 +2,11 @@
 #define BRAIN_WIDTH 480
 #define BRAIN_HEIGHT 220
 #include <string>
-namespace vex
-{
+namespace vex {
     class brain;
     class color;
 }
-struct Button
-{
+struct Button {
 protected:
     // vex::brain& Brain;
     int x;
@@ -44,8 +42,7 @@ public:
         height(height),
         label(label),
         xOff(xOff),
-        yOff(yOff)
-    {
+        yOff(yOff) {
         this->fill = fill.rgb();
         fill2 = fill.rgb();
     }
@@ -71,13 +68,11 @@ public:
         height(height),
         label(label),
         xOff(xOff),
-        yOff(yOff)
-    {
+        yOff(yOff) {
         this->fill = fill.rgb();
         this->fill2 = fill2.rgb();
     }
-    void draw()
-    {
+    void draw() {
         // fill(this.fill);
         // Brain.Screen.setFillColor(this->fill);
         // if (pressing())
@@ -85,12 +80,9 @@ public:
         //     Brain.Screen.setFillColor(this->fill2);
         // }
         // Brain.Screen.drawRectangle(x, y, width, height);
-        if (pressing())
-        {
+        if (pressing()) {
             vexDisplayForegroundColor(this->fill2);
-        }
-        else
-        {
+        } else {
             vexDisplayForegroundColor(this->fill);
         }
         vexDisplayRectFill(x, y, width + x, height + y);
@@ -98,8 +90,7 @@ public:
         vexDisplayStringAt(x + 50 + xOff, y + 50 + yOff, this->label.data());
         // Brain.Screen.printAt(x + 50 + xOff, y + 50 + yOff, this->label.data());
     }
-    bool pressing()
-    {
+    bool pressing() {
         V5_TouchStatus status;
         vexTouchDataGet(&status);
         int mouseX = status.lastXpos;
@@ -107,21 +98,17 @@ public:
         if (status.lastEvent == kTouchEventPress && mouseX > x &&
             mouseX < x + width &&
             mouseY > y &&
-            mouseY < y + height)
-        {
+            mouseY < y + height) {
 
             return true;
         }
         return false;
     }
-    bool clicked()
-    {
-        if (pressing())
-        {
+    bool clicked() {
+        if (pressing()) {
 
             V5_TouchStatus status;
-            while (status.lastEvent == kTouchEventPress)
-            {
+            while (status.lastEvent == kTouchEventPress) {
                 vexTouchDataGet(&status);
                 draw();
                 task::sleep(10);
@@ -131,24 +118,20 @@ public:
         }
         return false;
     }
-    bool released()
-    {
+    bool released() {
         // Return true when pressing() is false but lastPressed is true
         bool p = pressing();
-        if (!p && pressedLast)
-        {
+        if (!p && pressedLast) {
             pressedLast = false;
             return true;
         }
         pressedLast = p;
         return false;
     }
-    bool pressed()
-    {
+    bool pressed() {
         // Return true when pressing() is true but lastPressed is false
         bool p = pressing();
-        if (p && !pressedLast)
-        {
+        if (p && !pressedLast) {
             pressedLast = true;
             return true;
         }

@@ -4,8 +4,7 @@
 template <class G, class T>
 G converter_def(T val);
 template <class Get_T, class T = Get_T, Get_T (*converter)(T) = converter_def>
-class BasicEMA
-{
+class BasicEMA {
     double alpha;
     T val;
     T oldVal;
@@ -20,8 +19,7 @@ public:
     void seed(T value);
     BasicEMA<Get_T>& operator=(const BasicEMA<Get_T>& input);
 };
-class EMA : public BasicEMA<double>
-{
+class EMA : public BasicEMA<double> {
 public:
     using BasicEMA<double>::value;
     using BasicEMA<double>::update;
@@ -29,16 +27,13 @@ public:
     using BasicEMA<double>::operator double;
     using BasicEMA<double>::seed;
     using BasicEMA<double>::operator=;
-    EMA(double a) : BasicEMA<double>(a)
-    {
+    EMA(double a) : BasicEMA<double>(a) {
     }
-    EMA(double a, double v) : BasicEMA<double>(a, v)
-    {
+    EMA(double a, double v) : BasicEMA<double>(a, v) {
     }
 };
 
-class SMA
-{
+class SMA {
     size_t size;
     LinkedList<double> vals = {};
 
@@ -52,8 +47,7 @@ public:
     SMA& operator=(const SMA& input);
 };
 
-class WeightFilter
-{
+class WeightFilter {
     size_t size;
     LinkedList<double> vals = {};
     double stdDev;

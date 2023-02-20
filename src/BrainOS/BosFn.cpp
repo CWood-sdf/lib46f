@@ -2,14 +2,10 @@
 #define V5_LVGL_RATE 4
 void vexTaskSleep(uint32_t time);
 
-bool BosFn::call(bool remake)
-{
-    if (isPop)
-    {
+bool BosFn::call(bool remake) {
+    if (isPop) {
         return popFn(remake);
-    }
-    else
-    {
+    } else {
         mainFn(remake);
     }
     return false;
@@ -19,16 +15,14 @@ bool BosFn::call(bool remake)
  *
  * @param fn the function to be added
  */
-void BosFn::addNewFn(BosFn fn)
-{
+void BosFn::addNewFn(BosFn fn) {
     bosFns.pushBack(fn);
 }
 /**
  * @brief Sets the screen switch buttons to be transparent
  *
  */
-void BosFn::useTransparentScreenSwitchButtons()
-{
+void BosFn::useTransparentScreenSwitchButtons() {
     transparentScreenSwitch = true;
 }
 /**
@@ -36,8 +30,7 @@ void BosFn::useTransparentScreenSwitchButtons()
  *
  * @param fn the function to be called
  */
-BosFn::BosFn(bool (*fn)(bool))
-{
+BosFn::BosFn(bool (*fn)(bool)) {
     popFn = fn;
     isPop = true;
 }
@@ -46,8 +39,7 @@ BosFn::BosFn(bool (*fn)(bool))
  *
  * @param fn the function to be called
  */
-BosFn::BosFn(void (*fn)(bool))
-{
+BosFn::BosFn(void (*fn)(bool)) {
     mainFn = fn;
     isPop = false;
 }
@@ -58,23 +50,20 @@ BosFn::BosFn(void (*fn)(bool))
  * @return true if the function pointers are the same
  * @return false if the function pointers are different
  */
-bool BosFn::operator==(const BosFn& other) const
-{
+bool BosFn::operator==(const BosFn& other) const {
     return isPop ? popFn == other.popFn : mainFn == other.mainFn;
 }
 /**
  * @brief An infinite loop that runs the brainOS
  *
  */
-void BosFn::runBrainOS()
-{
+void BosFn::runBrainOS() {
     cout << "Start brainOS" << endl;
 
     // Set it to 50 gray and 10 transparent
     color buttonColorPress = color(0x0a3232ff);
     color buttonColor = color(0x0a323232);
-    if (transparentScreenSwitch)
-    {
+    if (transparentScreenSwitch) {
         // Set the transparency to true
         // HACK:
         *((bool*)(((uint32_t*)&buttonColor) + 1)) = true;
@@ -82,22 +71,18 @@ void BosFn::runBrainOS()
     Button screenLeft = Button(/*Brain, */ 0, BRAIN_HEIGHT - 60, 40, 40, buttonColor, buttonColorPress, "<", -40, -30);
     Button screenRight = Button(/*Brain, */ BRAIN_WIDTH - 40, BRAIN_HEIGHT - 60, 40, 40, buttonColor, buttonColorPress, ">", -40, -30);
     int emptyCount = 0;
-    while (bosFns.empty())
-    {
+    while (bosFns.empty()) {
         cout << "bosFns is empty for some reason" << endl;
         s(500);
-        if (++emptyCount == 10)
-        {
+        if (++emptyCount == 10) {
             cout << "bosFns is empty for 5 seconds, exiting" << endl;
             return;
         }
     }
     bosFns.getCurrent()->call(true);
-    while (1)
-    {
+    while (1) {
         // Have buttons clicked first so that clicking them overrides the screen click functions
-        if (screenLeft.clicked() && &bosFns.getBase() != &bosFns.getCurrent())
-        {
+        if (screenLeft.clicked() && &bosFns.getBase() != &bosFns.getCurrent()) {
             // BUG: (maybe) I'm not sure if this will crash anything if the screen is not lvgl, it should be fine though
             //  // If it's lvgl, clean it
             //  if (bosFns.getCurrent()->lvgl())
@@ -110,9 +95,7 @@ void BosFn::runBrainOS()
             bosFns.moveCurrentLeft();
             // Tell it to remake
             bosFns.getCurrent()->call(true);
-        }
-        else if (screenRight.clicked() && &bosFns.getEnd() != &bosFns.getCurrent())
-        {
+        } else if (screenRight.clicked() && &bosFns.getEnd() != &bosFns.getCurrent()) {
             // if (bosFns.getCurrent()->lvgl())
             // {
             cout << "Clean" << endl;
@@ -134,8 +117,7 @@ void BosFn::runBrainOS()
         lv_task_handler();
         // }
         // If we should pop the element from the list
-        if (result)
-        {
+        if (result) {
             // BUG:
             //  if (bosFns.getCurrent()->lvgl())
             //  {

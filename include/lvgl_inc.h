@@ -22,11 +22,10 @@
 #include "lvgl/lvgl.h"
 
 #ifdef __cplusplus
-extern "C"
-{
+extern "C" {
 #endif
 
-    void v5_lv_init(void);
+void v5_lv_init(void);
 
 #ifdef __cplusplus
 }

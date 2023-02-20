@@ -15,13 +15,11 @@
 class RamseteController;
 class PidController;
 class PurePursuitController;
-class PathFollowSettings
-{
+class PathFollowSettings {
     typedef PathFollowSettings& chain_method;
 
 public:
-    enum class exitMode
-    {
+    enum class exitMode {
         normal,
         hold = normal,
         coast,
@@ -35,49 +33,40 @@ public:
     double pathRadius = 1.0;
     double followPathDist = 16.0;
     int maxTimeIn = 10;
-    chain_method setUseDistToGoal(bool v)
-    {
+    chain_method setUseDistToGoal(bool v) {
         useDistToGoal = v;
         return *this;
     }
-    chain_method setTurnAtStart(bool v)
-    {
+    chain_method setTurnAtStart(bool v) {
         turnAtStart = v;
         return *this;
     }
-    chain_method setVirtualPursuitDist(double v)
-    {
+    chain_method setVirtualPursuitDist(double v) {
         virtualPursuitDist = v;
         return *this;
     }
-    chain_method setExitDist(double v)
-    {
+    chain_method setExitDist(double v) {
         exitDist = v;
         return *this;
     }
-    chain_method setBrakeMode(exitMode v)
-    {
+    chain_method setBrakeMode(exitMode v) {
         brakeMode = v;
         return *this;
     }
-    chain_method setPathRadius(double v)
-    {
+    chain_method setPathRadius(double v) {
         pathRadius = v;
         return *this;
     }
-    chain_method setFollowPathDist(double v)
-    {
+    chain_method setFollowPathDist(double v) {
         followPathDist = v;
         return *this;
     }
-    chain_method setMaxTimeIn(int v)
-    {
+    chain_method setMaxTimeIn(int v) {
         maxTimeIn = v;
         return *this;
     }
 };
-class WheelController
-{
+class WheelController {
 protected: // PID variables + other random things
     typedef WheelController& chain_method;
 
@@ -110,8 +99,7 @@ public: // Constructor
         std::function<PVector(PVector)> reversePos,
         std::function<double(double)> reverseAngle,
         PID turnCtrl,
-        double kConst = 1.0)
-    {
+        double kConst = 1.0) {
         autonReversePosition = reversePos;
         autonReverseAngle = reverseAngle;
         defaultPurePursuit = defPurePursuit;
@@ -123,8 +111,7 @@ public: // Constructor
         cout << chassis << endl;
     }
     std::function<void()> drawFn = []() {};
-    void draw(bool)
-    {
+    void draw(bool) {
         drawFn();
     }
     Path path = Path();
@@ -212,17 +199,14 @@ private:
 
 public:
     // }
-    virtual void generalFollow(VectorArr&& arr, SpeedController* controller, bool isNeg)
-    {
+    virtual void generalFollow(VectorArr&& arr, SpeedController* controller, bool isNeg) {
         generalFollow(arr, controller, isNeg);
     }
     virtual void generalFollow(VectorArr& arr, SpeedController* controller, bool isNeg);
-    virtual void followPath(SpeedController* controller, VectorArr arr)
-    {
+    virtual void followPath(SpeedController* controller, VectorArr arr) {
         generalFollow(arr, controller, false);
     }
-    virtual void backwardsFollow(SpeedController* controller, VectorArr arr)
-    {
+    virtual void backwardsFollow(SpeedController* controller, VectorArr arr) {
         generalFollow(arr, controller, true);
     }
     void generalDriveDistance(double dist, bool isNeg, PidController* pid);
@@ -234,8 +218,7 @@ public:
     void setBlue();
 };
 
-class MechWheelController : public WheelController
-{
+class MechWheelController : public WheelController {
 public: // Import variables + constructor
     // MechWheelController(motor& BL, motor& BR, posTp&, gps&) = delete;
     MechWheelController(
@@ -243,8 +226,7 @@ public: // Import variables + constructor
         RamseteController* ramsete, PurePursuitController* purePursuit, PidController* defPid,
         std::function<PVector(PVector)> reversePos, std::function<double(double)> reverseAngle,
         PID tc, double kConst = 1.0)
-      : WheelController(c, ramsete, purePursuit, defPid, reversePos, reverseAngle, tc, kConst)
-    {
+      : WheelController(c, ramsete, purePursuit, defPid, reversePos, reverseAngle, tc, kConst) {
     }
 
 public:

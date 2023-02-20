@@ -6,8 +6,7 @@
 #include "vex_triport.h"
 #include <functional>
 // A simple encoder wrapper, the only functions are getPosition and resetPosition
-class Encoder
-{
+class Encoder {
     // encoder sdfsd = encoder(Brain.ThreeWirePort.A);
     // const V5_DeviceType encoderType = V5_DeviceType::kDeviceTypeMotorSensor;
     std::function<double(rotationUnits)> getValue;
@@ -17,35 +16,27 @@ public:
     // The constructor, only enable if the type has been mapped
     // The constructor, only enable if the type has been mapped
     template <class Sensor>
-    Encoder(Sensor& e, decltype(&Sensor::resetPosition) = nullptr)
-    {
+    Encoder(Sensor& e, decltype(&Sensor::resetPosition) = nullptr) {
         cout << "Init encoder" << endl;
-        getValue = [&e](rotationUnits units)
-        {
+        getValue = [&e](rotationUnits units) {
             return e.position(units);
         };
-        resetter = [&e]()
-        {
+        resetter = [&e]() {
             e.resetPosition();
         };
     }
     template <class Sensor>
-    Encoder(Sensor& e, decltype(&Sensor::resetRotation) = nullptr)
-    {
-        getValue = [&e](rotationUnits units)
-        {
+    Encoder(Sensor& e, decltype(&Sensor::resetRotation) = nullptr) {
+        getValue = [&e](rotationUnits units) {
             return e.position(units);
         };
-        resetter = [&e]()
-        {
+        resetter = [&e]() {
             e.resetRotation();
         };
     }
     template <class Sensor>
-    Encoder(Sensor& e, std::function<void()> f)
-    {
-        getValue = [&e](rotationUnits units)
-        {
+    Encoder(Sensor& e, std::function<void()> f) {
+        getValue = [&e](rotationUnits units) {
             return e.position(units);
         };
         resetter = f;

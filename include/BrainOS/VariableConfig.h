@@ -2,8 +2,7 @@
 #define VARIABLE_CONFIG_H
 #include "stuff.h"
 #include <functional>
-class VariableConfig
-{
+class VariableConfig {
     // The confirm and deny buttons
     static Button confirm;
     static Button deny;
@@ -15,8 +14,7 @@ class VariableConfig
     bool selected = false;
     bool ready = false;
     vector<Button*> buttons = vector<Button*>();
-    function<bool()> bypass = []()
-    { return false; };
+    function<bool()> bypass = []() { return false; };
     // A callback function for when the variable is finally selected
     function<void(int)> callback = [](int) {};
     string title = "";

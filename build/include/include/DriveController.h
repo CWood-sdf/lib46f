@@ -1,10 +1,8 @@
 ﻿#include "Odometry/Controllers.h"
 
-class DriveController
-{
+class DriveController {
     Chassis* chassis;
-    std::function<double(double)> joystickSpeedCurve = [](double v)
-    {
+    std::function<double(double)> joystickSpeedCurve = [](double v) {
         return v;
     };
     int threshold = 20;

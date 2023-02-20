@@ -5,8 +5,7 @@
  * @param b the button to latch to
  * @param stateLim The number of states, defaults to 2 for pneumatics
  */
-ButtonLatch::ButtonLatch(const controller::button& b, int stateLim) : stateLim(stateLim), b(b)
-{
+ButtonLatch::ButtonLatch(const controller::button& b, int stateLim) : stateLim(stateLim), b(b) {
 }
 /**
  * @brief Returns true when the button is first pressed
@@ -15,21 +14,16 @@ ButtonLatch::ButtonLatch(const controller::button& b, int stateLim) : stateLim(s
  * @return true The button is pressed
  * @return false
  */
-bool ButtonLatch::pressing()
-{
-    if (b.pressing() && !isPressing)
-    {
+bool ButtonLatch::pressing() {
+    if (b.pressing() && !isPressing) {
         state++;
-        if (state == stateLim + 1)
-        {
+        if (state == stateLim + 1) {
             state = 1;
         }
 
         isPressing = true;
         return true;
-    }
-    else if (!b.pressing())
-    {
+    } else if (!b.pressing()) {
         isPressing = false;
     }
     return false;
@@ -39,7 +33,6 @@ bool ButtonLatch::pressing()
  *
  * @return int The state
  */
-int ButtonLatch::getState()
-{
+int ButtonLatch::getState() {
     return state;
 }

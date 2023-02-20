@@ -3,8 +3,7 @@
 #pragma once
 // #ifndef waitUntil
 #define waitUntil(condition) \
-    do                       \
-    {                        \
+    do {                     \
         wait(5, msec);       \
     } while (!condition)
 // #endif //waitUntil
@@ -63,7 +62,7 @@
 
 #define CHAIN return *this;
 //
-//    #define DRIVE_MECHANUM \
+//     #define DRIVE_MECHANUM \
 //double Y1 = abs(Greg.Axis3.value()) > sensitivity? Greg.Axis3.value() : 0;  \
 //double Y2 = abs(Greg.Axis2.value()) > sensitivity? Greg.Axis2.value() : 0;  \
 //double X1 = abs(Greg.Axis4.value()) > sensitivity? Greg.Axis4.value() : 0;  \
@@ -82,7 +81,7 @@
 //}       \
 //;
 //
-//    #define DRIVE_MECHANUM2 \
+//     #define DRIVE_MECHANUM2 \
 //double Y1 = abs(Greg.Axis3.value()) > sensitivity? Greg.Axis3.value() : 0;  \
 //double Y2 = abs(Greg.Axis2.value()) > sensitivity? Greg.Axis2.value() : 0;  \
 //double X1 = abs(Greg.Axis4.value()) > sensitivity? Greg.Axis4.value() : 0;  \
@@ -112,7 +111,7 @@
 //}       \
 //;
 //
-//    #define DRIVE_OMNI2 \
+//     #define DRIVE_OMNI2 \
 //double Y1 = abs(Greg.Axis3.value()) > sensitivity? Greg.Axis3.value() : 0;  \
 //double Y2 = abs(Greg.Axis2.value()) > sensitivity? Greg.Axis2.value() : 0;  \
 //double X1 = abs(Greg.Axis4.value()) > sensitivity? Greg.Axis4.value() : 0;  \
@@ -124,7 +123,7 @@
 //;
 //
 //
-//    #define DRIVE_OMNI \
+//     #define DRIVE_OMNI \
 //double Y1 = abs(Greg.Axis3.value()) > sensitivity? Greg.Axis3.value() : 0;  \
 //double Y2 = abs(Greg.Axis2.value()) > sensitivity? Greg.Axis2.value() : 0;  \
 //if(Y1 != 0 || Y2 != 0){    \
@@ -141,17 +140,14 @@
 #endif
 
 #ifdef MAKE
-void s(int time)
-{
+void s(int time) {
     task::sleep(time);
 }
 template <typename Number>
-string parseInt(Number n)
-{
+string parseInt(Number n) {
 
     char str[20];
-    if (n < 0)
-    {
+    if (n < 0) {
         string ret = "-";
         ret += parseInt(abs(n));
         return ret;
@@ -161,13 +157,11 @@ string parseInt(Number n)
 }
 
 template <>
-string parseInt<string>(string n)
-{
+string parseInt<string>(string n) {
     return n;
 }
 template <>
-string parseInt<const char*>(const char* n)
-{
+string parseInt<const char*>(const char* n) {
     return n;
 }
 #else

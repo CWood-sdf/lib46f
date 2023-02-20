@@ -1,6 +1,5 @@
 ﻿#include <iostream>
-int main()
-{
+int main() {
     std::cout << "calling lib46f main()" << std::endl;
     return 0;
 }

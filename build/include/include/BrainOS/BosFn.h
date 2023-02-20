@@ -1,8 +1,7 @@
 ﻿#include "stuff.h"
 #define V5_LVGL_RATE 4
 void vexTaskSleep(uint32_t time);
-class BosFn
-{
+class BosFn {
     bool (*popFn)(bool);
     void (*mainFn)(bool);
     bool isPop = false;

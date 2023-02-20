@@ -19,28 +19,22 @@ void updateBotAngle(bool add = false);
 // A class that stores a reference of something as a pointer
 //   this is used so that I can put references in arrays
 template <class tp>
-struct Ref
-{
+struct Ref {
     tp* val;
     Ref() {}
-    Ref(tp& v)
-    {
+    Ref(tp& v) {
         val = &v;
     }
-    tp& operator*()
-    {
+    tp& operator*() {
         return *val;
     }
-    operator tp&()
-    {
+    operator tp&() {
         return *val;
     }
-    operator tp*()
-    {
+    operator tp*() {
         return val;
     }
-    tp* operator->()
-    {
+    tp* operator->() {
         return val;
     }
 };
@@ -61,31 +55,26 @@ struct Ref
 // };
 
 #ifndef WINDOWS
-struct AddDevice
-{
+struct AddDevice {
     AddDevice(string name, vex::device* device);
     AddDevice(string name, vex::motor* deivce);
     AddDevice(string name, vex::motor* device, bool drive);
 };
 class Positioner;
-class TrackingWheel
-{
+class TrackingWheel {
     friend class Positioner;
     Encoder* encoder;
     bool reverse;
     double wheelDiameter;
     TrackingWheel(bool reverse, double wheelDiameter);
     rotation* rot = NULL;
-    Encoder* operator->()
-    {
+    Encoder* operator->() {
         return encoder;
     }
-    double mult()
-    {
+    double mult() {
         return reverse ? -1.0 : 1.0;
     }
-    double wheelRadius()
-    {
+    double wheelRadius() {
         return wheelDiameter / 2.0;
     }
 
@@ -124,8 +113,7 @@ public:
      */
     TrackingWheel(Encoder& e, bool reverse, double wheelDiameter);
 };
-class Inertial
-{
+class Inertial {
     friend class Positioner;
     inertial* sensor;
     double errNeg = 1.0;
@@ -180,8 +168,7 @@ public:
      * @brief Calibrate the sensor
      *
      */
-    void init()
-    {
+    void init() {
         gyroInit(*sensor);
     }
     /**
@@ -189,14 +176,12 @@ public:
      *
      * @param a
      */
-    void setAngle(double a)
-    {
+    void setAngle(double a) {
         offset += a - heading();
         lastAngle = currentAngle = a;
     }
 };
-class Positioner
-{
+class Positioner {
     // A few typedefs
 public:
     typedef vector<TrackingWheel> encoderArr;
@@ -238,8 +223,7 @@ public:
     bool moving();
     double velocity();
     void clearMove();
-    void init()
-    {
+    void init() {
         angleSensor.init();
     }
 };

@@ -5,8 +5,7 @@ std::vector<lv_point_t> actualPts;
 std::vector<lv_point_t> pathPts = {};
 extern Chassis chassis;
 extern WheelController wc;
-void displayBot(bool remake)
-{
+void displayBot(bool remake) {
     static lv_obj_t* botContainer;
     static lv_obj_t* line2;
     static lv_obj_t* centerPt;
@@ -14,8 +13,7 @@ void displayBot(bool remake)
     static lv_obj_t* labelY;
     static lv_obj_t* labelA;
     static lv_obj_t* pathLine;
-    if (remake)
-    {
+    if (remake) {
         short gridHeight = LV_VER_RES;
         short sixthHeight = (LV_VER_RES / 6);
         lv_obj_set_style_bg_color(lv_scr_act(), lv_color_make(50, 50, 50), 0);
@@ -28,29 +26,21 @@ void displayBot(bool remake)
         lv_obj_set_pos(gridContainer, 40, 0);
 
         pts.clear();
-        for (int i = 1; i < 6; i++)
-        {
-            if (i % 2 == 0)
-            {
+        for (int i = 1; i < 6; i++) {
+            if (i % 2 == 0) {
                 pts.push_back({(short)(sixthHeight * (i)), (short)0});
                 pts.push_back({(short)(sixthHeight * (i)), gridHeight});
-            }
-            else
-            {
+            } else {
                 pts.push_back({(short)(sixthHeight * (i)), gridHeight});
                 pts.push_back({(short)(sixthHeight * (i)), (short)0});
             }
         }
         pts.push_back({gridHeight, (short)0});
-        for (int i = 1; i < 6; i++)
-        {
-            if (i % 2 == 0)
-            {
+        for (int i = 1; i < 6; i++) {
+            if (i % 2 == 0) {
                 pts.push_back({(short)0, (short)(sixthHeight * (i))});
                 pts.push_back({gridHeight, (short)(sixthHeight * (i))});
-            }
-            else
-            {
+            } else {
                 pts.push_back({gridHeight, (short)(sixthHeight * (i))});
                 pts.push_back({(short)0, (short)(sixthHeight * (i))});
             }
@@ -66,8 +56,7 @@ void displayBot(bool remake)
         lv_obj_set_style_line_width(line, 1, 0);
         lv_obj_set_style_line_rounded(line, true, 0);
         {
-            auto basicAlign = [](lv_obj_t* obj, int y)
-            {
+            auto basicAlign = [](lv_obj_t* obj, int y) {
                 lv_label_set_long_mode(obj, LV_LABEL_LONG_CLIP);
                 lv_obj_align(obj, LV_ALIGN_TOP_LEFT, 300, y);
             };
@@ -153,19 +142,16 @@ void displayBot(bool remake)
         {width, -width},
         {width, width}};
     actualPts.clear();
-    for (PVector& v : lineCorners)
-    {
+    for (PVector& v : lineCorners) {
         v.rotate(angle);
         actualPts.push_back(v + PVector(halfContWidth, halfContWidth));
     }
     lv_line_set_points(line2, actualPts.data(), actualPts.size());
 
-    if (wc.drawArr)
-    {
+    if (wc.drawArr) {
         auto p = wc.publicPath;
         pathPts.clear();
-        for (auto pt : p)
-        {
+        for (auto pt : p) {
 
             pt += {72, 72};
             pt *= height / 144.0;

@@ -3,8 +3,7 @@
 #include "EPA_Tracker.h"
 #include <deque>
 // Makes an array of Vectors that can be efficiently modified at both ends
-struct VectorArr
-{
+struct VectorArr {
     // Underlying storage type
     // Leave it public just because
     deque<PVector> arr = deque<PVector>();
@@ -21,8 +20,7 @@ struct VectorArr
      *
      * @param other The other array to copy
      */
-    VectorArr(const VectorArr& other)
-    {
+    VectorArr(const VectorArr& other) {
         arr = other.arr;
     }
     VectorArr(VectorArr&&) = default;

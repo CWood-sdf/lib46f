@@ -5,8 +5,7 @@
 // PID.h -- use this file for a PID class
 class PIDF;
 // Stores numbers to add to a PID's KVals
-class PidfAdder
-{
+class PidfAdder {
     friend class PIDF;
 
 public:
@@ -17,31 +16,23 @@ public:
     PidfAdder();
 };
 
-struct PIDF_Extension
-{
+struct PIDF_Extension {
     virtual ~PIDF_Extension() {}
-    PIDF_Extension()
-    {
+    PIDF_Extension() {
     }
-    virtual void manageP(double& p)
-    {
+    virtual void manageP(double& p) {
     }
-    virtual void manageI(double& i)
-    {
+    virtual void manageI(double& i) {
     }
-    virtual void manageD(double& d)
-    {
+    virtual void manageD(double& d) {
     }
-    virtual double getVal(double ret)
-    {
+    virtual double getVal(double ret) {
         return ret;
     }
-    virtual PIDF_Extension* getCopy()
-    {
+    virtual PIDF_Extension* getCopy() {
         return new PIDF_Extension(*this);
     }
-    virtual double manageError(double in)
-    {
+    virtual double manageError(double in) {
         return in;
     }
 };
@@ -55,14 +46,12 @@ ENSURE THAT THERE ARE |   \  | |   |  __  |
 NON-DOUBLE TYPE VARIABLES BEFORE THE DOUBLE TYPE VARIABLES
     (This is for hacky pointer copy constructor)
 ********************************/
-class PIDF
-{
+class PIDF {
 public:
     // The values to multiply the K values by
     double p = 0.0, i = 0.0, d = 0.0, f = 0.0;
     // A simple struct that stores the multiplication values
-    struct KVals
-    {
+    struct KVals {
         // The variables
         double p = 0.0, i = 0.0, d = 0.0, f = 0.0;
         KVals();

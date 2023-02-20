@@ -1,8 +1,7 @@
 ﻿#ifndef BUTTONLATCH_H
 #define BUTTONLATCH_H
 #include "stuff.h"
-class ButtonLatch
-{
+class ButtonLatch {
     // Is true when the button is held down
     bool isPressing = false;
     // The current state number of the latch

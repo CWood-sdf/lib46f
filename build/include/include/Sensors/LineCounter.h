@@ -7,8 +7,7 @@
 // It just always works (unless there's a sun there)
 
 // Class that uses a line tracker to count objects
-class LineCounter
-{
+class LineCounter {
 
     static const thread updater;
     friend class LineGroup;

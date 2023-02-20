@@ -1,8 +1,7 @@
 ﻿#include "BrainOS/VariableConfig.h"
 #include "Sensors/PotDial.h"
 #include "stuff.h"
-class Auton
-{
+class Auton {
     static inline size_t idSet = 0;
     static inline std::vector<Auton*> refList;
     static inline std::vector<Button*> buttons;

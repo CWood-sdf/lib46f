@@ -1,6 +1,5 @@
 ﻿#include "stuff.h"
-struct FieldCoord
-{
+struct FieldCoord {
     PVector pos = PVector();
     double angle = 0.0;
 

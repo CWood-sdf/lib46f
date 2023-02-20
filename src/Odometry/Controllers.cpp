@@ -3,25 +3,19 @@
 #include <cstdint>
 #include <iomanip>
 // That should be a sufficient path generator
-Path::chain_method Path::setK(double s)
-{
+Path::chain_method Path::setK(double s) {
     kConst = s;
     CHAIN
 }
-double clamp(double val, double high, double low)
-{
-    if (val > high)
-    {
+double clamp(double val, double high, double low) {
+    if (val > high) {
         return high;
-    }
-    else if (val < low)
-    {
+    } else if (val < low) {
         return low;
     }
     return val;
 }
-void Path::make(VectorArr& arr, Chassis* chassis)
-{
+void Path::make(VectorArr& arr, Chassis* chassis) {
     // cout << "Making path" << endl; s(100);
     this->path.clear();
     this->arr = arr;
@@ -36,18 +30,15 @@ void Path::make(VectorArr& arr, Chassis* chassis)
     vector<double> targetSpeeds;
     auto deriv = VectorArr(bezierDerivative(arrCopy));
     // cout << "Derivative size: " << deriv.size() << endl; s(100);
-    for (auto i : deriv)
-    {
+    for (auto i : deriv) {
         targetAngles.push_back(i.heading());
     }
     // cout << "Target angles size: " << targetAngles.size() << endl; s(100);
     curvatures = bezierCurvature(arrCopy);
     targetSpeeds = vector<double>();
-    for (int i = 0; i < bezier.size(); i++)
-    {
+    for (int i = 0; i < bezier.size(); i++) {
         targetSpeeds.push_back(abs(min(chassis->getSpeedLimit(), kConst / curvatures[i])));
-        if (targetSpeeds.back() > 100)
-        {
+        if (targetSpeeds.back() > 100) {
             targetSpeeds.back() = 100;
         }
     }
@@ -59,25 +50,20 @@ void Path::make(VectorArr& arr, Chassis* chassis)
     targetSpeeds[0] = startVel;
     targetSpeeds[targetSpeeds.size() - 1] = 40;
 
-    for (int i = 1; i < bezier.size(); i++)
-    {
+    for (int i = 1; i < bezier.size(); i++) {
         // I think this math of converting inches to percent works
         double d = (bezier)[i].dist2D((bezier)[i - 1]);
         double a = getMaxAcc();
         targetSpeeds[i] = abs(targetSpeeds[i]);
-        if (startVel < targetSpeeds[i] && i != bezier.size() - 1)
-        {
+        if (startVel < targetSpeeds[i] && i != bezier.size() - 1) {
             startVel = targetSpeeds[i] = clamp(chassis->realToPct(sqrt(pow(chassis->pctToReal(startVel), 2) + 2.0 * a * d)), abs(targetSpeeds[i]), 0);
             // if(startVel > targetSpeeds[i + 1]){
             //   targetSpeeds[i] = startVel = targetSpeeds[i + 1];
             // }
-        }
-        else if (startVel > targetSpeeds[i] && i != 0)
-        {
+        } else if (startVel > targetSpeeds[i] && i != 0) {
             int startI = i;
             // Go backwards until reached speed
-            do
-            {
+            do {
                 startVel = targetSpeeds[i];
                 i--;
                 double a = getMaxDAcc();
@@ -89,35 +75,29 @@ void Path::make(VectorArr& arr, Chassis* chassis)
         }
     }
     // cout << "Target speeds size: " << targetSpeeds.size() << endl; s(100);
-    for (auto& i : targetSpeeds)
-    {
+    for (auto& i : targetSpeeds) {
         i = abs(i);
     }
     // cout << "Target speeds size: " << targetSpeeds.size() << endl; s(100);
-    if (curvatures.size() != bezier.size() || targetSpeeds.size() != bezier.size() || targetAngles.size() != bezier.size())
-    {
+    if (curvatures.size() != bezier.size() || targetSpeeds.size() != bezier.size() || targetAngles.size() != bezier.size()) {
         cout << "Err in making path\ncurvatures: " << curvatures.size()
              << "\nbezier: " << bezier.size()
              << "\ntargetSpeeds: " << targetSpeeds.size()
              << "\ntargetAngles: " << targetAngles.size() << endl;
     }
     // cout << "Path made" << endl; s(100);
-    for (int i = 0; i < bezier.size(); i++)
-    {
+    for (int i = 0; i < bezier.size(); i++) {
         path.push_back(El{(bezier)[i], targetSpeeds[i], targetAngles[i], curvatures[i]});
     }
     // s(300000);
     // cout << "Path size: " << path.size() << endl; s(100);
 }
-void Path::remake(Chassis* chassis)
-{
+void Path::remake(Chassis* chassis) {
     make(arr, chassis);
 }
-VectorArr Path::getBezier()
-{
+VectorArr Path::getBezier() {
     VectorArr ret = {};
-    for (auto i : path)
-    {
+    for (auto i : path) {
         ret.push(i.bezierPt);
     }
     return ret;
@@ -131,36 +111,28 @@ VectorArr Path::getBezier()
 //     }
 //     return ret;
 // }
-int Path::size()
-{
+int Path::size() {
     return path.size();
 }
-Path::El& Path::last()
-{
+Path::El& Path::last() {
     return path.back();
 }
-Path::El& Path::operator[](int index)
-{
+Path::El& Path::operator[](int index) {
     return path[index];
 }
-Path::chain_method Path::setMaxAcc(double maxAcc)
-{
+Path::chain_method Path::setMaxAcc(double maxAcc) {
     this->maxAcc = maxAcc;
     return *this;
 }
-Path::chain_method Path::setMaxDAcc(double maxDAcc)
-{
+Path::chain_method Path::setMaxDAcc(double maxDAcc) {
     this->maxDAcc = maxDAcc;
     return *this;
 }
-void SpeedController::init()
-{
+void SpeedController::init() {
 }
-void SpeedController::deInit()
-{
+void SpeedController::deInit() {
 }
-PurePursuitController::followToRet PurePursuitController::followTo(Input& input)
-{
+PurePursuitController::followToRet PurePursuitController::followTo(Input& input) {
     // From pages 13-15 of implementation paper found at https://www.chiefdelphi.com/t/paper-implementation-of-the-adaptive-pure-pursuit-controller/166552
     double travelCurvature;
     {
@@ -182,20 +154,16 @@ PurePursuitController::followToRet PurePursuitController::followTo(Input& input)
 
     return {{speed, ForwardVel::pct}, {travelCurvature, AngularVel::curvature}};
 }
-void PurePursuitController::init()
-{
+void PurePursuitController::init() {
     ctrl.setTarget(0);
 }
-PurePursuitController::PurePursuitController(PID input) : PurePursuitController(input, PathFollowSettings())
-{
+PurePursuitController::PurePursuitController(PID input) : PurePursuitController(input, PathFollowSettings()) {
 }
-PurePursuitController::PurePursuitController(PID input, PathFollowSettings settings)
-{
+PurePursuitController::PurePursuitController(PID input, PathFollowSettings settings) {
     ctrl = input;
     this->settings = settings;
 }
-RamseteController::followToRet RamseteController::followTo(Input& input)
-{
+RamseteController::followToRet RamseteController::followTo(Input& input) {
     double theta = posNeg180(input.currentAngle);      // deg
     double targetAngle = posNeg180(input.angleTarget); // deg
     auto pursuit = input.target;
@@ -218,27 +186,22 @@ RamseteController::followToRet RamseteController::followTo(Input& input)
     double turnVel = Wd + k * eTheta + beta * vd * sin(eTheta) / (eTheta + eTheta == 0 ? 0.00001 : 0) * error(0, 0);
     return {{speed, ForwardVel::inps}, {turnVel, AngularVel::radps}};
 }
-RamseteController::RamseteController(double beta, double zeta, PathFollowSettings settings) : SpeedController()
-{
+RamseteController::RamseteController(double beta, double zeta, PathFollowSettings settings) : SpeedController() {
     this->beta = beta;
     this->zeta = zeta;
     this->settings = settings;
 }
-RamseteController::RamseteController(double beta, double zeta) : RamseteController(beta, zeta, PathFollowSettings())
-{
+RamseteController::RamseteController(double beta, double zeta) : RamseteController(beta, zeta, PathFollowSettings()) {
 }
-PidController::PidController(PID ctrl, PID slave, PathFollowSettings settings) : SpeedController()
-{
+PidController::PidController(PID ctrl, PID slave, PathFollowSettings settings) : SpeedController() {
     this->ctrl = ctrl;
     this->slave = slave;
     this->settings = settings;
 }
-PidController::PidController(PID ctrl, PID slave) : PidController(ctrl, slave, PathFollowSettings())
-{
+PidController::PidController(PID ctrl, PID slave) : PidController(ctrl, slave, PathFollowSettings()) {
 }
 
-PidController::followToRet PidController::followTo(Input& input)
-{
+PidController::followToRet PidController::followTo(Input& input) {
     double dist = input.dist;
     double normAngle = posNeg180(input.angleTarget - input.currentAngle);
     // cout << normAngle << endl;
@@ -251,8 +214,7 @@ PidController::followToRet PidController::followTo(Input& input)
 
     return {{fwdVel * 0.8, SpeedController::ForwardVel::pct}, {turnVel * 2.0, SpeedController::AngularVel::pctDiff}};
 }
-void PidController::init()
-{
+void PidController::init() {
     ctrl.setTarget(0);
     slave.setTarget(0);
 }

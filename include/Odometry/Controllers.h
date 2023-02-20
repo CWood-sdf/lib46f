@@ -7,13 +7,11 @@
 // That should be a sufficient path generator
 
 double sign(double v);
-class SpeedController
-{
+class SpeedController {
 public:
     PathFollowSettings settings;
 
-    struct Input
-    {
+    struct Input {
         PVector target;
         PVector position;
         double angleTarget;
@@ -23,14 +21,12 @@ public:
         Chassis* chassis;
         // bool isNeg;
     };
-    enum class AngularVel
-    {
+    enum class AngularVel {
         curvature,
         pctDiff,
         radps
     };
-    enum class ForwardVel
-    {
+    enum class ForwardVel {
         pct,
         inps
     };
@@ -39,18 +35,15 @@ public:
 
     typedef pair<pair<double, ForwardVel>, pair<double, AngularVel>> followToRet;
     virtual followToRet followTo(Input& input);
-    followToRet followTo(Input&& v)
-    {
+    followToRet followTo(Input&& v) {
         return followTo(v);
     }
 
     virtual void deInit();
-    SpeedController()
-    {
+    SpeedController() {
     }
 };
-class PurePursuitController : public SpeedController
-{
+class PurePursuitController : public SpeedController {
     // Get ctrl kP up to 6.25
     PID ctrl = PID();
 
@@ -61,8 +54,7 @@ public:
     PurePursuitController(PID input, PathFollowSettings settings);
     PurePursuitController() = delete;
 };
-class RamseteController : public SpeedController
-{
+class RamseteController : public SpeedController {
     // beta ~ p-term
     //[b > 0]
     // zeta ~ d-term
@@ -76,8 +68,7 @@ public:
     RamseteController(double beta, double zeta, PathFollowSettings settings);
     RamseteController() = delete;
 };
-class PidController : public SpeedController
-{
+class PidController : public SpeedController {
     PID ctrl;
     PID slave;
 
