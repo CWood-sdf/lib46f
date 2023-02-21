@@ -345,7 +345,7 @@ void WheelController::generalFollow(VectorArr& arr, SpeedController* controller,
     double dist = 0.0;
 
     // Loop
-    while (timeIn * sleepTime < controller->settings.maxTimeIn) {
+    while (timeIn * sleepTime < controller->settings.timeIn) {
 
         // Get the nearest pure pursuit position
         int nearestIndex = getNearest(path, botPos(), lastIndex);
@@ -494,7 +494,7 @@ void WheelController::generalDriveDistance(double targetDist, bool isNeg, PidCon
     PVector startPos = chassis->botPos();
     double startAngle = chassis->botAngle();
     int timeIn = 0;
-    int maxTimeIn = pid->settings.maxTimeIn;
+    int minTimeIn = pid->settings.timeIn;
     double maxDist = pid->settings.followPathDist;
     int sleepTime = 10;
     setOldDistFns();
@@ -508,7 +508,7 @@ void WheelController::generalDriveDistance(double targetDist, bool isNeg, PidCon
     // cout << "%ctrlP: def d" << endl;
     while (1) {
         // Basic exit conditions
-        if (timeIn * sleepTime > maxTimeIn) {
+        if (timeIn * sleepTime > minTimeIn) {
             break;
         }
         // 50 ms not moving -> exit

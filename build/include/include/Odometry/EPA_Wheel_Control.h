@@ -31,7 +31,7 @@ public:
     double exitDist = 1.0;
     exitMode brakeMode = exitMode::normal;
     double followPathDist = 16.0;
-    int maxTimeIn = 10;
+    int timeIn = 10;
     chain_method setUseDistToGoal(bool v) {
         useDistToGoal = v;
         return *this;
@@ -56,8 +56,8 @@ public:
         followPathDist = v;
         return *this;
     }
-    chain_method setMaxTimeIn(int v) {
-        maxTimeIn = v;
+    chain_method setTimeIn(int v) {
+        timeIn = v;
         return *this;
     }
 };
