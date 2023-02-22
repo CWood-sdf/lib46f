@@ -1,6 +1,7 @@
 ﻿#pragma once
 #define BRAIN_WIDTH 480
-#define BRAIN_HEIGHT 220
+#define BRAIN_HEIGHT 240
+#include <iostream>
 #include <string>
 namespace vex {
     class brain;
@@ -19,6 +20,7 @@ protected:
     int xOff = 0;
     int yOff = 0;
     bool pressedLast = false;
+    bool screenPressing = false;
 
 public:
     /**
@@ -86,8 +88,9 @@ public:
             vexDisplayForegroundColor(this->fill);
         }
         vexDisplayRectFill(x, y, width + x, height + y);
-
-        vexDisplayStringAt(x + 50 + xOff, y + 50 + yOff, this->label.data());
+        vexDisplayRectDraw(x, y, width + x, height + y);
+        vexDisplayForegroundColor(vex::color(255, 255, 255));
+        vexDisplayPrintf(x + 50 + xOff, y + 50 + yOff, 0, this->label.data());
         // Brain.Screen.printAt(x + 50 + xOff, y + 50 + yOff, this->label.data());
     }
     bool pressing() {
@@ -95,7 +98,13 @@ public:
         vexTouchDataGet(&status);
         int mouseX = status.lastXpos;
         int mouseY = status.lastYpos;
-        if (status.lastEvent == kTouchEventPress && mouseX > x &&
+        if (status.lastEvent == kTouchEventPress || status.lastEvent == kTouchEventPressAuto) {
+            screenPressing = true;
+        }
+        if (status.lastEvent == kTouchEventRelease) {
+            screenPressing = false;
+        }
+        if (screenPressing && mouseX > x &&
             mouseX < x + width &&
             mouseY > y &&
             mouseY < y + height) {
@@ -108,11 +117,11 @@ public:
         if (pressing()) {
 
             V5_TouchStatus status;
-            while (status.lastEvent == kTouchEventPress) {
+            do {
                 vexTouchDataGet(&status);
                 draw();
                 task::sleep(10);
-            }
+            } while (status.lastEvent == kTouchEventPress || status.lastEvent == kTouchEventPressAuto);
 
             return true;
         }

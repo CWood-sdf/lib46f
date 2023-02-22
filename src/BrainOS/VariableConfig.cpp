@@ -71,16 +71,17 @@ bool VariableConfig::draw() {
         // Uses integer division to implicitly round down
         int buttonWidthCount = optionNames.size() - optionNames.size() / 2;
         // The width of a button
-        double buttonWidth = (double)(BRAIN_WIDTH - 80) / (double)buttonWidthCount;
+        double buttonWidth = (double)(BRAIN_WIDTH - 80) / (double)buttonWidthCount - 3;
         // The height of a button
-        double buttonHeight = (double)(BRAIN_HEIGHT + 20) / 2.0;
+        double buttonHeight = (double)(BRAIN_HEIGHT + 20) / 2.0 - 3;
         // Make new buttons
         for (int i = 0; i < optionNames.size(); i++) {
             buttons.push_back(new Button(/*Brain, */ (i / 2) * buttonWidth + 40, (i % 2) * buttonHeight, buttonWidth, buttonHeight, vex::blue, vex::purple, optionNames[i], -30, -30));
         }
     }
     // Background
-    vexDisplayBackgroundColor(black);
+    vexDisplayForegroundColor(black);
+    vexDisplayRectFill(0, 0, BRAIN_WIDTH, BRAIN_HEIGHT);
     // Brain.Screen.clearScreen(black);
     // If the user has not selected an option
     if (!selected) {
@@ -93,10 +94,13 @@ bool VariableConfig::draw() {
             }
         }
     } else if (!ready) {
+        vexDisplayForegroundColor(black);
+        vexDisplayRectFill(0, 0, BRAIN_WIDTH, BRAIN_HEIGHT);
         confirm.draw();
         deny.draw();
+        vexDisplayForegroundColor(white);
         // Brain.Screen.setFillColor(black);
-        vexDisplayBackgroundColor(black);
+        // vexDisplayBackgroundColor(black);
         // Brain.Screen.printAt(BRAIN_WIDTH / 2 - 20, BRAIN_HEIGHT / 2, optionNames[index].data());
         vexDisplayPrintf(BRAIN_WIDTH / 2 - 20, BRAIN_HEIGHT / 2, 0, optionNames[index].data());
         // Deny first as an extra layer of safety
@@ -131,6 +135,8 @@ bool VariableConfig::draw() {
 // A function that draws each of the variable screens in order
 bool VariableConfig::drawAll(bool) {
     // If there are no variables, return true
+    vexDisplayForegroundColor(black);
+    vexDisplayRectFill(0, 0, BRAIN_WIDTH, BRAIN_HEIGHT);
     if (variables.empty()) {
         return true;
     }

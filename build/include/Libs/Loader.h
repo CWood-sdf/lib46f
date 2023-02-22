@@ -1,14 +1,18 @@
 ﻿#pragma once
 
 union PVector;
+
 #ifdef MAKE
+
 void windowsLoader(bool) {
     static PVector pos = PVector(0.0, 0.0);
-    static PVector velocity = PVector(1.5, 1.5);
+    static PVector velocity = PVector(1, 1);
 
     // Brain.Screen.waitForRefresh();
     // Brain.Screen.clearScreen(black);
-    vexDisplayBackgroundColor(black);
+
+    vexDisplayForegroundColor(black);
+    vexDisplayRectFill(0, 0, 480, 240);
 
     vexDisplayForegroundColor(red);
     // Brain.Screen.drawRectangle(pos.x, pos.y, 50, 50, red);

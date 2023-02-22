@@ -59,15 +59,14 @@ bool BosFn::operator==(const BosFn& other) const {
  */
 void BosFn::runBrainOS() {
     cout << "Start brainOS" << endl;
-
-    // Set it to 50 gray and 10 transparent
-    color buttonColorPress = color(0x0a3232ff);
-    color buttonColor = color(0x0a323232);
-    if (transparentScreenSwitch) {
-        // Set the transparency to true
-        // HACK:
-        *((bool*)(((uint32_t*)&buttonColor) + 1)) = true;
+    int32_t col = 0x0a323232;
+    if (!transparentScreenSwitch) {
+        col = 0xff323232;
     }
+    // Set it to 50 gray and 10 transparent
+    color buttonColorPress = color(col);
+    color buttonColor = color(col);
+
     Button screenLeft = Button(/*Brain, */ 0, BRAIN_HEIGHT - 60, 40, 40, buttonColor, buttonColorPress, "<", -40, -30);
     Button screenRight = Button(/*Brain, */ BRAIN_WIDTH - 40, BRAIN_HEIGHT - 60, 40, 40, buttonColor, buttonColorPress, ">", -40, -30);
     int emptyCount = 0;

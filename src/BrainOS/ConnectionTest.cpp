@@ -4,7 +4,8 @@ void testConnection(bool) {
     int i = 0;
     int j = 0;
     static color orange = vex::color(255, 165, 0);
-    vexDisplayBackgroundColor(black);
+    vexDisplayForegroundColor(black);
+    vexDisplayRectFill(0, 0, 480, 240);
     // Brain.Screen.clearScreen(black);
     for (auto device : connectedDevices) {
         string name = get<0>(device);
@@ -29,7 +30,7 @@ void testConnection(bool) {
             vexDisplayPrintf(10 + j * 180, 20 + i * 19, 0, "%s-%d", name.c_str(), dev->index() + 1);
             // Brain.Screen.printAt(10 + j * 180, 20 + i * 19, true, "%s-%d", name.c_str(), dev->index() + 1);
         }
-        if (i * 19 + 20 > BRAIN_HEIGHT - 20) {
+        if (i * 19 + 20 > BRAIN_HEIGHT - 40) {
             i = 0;
             j++;
         } else {
