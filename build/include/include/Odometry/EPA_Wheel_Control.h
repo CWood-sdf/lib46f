@@ -140,8 +140,6 @@ public:
 };
 class WheelController {
 private: // PID variables + other random things
-    typedef WheelController& chain_method;
-
     map<double, std::function<void()>> distFns, oldFns;
     bool callingInDrive = false;
     std::function<PVector(PVector)> autonReversePosition;
@@ -299,21 +297,18 @@ public:
      *
      * @param v The position
      * @param a The heading
-     * @return chain_method
      */
-    chain_method estimateStartPos(PVector v, double a);
+    void estimateStartPos(PVector v, double a);
     /**
      * @brief Force the path folowing to end instantly
      *
-     * @return chain_method
      */
-    chain_method forceEarlyExit();
+    void forceEarlyExit();
     /**
      * @brief Prevent the robot from exiting when stopped
      *
-     * @return chain_method
      */
-    chain_method prevStopExit();
+    void prevStopExit();
 
 private: // General path follower
     Chassis* chassis;

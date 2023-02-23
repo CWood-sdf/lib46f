@@ -2352,7 +2352,7 @@ Discarded input sections
  .ARM.exidx.text._ZN15WheelController10useDistFnsEd
                 0x00000000        0x8 build/src/Odometry/EPA_Wheel_Control.o
  .text._ZN15WheelController6turnToESt8functionIFdvEE
-                0x00000000      0x3c4 build/src/Odometry/EPA_Wheel_Control.o
+                0x00000000      0x464 build/src/Odometry/EPA_Wheel_Control.o
  .ARM.exidx.text._ZN15WheelController6turnToESt8functionIFdvEE
                 0x00000000        0x8 build/src/Odometry/EPA_Wheel_Control.o
  .text._ZN15WheelController6isBlueEv
@@ -2364,7 +2364,7 @@ Discarded input sections
  .ARM.exidx.text._ZN15WheelController6turnToEd
                 0x00000000        0x8 build/src/Odometry/EPA_Wheel_Control.o
  .text._ZN15WheelController10faceTargetE7PVector
-                0x00000000       0xb0 build/src/Odometry/EPA_Wheel_Control.o
+                0x00000000       0xe0 build/src/Odometry/EPA_Wheel_Control.o
  .ARM.exidx.text._ZN15WheelController10faceTargetE7PVector
                 0x00000000        0x8 build/src/Odometry/EPA_Wheel_Control.o
  .text._ZN15WheelController5isRedEv
@@ -2376,7 +2376,7 @@ Discarded input sections
  .ARM.exidx.text._ZN15WheelController8isMovingEv
                 0x00000000        0x8 build/src/Odometry/EPA_Wheel_Control.o
  .text._ZN15WheelController16estimateStartPosE7PVectord
-                0x00000000      0x1ac build/src/Odometry/EPA_Wheel_Control.o
+                0x00000000      0x1a8 build/src/Odometry/EPA_Wheel_Control.o
  .ARM.exidx.text._ZN15WheelController16estimateStartPosE7PVectord
                 0x00000000        0x8 build/src/Odometry/EPA_Wheel_Control.o
  .text._ZN15WheelController14forceEarlyExitEv

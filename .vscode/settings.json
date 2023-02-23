@@ -48,6 +48,7 @@
     "array": "cpp",
     "initializer_list": "cpp",
     "utility": "cpp",
-    "iosfwd": "cpp"
+    "iosfwd": "cpp",
+    "ostream": "cpp"
   }
 }

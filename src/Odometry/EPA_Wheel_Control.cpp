@@ -74,6 +74,7 @@ void WheelController::turnTo(std::function<double()> angleCalc) {
     int minTimeIn = 200;
     double degRange = 4.0;
     int timeSpent = 0;
+    moving = true;
 
     //
     //
@@ -85,6 +86,11 @@ void WheelController::turnTo(std::function<double()> angleCalc) {
     //           it is too slow; but, with minSpeed, it overshoots too much
     while (timeIn * sleepTime < minTimeIn) {
 
+        if (exitEarly) {
+            cout << "Exit due to external thread request" << endl;
+            exitEarly = false;
+            break;
+        }
         double speed = turnCtrl.getVal(normAngle);
         if (abs(speed) < 30) {
             speed = 30 * sign(speed);
@@ -108,9 +114,8 @@ void WheelController::turnTo(std::function<double()> angleCalc) {
         //
     }
     chassis->holdBrake();
-
     // s(300);
-
+    moving = false;
     cout << "current: " << botAngle() << endl;
     cout << "target: " << angleCalc() << endl;
 }
@@ -120,8 +125,7 @@ void WheelController::turnTo(double angle) {
 // Implement faceTarget
 void WheelController::faceTarget(PVector target) {
     if (!isRed()) {
-        target.x *= -1.0;
-        target.y *= -1.0;
+        target = autonReversePosition(target);
     }
     callingInDrive = true;
     turnTo([=]() { return botPos().angleTo(target); });
@@ -133,8 +137,7 @@ void WheelController::faceTarget(PVector target) {
 bool WheelController::isMoving() {
     return moving;
 }
-#ifndef WINDOWS
-WheelController::chain_method WheelController::estimateStartPos(PVector v, double a) {
+void WheelController::estimateStartPos(PVector v, double a) {
     cout << sign(botPos().x) << ", " << sign(v.x) << endl;
     // If it thinks it is at (0, 0), just use the given value
 
@@ -143,17 +146,13 @@ WheelController::chain_method WheelController::estimateStartPos(PVector v, doubl
     } else {
         chassis->pos.setPos(v, a);
     }
-    CHAIN;
 }
-#endif
-WheelController::chain_method WheelController::forceEarlyExit() {
+void WheelController::forceEarlyExit() {
     exitEarly = true;
-    CHAIN;
 }
 
-WheelController::chain_method WheelController::prevStopExit() {
+void WheelController::prevStopExit() {
     stopExitPrev = true;
-    CHAIN
 }
 
 template <class Arr>
@@ -508,7 +507,7 @@ void WheelController::generalDriveDistance(double targetDist, bool isNeg, PidCon
             break;
         }
         // If the bot's not moving, and it's not currently accelerating
-        if (chassis->pos.velocity() < 0.1 && t.time(timeUnits::msec) > 1000) {
+        if (chassis->pos.velocity() < 0.05 && t.time(timeUnits::msec) > 1000) {
             timesStopped++;
         } else {
             timesStopped = 0;
