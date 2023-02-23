@@ -122,6 +122,7 @@ void PIDF::resetVals() {
 // Set the target value of the PID
 void PIDF::setTarget(double val) {
     resetVals();
+    f = val;
     target = val;
 }
 // Apply the error
@@ -155,10 +156,11 @@ double PIDF::getVal() {
     double pInc = k.p * p;
     double iInc = k.i * this->i;
     double dInc = k.d * this->d;
+    double fInc = k.f * f;
     if (manager) {
-        return manager->getVal(pInc + iInc + dInc);
+        return manager->getVal(pInc + iInc + dInc + fInc);
     } else {
-        return pInc + iInc + dInc;
+        return pInc + iInc + dInc + fInc;
     }
 }
 // Apply error, then return getVal()

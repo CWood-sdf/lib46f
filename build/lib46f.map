@@ -2352,7 +2352,7 @@ Discarded input sections
  .ARM.exidx.text._ZN15WheelController10useDistFnsEd
                 0x00000000        0x8 build/src/Odometry/EPA_Wheel_Control.o
  .text._ZN15WheelController6turnToESt8functionIFdvEE
-                0x00000000      0x3d4 build/src/Odometry/EPA_Wheel_Control.o
+                0x00000000      0x3c4 build/src/Odometry/EPA_Wheel_Control.o
  .ARM.exidx.text._ZN15WheelController6turnToESt8functionIFdvEE
                 0x00000000        0x8 build/src/Odometry/EPA_Wheel_Control.o
  .text._ZN15WheelController6isBlueEv
@@ -2417,7 +2417,7 @@ Discarded input sections
  .ARM.exidx.text._ZN7PVector8rotateXYEd
                 0x00000000        0x8 build/src/Odometry/EPA_Wheel_Control.o
  .text._ZN15WheelController13generalFollowER9VectorArrP15SpeedControllerb
-                0x00000000      0xd34 build/src/Odometry/EPA_Wheel_Control.o
+                0x00000000      0xd2c build/src/Odometry/EPA_Wheel_Control.o
  .ARM.exidx.text._ZN15WheelController13generalFollowER9VectorArrP15SpeedControllerb
                 0x00000000        0x8 build/src/Odometry/EPA_Wheel_Control.o
  .group         0x00000000        0xc build/src/Odometry/EPA_Wheel_Control.o
@@ -2426,7 +2426,7 @@ Discarded input sections
  .ARM.exidx.text._ZN15WheelController10getNearestI4PathEEjT_7PVectorj
                 0x00000000        0x8 build/src/Odometry/EPA_Wheel_Control.o
  .text._ZN15WheelController20generalDriveDistanceEdbP13PidController
-                0x00000000      0x6c8 build/src/Odometry/EPA_Wheel_Control.o
+                0x00000000      0x6c0 build/src/Odometry/EPA_Wheel_Control.o
  .ARM.exidx.text._ZN15WheelController20generalDriveDistanceEdbP13PidController
                 0x00000000        0x8 build/src/Odometry/EPA_Wheel_Control.o
  .text._ZN15WheelController13driveDistanceEd
@@ -2679,9 +2679,9 @@ Discarded input sections
  .rodata.str1.1
                 0x00000000       0xec build/src/Odometry/EPA_Wheel_Control.o
  .rodata._ZTV15WheelController
-                0x00000000       0x30 build/src/Odometry/EPA_Wheel_Control.o
+                0x00000000       0x2c build/src/Odometry/EPA_Wheel_Control.o
  .rodata._ZTV19MechWheelController
-                0x00000000       0x34 build/src/Odometry/EPA_Wheel_Control.o
+                0x00000000       0x30 build/src/Odometry/EPA_Wheel_Control.o
  .rodata._ZStL19piecewise_construct
                 0x00000000        0x1 build/src/Odometry/EPA_Wheel_Control.o
  .llvm_addrsig  0x00000000        0xf build/src/Odometry/EPA_Wheel_Control.o
@@ -2777,7 +2777,7 @@ Discarded input sections
  .ARM.exidx.text._ZN4PIDF8getErrorEv
                 0x00000000        0x8 build/src/Odometry/PID.o
  .text._ZN4PIDF9setTargetEd
-                0x00000000       0x2c build/src/Odometry/PID.o
+                0x00000000       0x34 build/src/Odometry/PID.o
  .ARM.exidx.text._ZN4PIDF9setTargetEd
                 0x00000000        0x8 build/src/Odometry/PID.o
  .text._ZN4PIDF7incValsEd

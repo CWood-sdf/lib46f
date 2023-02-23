@@ -19,45 +19,122 @@ class PathFollowSettings {
     typedef PathFollowSettings& chain_method;
 
 public:
+    /**
+     * @brief The exitMode enum
+     *
+     */
     enum class exitMode {
+        // Apply hold brake
         normal,
         hold = normal,
+        // Apply coast brake
         coast,
+        // No brake
         nothing
     };
+    /**
+     * @brief Whether to exit on distance to goal point, or forward distance
+     *
+     */
     bool useDistToGoal = true;
+    /**
+     * @brief Whether to turn at the start of the path
+     *
+     */
     bool turnAtStart = true;
+    /**
+     * @brief The distance to add on to the end of the path
+     *
+     */
     double virtualPursuitDist = 5.0;
+    /**
+     * @brief The distance to exit the path from
+     *
+     */
     double exitDist = 1.0;
+    /**
+     * @brief the exitMode
+     *
+     */
     exitMode brakeMode = exitMode::normal;
+    /**
+     * @brief The distance to follow the path from
+     *
+     */
     double followPathDist = 16.0;
+    /**
+     * @brief The time in ms to allow the robot to be in the exitDist before exiting
+     *
+     */
     int timeIn = 10;
+    /**
+     * @brief Set useDistToGoal
+     *
+     * @param v the new value
+     * @return chain_method
+     */
     chain_method setUseDistToGoal(bool v) {
         useDistToGoal = v;
         return *this;
     }
+    /**
+     * @brief Set turnAtStart
+     *
+     * @param v the new value
+     * @return chain_method
+     */
     chain_method setTurnAtStart(bool v) {
         turnAtStart = v;
         return *this;
     }
-    chain_method setVirtualPursuitDist(double v) {
-        virtualPursuitDist = v;
+    /**
+     * @brief Set virtualPursuitDist
+     *
+     * @param distIn the distance in inches
+     * @return chain_method
+     */
+    chain_method setVirtualPursuitDist(double distIn) {
+        virtualPursuitDist = distIn;
         return *this;
     }
-    chain_method setExitDist(double v) {
-        exitDist = v;
+    /**
+     * @brief Set exitDist
+     *
+     * @param distIn the distance in inches
+     * @return chain_method
+     */
+    chain_method setExitDist(double distIn) {
+        exitDist = distIn;
         return *this;
     }
+    /**
+     * @brief Set brakeMode
+     *
+     * @param v the new value
+     * @return chain_method
+     */
     chain_method setBrakeMode(exitMode v) {
         brakeMode = v;
         return *this;
     }
-    chain_method setFollowPathDist(double v) {
-        followPathDist = v;
+    /**
+     * @brief Set followPathDist
+     *
+     * @param distIn the new value
+     * @return chain_method
+     */
+    chain_method setFollowPathDist(double distIn) {
+        followPathDist = distIn;
         return *this;
     }
-    chain_method setTimeIn(int v) {
-        timeIn = v;
+    /**
+     * @brief Set timeIn
+     *
+     * @param timeMs The time in ms
+     * @return chain_method
+     */
+    chain_method setTimeIn(int timeMs) {
+        timeIn = timeMs;
         return *this;
     }
 };
@@ -74,15 +151,48 @@ private: // PID variables + other random things
     std::function<void()> afterTurn = []() {};
 
 public: // Some variables
+    /**
+     * @brief The turn control pid
+     *
+     */
     PID turnCtrl;
-    // A public path for drawing
+    /**
+     * @brief Holds a copy of the current path being followed
+     *
+     */
     VectorArr publicPath;
+    /**
+     * @brief Whether publicPath holds a valid path
+     *
+     */
     bool drawArr = false;
+    /**
+     * @brief The default ramsete controller
+     *
+     */
     RamseteController* defaultRamsete;
+    /**
+     * @brief The default pure pursuit controller
+     *
+     */
     PurePursuitController* defaultPurePursuit;
+    /**
+     * @brief The default pid controller
+     *
+     */
     PidController* defaultPid;
-
-public: // Constructor
+    /**
+     * @brief Construct a new Wheel Controller object
+     *
+     * @param c the chassis
+     * @param defRamsete the default ramsete controller
+     * @param defPurePursuit the default pure pursuit controller
+     * @param defPid the default pid controller
+     * @param reversePos the function to reverse the position for autons
+     * @param reverseAngle the function to reverse the angle for autons
+     * @param turnCtrl the turn control pid
+     * @param kConst the k constant for the path
+     */
     WheelController(
         Chassis* c,
         RamseteController* defRamsete,
@@ -102,29 +212,68 @@ public: // Constructor
         this->turnCtrl = turnCtrl;
         chassis = c;
     }
+    /**
+     * @brief The Path for making paths
+     *
+     */
     Path path = Path();
 
-public: // Some Functions
-    // void addTurnPid(PidAdder a);
-    // void addTurnPid(double p, double i, double d);
-    // void popTopTurnPid();
-
+    /**
+     * @brief Drive the robot to (x,y)
+     *
+     * @param x the x coordinate
+     * @param y the y coordinate
+     */
     void driveTo(double x, double y);
+    /**
+     * @brief Drive the robot backwars to (x,y)
+     *
+     * @param x the x coordinate
+     * @param y the y coordinate
+     */
     void backInto(double x, double y);
-    virtual double botAngle();
+    /**
+     * @brief Returns the robots heading
+     *
+     * @return double
+     */
+    double botAngle();
+    /**
+     * @brief Returns the robots position
+     *
+     * @return PVector
+     */
     PVector botPos();
-    // Add a function to be called at a specified distance
+    /**
+     * @brief Add a function to be called within a specified distance
+     *
+     * @param dist the distance in inches
+     * @param fn the function to be called
+     */
     void addDistFn(double dist, std::function<void()> fn);
-    // Reuse the old map
+    /**
+     * @brief Reuse the distance functions from the last path
+     *
+     */
     void reuseDistFns();
+    /**
+     * @brief Set the function to be called after turning to face the path
+     *
+     * @param fn
+     */
     void setAfterTurnFn(std::function<void()> fn);
-    void setOldDistFns();
 
 private: // turnTo, with re-updating function
+    void setOldDistFns();
     void useDistFns(double dist);
     virtual void turnTo(std::function<double()> angleCalc);
 
 public: // TurnTo
+    /**
+     * @brief Turn the robot to a specific angle
+     *
+     * @param angle
+     */
     virtual void turnTo(double angle);
 
 private: // followPath vars
@@ -137,13 +286,33 @@ private: // followPath vars
     // Set to true to prevent a stop exit
     bool stopExitPrev = false;
 
-public: // followPath var editors
+public:
+    /**
+     * @brief Returns true if the robot is moving
+     *
+     * @return true
+     * @return false
+     */
     bool isMoving();
-    // chain_method setPathRadius(double r);
+    /**
+     * @brief Set the starting position for an auton
+     *
+     * @param v The position
+     * @param a The heading
+     * @return chain_method
+     */
     chain_method estimateStartPos(PVector v, double a);
+    /**
+     * @brief Force the path folowing to end instantly
+     *
+     * @return chain_method
+     */
     chain_method forceEarlyExit();
-    chain_method setExitDist(double v);
-    PVector getLastTarget();
+    /**
+     * @brief Prevent the robot from exiting when stopped
+     *
+     * @return chain_method
+     */
     chain_method prevStopExit();
 
 private: // General path follower
@@ -154,8 +323,25 @@ private: // General path follower
     size_t getNearest(Arr arr, PVector obj, size_t start);
 
 public:
+    /**
+     * @brief Face a target
+     *
+     * @param target the target
+     */
     virtual void faceTarget(PVector target);
+    /**
+     * @brief Follow a path with the ramsete controller
+     *
+     * @param arr The control point array
+     * @param isNeg Whether to follow backwards
+     */
     virtual void ramseteFollow(VectorArr arr, bool isNeg);
+    /**
+     * @brief Follow a path with the pure pursuit controller
+     *
+     * @param arr The control point array
+     * @param isNeg Whether to follow backwards
+     */
     virtual void purePursuitFollow(VectorArr arr, bool isNeg);
 
 private:
@@ -169,24 +355,77 @@ private:
     void generalDriveDistance(double dist, bool isNeg, PidController* pid);
 
 public:
+    /**
+     * @brief Follow a path with the specified controller
+     *
+     * @param controller the controller to use
+     * @param arr the control point array
+     */
     virtual void followPath(SpeedController* controller, VectorArr arr) {
         generalFollow(arr, controller, false);
     }
+    /**
+     * @brief Follow a path backwards with the specified controller
+     *
+     * @param controller the controller to use
+     * @param arr the control point array
+     */
     virtual void backwardsFollow(SpeedController* controller, VectorArr arr) {
         generalFollow(arr, controller, true);
     }
+    /**
+     * @brief Drive a certain distance
+     *
+     * @param dist the distance in inches
+     */
     void driveDistance(double dist);
+    /**
+     * @brief Drive a certain distance backwards
+     *
+     * @param dist the distance in inches
+     */
     void backwardsDriveDistance(double dist);
-
+    /**
+     * @brief Drive a certain distance with a specified controller
+     *
+     * @param dist the distance in inches
+     * @param pid the controller to use
+     */
     void driveDistance(double dist, PidController* pid) {
         generalDriveDistance(dist, false, pid);
     }
+    /**
+     * @brief Drive a certain distance backwards with a specified controller
+     *
+     * @param dist the distance in inches
+     * @param pid the controller to use
+     */
     void backwardsDriveDistance(double dist, PidController* pid) {
         generalDriveDistance(dist, true, pid);
     }
+    /**
+     * @brief Returns true if the robot has been set to the red alliance
+     *
+     * @return true
+     * @return false
+     */
     bool isRed();
+    /**
+     * @brief Returns true if the robot has been set to the blue alliance
+     *
+     * @return true
+     * @return false
+     */
     bool isBlue();
+    /**
+     * @brief Sets the robot alliance to red
+     *
+     */
     void setRed();
+    /**
+     * @brief Sets the robot alliance to blue
+     *
+     */
     void setBlue();
 };
 

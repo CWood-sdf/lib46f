@@ -47,7 +47,8 @@ NON-DOUBLE TYPE VARIABLES BEFORE THE DOUBLE TYPE VARIABLES
     (This is for hacky pointer copy constructor)
 ********************************/
 class PIDF {
-public:
+    friend ostream& operator<<(ostream& os, PIDF& pid);
+    friend ostream& operator<<(ostream& os, PIDF&& pid);
     // The values to multiply the K values by
     double p = 0.0, i = 0.0, d = 0.0, f = 0.0;
     // A simple struct that stores the multiplication values
