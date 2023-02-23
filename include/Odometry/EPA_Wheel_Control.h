@@ -70,13 +70,14 @@ private: // PID variables + other random things
     std::function<PVector(PVector)> autonReversePosition;
     std::function<double(double)> autonReverseAngle;
 
+    // Function to be called between turning and driving
+    std::function<void()> afterTurn = []() {};
+
 public: // Some variables
     PID turnCtrl;
     // A public path for drawing
     VectorArr publicPath;
     bool drawArr = false;
-    // Function to be called between turning and driving
-    std::function<void()> afterTurn = []() {};
     RamseteController* defaultRamsete;
     PurePursuitController* defaultPurePursuit;
     PidController* defaultPid;
@@ -91,6 +92,7 @@ public: // Constructor
         std::function<double(double)> reverseAngle,
         PID turnCtrl,
         double kConst = 1.0) {
+
         autonReversePosition = reversePos;
         autonReverseAngle = reverseAngle;
         defaultPurePursuit = defPurePursuit;
@@ -99,11 +101,6 @@ public: // Constructor
         path.setK(kConst);
         this->turnCtrl = turnCtrl;
         chassis = c;
-        cout << chassis << endl;
-    }
-    std::function<void()> drawFn = []() {};
-    void draw(bool) {
-        drawFn();
     }
     Path path = Path();
 
@@ -131,8 +128,6 @@ public: // TurnTo
     virtual void turnTo(double angle);
 
 private: // followPath vars
-    PVector lastTarget;
-    double exitDist = 0.0;
     // Set to true by external threads to stop the robot
     bool exitEarly = false;
     // Is true when auto needs to be reversed
@@ -141,8 +136,6 @@ private: // followPath vars
     bool moving = false;
     // Set to true to prevent a stop exit
     bool stopExitPrev = false;
-    // Distance following the path
-    double followPathDist = 16.0;
 
 public: // followPath var editors
     bool isMoving();
@@ -165,7 +158,6 @@ public:
     virtual void ramseteFollow(VectorArr arr, bool isNeg);
     virtual void purePursuitFollow(VectorArr arr, bool isNeg);
 
-    // PathFollowSettings getDefaults(){
 private:
     void generalFollowTurnAtStart(VectorArr& arr, double& purePursuitDist, bool& isNeg);
     PVector generalFollowGetVirtualPursuit(PVector& pursuit, SpeedController* controller);

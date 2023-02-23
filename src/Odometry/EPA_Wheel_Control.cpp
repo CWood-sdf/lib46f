@@ -73,7 +73,6 @@ void WheelController::turnTo(std::function<double()> angleCalc) {
     int sleepTime = 20;
     int minTimeIn = 200;
     double degRange = 4.0;
-    int speedLimit = chassis->getSpeedLimit();
     int timeSpent = 0;
 
     //
@@ -90,7 +89,7 @@ void WheelController::turnTo(std::function<double()> angleCalc) {
         if (abs(speed) < 30) {
             speed = 30 * sign(speed);
         }
-        chassis->turnLeft(speed > speedLimit ? speedLimit : speed);
+        chassis->turnLeft(speed > chassis->getSpeedLimit() ? chassis->getSpeedLimit() : speed);
         s(sleepTime);
 
         angle = posNeg180(angleCalc() + add180 * 180);
@@ -151,9 +150,7 @@ WheelController::chain_method WheelController::forceEarlyExit() {
     exitEarly = true;
     CHAIN;
 }
-PVector WheelController::getLastTarget() {
-    return lastTarget;
-}
+
 WheelController::chain_method WheelController::prevStopExit() {
     stopExitPrev = true;
     CHAIN
@@ -467,10 +464,7 @@ void WheelController::generalFollow(VectorArr& arr, SpeedController* controller,
     moving = false;
     // Stop drawing the path
     // De-init code
-    {
-        // Set the last target for external stuff
-        lastTarget = bezier.last();
-        // Stop the bot
+    { // Stop the bot
         switch (controller->settings.brakeMode) {
         case PathFollowSettings::exitMode::normal:
             chassis->holdBrake();
@@ -485,7 +479,6 @@ void WheelController::generalFollow(VectorArr& arr, SpeedController* controller,
         cout << "Path stop" << endl;
         // Print postion and target position
         cout << botPos() << ", " << bezier.last() << endl;
-        exitDist = 0.0;
     }
     stopExitPrev = false;
     controller->deInit();
@@ -494,8 +487,6 @@ void WheelController::generalDriveDistance(double targetDist, bool isNeg, PidCon
     PVector startPos = chassis->botPos();
     double startAngle = chassis->botAngle();
     int timeIn = 0;
-    int minTimeIn = pid->settings.timeIn;
-    double maxDist = pid->settings.followPathDist;
     int sleepTime = 10;
     setOldDistFns();
     moving = true;
@@ -508,7 +499,7 @@ void WheelController::generalDriveDistance(double targetDist, bool isNeg, PidCon
     // cout << "%ctrlP: def d" << endl;
     while (1) {
         // Basic exit conditions
-        if (timeIn * sleepTime > minTimeIn) {
+        if (timeIn * sleepTime > pid->settings.timeIn) {
             break;
         }
         // 50 ms not moving -> exit
@@ -544,7 +535,7 @@ void WheelController::generalDriveDistance(double targetDist, bool isNeg, PidCon
         input.angleTarget = startAngle;
         input.currentAngle = angle;
         input.chassis = chassis;
-        input.dist = dist > maxDist ? maxDist : dist;
+        input.dist = dist > pid->settings.followPathDist ? pid->settings.followPathDist : dist;
         auto speeds = pid->followTo(input);
         double speed = 0;
         // Convert the speed to a percentage
@@ -623,7 +614,6 @@ void WheelController::generalDriveDistance(double targetDist, bool isNeg, PidCon
         // Print postion and target position
         cout << -dist + targetDist << ", " << targetDist << ", " << botPos() << endl;
         cout << botAngle() - startAngle << endl;
-        exitDist = 0.0;
     }
     stopExitPrev = false;
     pid->deInit();
