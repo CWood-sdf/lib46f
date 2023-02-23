@@ -191,9 +191,6 @@ double Positioner::yPosition() {
 double Positioner::heading() {
     return angleSensor.heading();
 }
-FieldCoord Positioner::fullPos() {
-    return FieldCoord(position(), heading());
-}
 double Positioner::velocity() {
     return speed;
 }

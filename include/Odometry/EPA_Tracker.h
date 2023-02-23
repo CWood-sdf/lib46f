@@ -1,6 +1,5 @@
 ﻿#ifndef EPA_TRACKER_H
 #define EPA_TRACKER_H
-#include "FieldCoord.h"
 #include "Sensors/Wrappers/Encoder.h"
 // EPA_Tracker.h -- Use this file to track the robot's absolute position on the field
 // This file does so much math that it be like Beethoven 9 if it all works properly
@@ -252,12 +251,6 @@ public:
      * @return double
      */
     double heading();
-    /**
-     * @brief Get the current position of the robot as a FieldCoord
-     *
-     * @return FieldCoord
-     */
-    FieldCoord fullPos();
     /**
      * @brief Get an estimate of the robot's velocity
      *
