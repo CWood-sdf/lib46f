@@ -26,6 +26,11 @@ class LineCounter {
     bool fHit = false;
 
     static inline vector<LineCounter*> instances = {};
+    /**
+     * @brief Updates the line counter
+     *
+     */
+    void update();
 
 public:
     LineCounter(const LineCounter&) = delete;
@@ -57,11 +62,6 @@ public:
      * @return false
      */
     bool active();
-    /**
-     * @brief Updates the line counter
-     *
-     */
-    void update();
     /**
      * @brief Resets the line counter count
      */
