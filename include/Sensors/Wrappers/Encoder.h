@@ -13,8 +13,12 @@ class Encoder {
     std::function<void()> resetter;
     // static inline devices device = devices();
 public:
-    // The constructor, only enable if the type has been mapped
-    // The constructor, only enable if the type has been mapped
+    /**
+     * @brief Construct a new Encoder object
+     *
+     * @tparam Sensor The sensor type
+     * @param e The sensor
+     */
     template <class Sensor>
     Encoder(Sensor& e, decltype(&Sensor::resetPosition) = nullptr) {
         cout << "Init encoder" << endl;
@@ -25,6 +29,12 @@ public:
             e.resetPosition();
         };
     }
+    /**
+     * @brief Construct a new Encoder object
+     *
+     * @tparam Sensor The sensor type
+     * @param e The sensor
+     */
     template <class Sensor>
     Encoder(Sensor& e, decltype(&Sensor::resetRotation) = nullptr) {
         getValue = [&e](rotationUnits units) {
@@ -34,18 +44,29 @@ public:
             e.resetRotation();
         };
     }
-    template <class Sensor>
-    Encoder(Sensor& e, std::function<void()> f) {
-        getValue = [&e](rotationUnits units) {
-            return e.position(units);
-        };
-        resetter = f;
-    }
-    // Constructor that just takes the functions
+    /**
+     * @brief Construct a new Encoder object
+     *
+     * @param f The position() function
+     * @param r The resetPosition() function
+     */
     Encoder(std::function<double(rotationUnits)> f, std::function<void()> r);
+    /**
+     * @brief Construct a new Encoder object
+     *
+     */
     Encoder();
-    // Make the position method
+    /**
+     * @brief Returns the position of the encoder
+     *
+     * @param units The rotation units to return the position in
+     * @return double
+     */
     double position(rotationUnits units);
+    /**
+     * @brief Resets the position of the encoder
+     *
+     */
     void resetPosition();
     Encoder& operator=(const Encoder& other);
     Encoder& operator=(Encoder&& other);

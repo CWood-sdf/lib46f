@@ -25,8 +25,9 @@ class LineCounter {
     unsigned int countIn = 0;
     bool fHit = false;
 
-public:
     static inline vector<LineCounter*> instances = {};
+
+public:
     LineCounter(const LineCounter&) = delete;
     LineCounter(line& se, bool throughPolycarb = false);
     LineCounter(triport::port& p, bool throughPolycarb = false);
