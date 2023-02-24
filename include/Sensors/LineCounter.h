@@ -29,26 +29,78 @@ class LineCounter {
 
 public:
     LineCounter(const LineCounter&) = delete;
+    /**
+     * @brief Construct a new Line Counter object
+     *
+     * @param se The sensor to use
+     * @param throughPolycarb Whether the sensor is looking through polycarbonate
+     */
     LineCounter(line& se, bool throughPolycarb = false);
+    /**
+     * @brief Construct a new Line Counter object
+     *
+     * @param p The port to use
+     * @param throughPolycarb Whether the sensor is looking through polycarbonate
+     */
     LineCounter(triport::port& p, bool throughPolycarb = false);
-    // Return true if its the first time called after a hit
+    /**
+     * @brief Returns true for the first time this function is called after an object enters the field of view
+     *
+     * @return true
+     * @return false
+     */
     bool firstHit();
-    // Return true if obj near
+    /**
+     * @brief Returns true if a object is in the field of view
+     *
+     * @return true
+     * @return false
+     */
     bool active();
-    // Update the values
+    /**
+     * @brief Updates the line counter
+     *
+     */
     void update();
-    // Reset the counts
+    /**
+     * @brief Resets the line counter count
+     */
     void reset();
-    // Get the number of objs that entered field of view, then left
+    /**
+     * @brief Get the number of objects that have entered then left the field of view
+     *
+     * @return int
+     */
     int getCountOut();
-    // Get the number of objs that entered field of view
+    /**
+     * @brief Get the number of objects that have entered the field of view
+     *
+     * @return int
+     */
     int getCountIn();
-    // Same as active()
+    /**
+     * @brief Returns true if a object is in the field of view
+     *
+     * @return true
+     * @return false
+     */
     bool pressing();
-    // Returns raw line tracker value
+    /**
+     * @brief Returns the raw sensor value
+     *
+     * @return int
+     */
     int rawData();
-    // Sets the count to a specific value
+    /**
+     * @brief Set the count of objects
+     *
+     * @param count The new count
+     */
     void setCount(int count);
+    /**
+     * @brief Draw a list of all the line counters on the brain screen
+     *
+     */
     static void listVals(bool);
 };
 
