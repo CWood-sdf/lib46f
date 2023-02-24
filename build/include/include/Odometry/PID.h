@@ -9,7 +9,7 @@ class PidfAdder {
     friend class PIDF;
 
 public:
-    double p, i, d, f;
+    double p = 0, i = 0, d = 0, f = 0;
     // Constructor
     // PidAdder(0.1, 0.2, 0.1);
     PidfAdder(double p, double i, double d, double f = 0.0);
@@ -73,9 +73,9 @@ class PIDF {
 
     // Variables
     double target = 0.0, error = 0.0, lastError = 0.0, iCap = 0.0, iGrowth = 0.0, iZero = 0.0;
+    std::shared_ptr<PIDF_Extension> manager = std::shared_ptr<PIDF_Extension>(NULL);
 
 public:
-    std::shared_ptr<PIDF_Extension> manager = std::shared_ptr<PIDF_Extension>(NULL);
     /**
      * @brief Construct a new PIDF object, with zero for everything
      *
@@ -90,7 +90,7 @@ public:
      * @param iGrowthRange The absolute value error range for integral growth, if less than 0, grows infinitely
      * @param iZeroRange The range to zero the integral, if less than 0, never zeros
      */
-    PIDF(KVals vals, std::shared_ptr<PIDF_Extension> mgr, double iCap = 0.0, double iGrowthRange = 0.0, double iZeroRange = 0.0);
+    PIDF(KVals vals, std::shared_ptr<PIDF_Extension> mgr, double iCap = -1.0, double iGrowthRange = -1.0, double iZeroRange = -1.0);
     /**
      * @brief Construct a new PIDF object
      *
@@ -102,7 +102,7 @@ public:
      * @param iGrowthRange integral growth range
      * @param iZeroRange Integral zero range
      */
-    PIDF(double p, double i, double d, std::shared_ptr<PIDF_Extension> mgr, double iCap = 0.0, double iGrowthRange = 0.0, double iZeroRange = 0.0);
+    PIDF(double p, double i, double d, std::shared_ptr<PIDF_Extension> mgr, double iCap = -1.0, double iGrowthRange = -1.0, double iZeroRange = -1.0);
     /**
      * @brief Construct a new PIDF object
      *
@@ -115,7 +115,7 @@ public:
      * @param iGrowthRange integral growth range
      * @param iZeroRange integral zero range
      */
-    PIDF(double p, double i, double d, double f, std::shared_ptr<PIDF_Extension> mgr, double iCap = 0.0, double iGrowthRange = 0.0, double iZeroRange = 0.0);
+    PIDF(double p, double i, double d, double f, std::shared_ptr<PIDF_Extension> mgr, double iCap = -1.0, double iGrowthRange = -1.0, double iZeroRange = -1.0);
     /**
      * @brief Construct a new PIDF object
      *

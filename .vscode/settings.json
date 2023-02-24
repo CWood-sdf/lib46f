@@ -49,6 +49,7 @@
     "initializer_list": "cpp",
     "utility": "cpp",
     "iosfwd": "cpp",
-    "ostream": "cpp"
+    "ostream": "cpp",
+    "complex": "cpp"
   }
 }

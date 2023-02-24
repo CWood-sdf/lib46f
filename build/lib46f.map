@@ -2621,7 +2621,7 @@ Discarded input sections
  .ARM.exidx.text._ZN9PidfAdderC2Edddd
                 0x00000000        0x8 build/src/Odometry/PID.o
  .text._ZN9PidfAdderC2Ev
-                0x00000000        0x4 build/src/Odometry/PID.o
+                0x00000000       0x14 build/src/Odometry/PID.o
  .ARM.exidx.text._ZN9PidfAdderC2Ev
                 0x00000000        0x8 build/src/Odometry/PID.o
  .text._ZN4PIDF5KValsC2Ev
