@@ -14,10 +14,35 @@ class SelectorArr {
     static void addDial(PotDial* dial);
 
 public:
+    /**
+     * @brief Construct a new Selector Arr object
+     *
+     * @param count The desired value of the dials
+     * @param fn The function to be called when the dials are set to the desired value
+     */
     SelectorArr(vector<int> count, FnTp fn);
+    /**
+     * @brief Construct a new Selector Arr object
+     *
+     * @param count The desired value of the dials
+     */
     SelectorArr(vector<int> count);
+    /**
+     * @brief Construct a new Selector Arr object
+     *
+     */
     SelectorArr() {}
+    /**
+     * @brief Set the function to be called when the dials are set to the desired value
+     *
+     * @param fn
+     */
     void attachFn(FnTp fn);
+    /**
+     * @brief Get the function to be called given the dials' current values
+     *
+     * @return FnTp
+     */
     static FnTp getVal();
 };
 class PotDial {
