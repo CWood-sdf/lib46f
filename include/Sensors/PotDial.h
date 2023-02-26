@@ -10,6 +10,7 @@ class SelectorArr {
     static inline vector<PotDial*> boundDials = {};
     static inline map<vector<int>, FnTp> toVal = {};
     vector<int> count;
+    FnTp fn = emptyFn;
     friend class PotDial;
     static void addDial(PotDial* dial);
 
@@ -39,6 +40,12 @@ public:
      */
     void attachFn(FnTp fn);
     /**
+     * @brief Set the desired value of the dials
+     *
+     * @param count The desired value of the dials
+     */
+    void setArray(vector<int> count);
+    /**
      * @brief Get the function to be called given the dials' current values
      *
      * @return FnTp
@@ -64,15 +71,33 @@ class PotDial {
     }
 
 public:
-public:
+    /**
+     * @brief Construct a new Pot Dial object
+     *
+     * @tparam Args
+     * @param sensor The potentiometer to be used
+     * @param otherArgs The private constructor arguments
+     */
     template <typename... Args>
     PotDial(pot& sensor, Args... otherArgs) : PotDial(otherArgs...) {
         this->sensor = &sensor;
     }
+    /**
+     * @brief Construct a new Pot Dial object
+     *
+     * @tparam Args
+     * @param p The port to be used
+     * @param args The private constructor arguments
+     */
     template <typename... Args>
     PotDial(port& p, Args... args) : PotDial(args...) {
         sensor = new pot(p);
     }
+    /**
+     * @brief Return the value from the potentiometer
+     *
+     * @return int
+     */
     int getAmnt();
 };
 
