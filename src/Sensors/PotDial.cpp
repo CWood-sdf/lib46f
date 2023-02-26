@@ -51,9 +51,8 @@ int PotDial::getAmnt() {
         return ticks;
     } else {
         angle -= baseVal;
-        angle /= (double)range;
-        angle *= (double)ticks - 1;
-        return round(angle) + 1;
+        angle /= (double)range / (double)ticks;
+        return floor(angle) + 1;
     }
 }
 SelectorArr::FnTp SelectorArr::getVal() {

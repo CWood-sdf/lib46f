@@ -2,7 +2,6 @@
 #define POTDIAL_H
 
 #include "Odometry/EPA_Tracker.h"
-typedef triport::port port;
 class PotDial;
 class SelectorArr {
     typedef function<void()> FnTp;
@@ -16,7 +15,7 @@ class SelectorArr {
 public:
     SelectorArr(vector<int> count, FnTp fn);
     SelectorArr(vector<int> count);
-    SelectorArr() {}
+    // SelectorArr() {}
     void attachFn(FnTp fn);
     static FnTp getVal();
 };
@@ -45,7 +44,7 @@ public:
         this->sensor = &sensor;
     }
     template <typename... Args>
-    PotDial(port& p, Args... args) : PotDial(args...) {
+    PotDial(triport::port& p, Args... args) : PotDial(args...) {
         sensor = new pot(p);
     }
     int getAmnt();
