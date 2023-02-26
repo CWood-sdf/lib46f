@@ -10,8 +10,7 @@ void SelectorArr::addDial(PotDial* dial) {
     boundDials.push_back(dial);
     if (toVal.size() > 0) {
         cout << "Warning in SelectorArr: "
-             << "Adding new dial which could potentially mess up current " << endl;
-        toVal.clear();
+             << "Adding new dial which could potentially mess up current map" << endl;
     }
 }
 SelectorArr::SelectorArr(vector<int> count, FnTp fn) {
@@ -24,6 +23,7 @@ SelectorArr::SelectorArr(vector<int> count, FnTp fn) {
             << ")"
             << endl;
     }
+    this->fn = fn;
     toVal[count] = fn;
     this->count = count;
 }
@@ -41,19 +41,7 @@ SelectorArr::SelectorArr(vector<int> count) {
 }
 void SelectorArr::attachFn(FnTp fn) {
     toVal[count] = fn;
-}
-
-int PotDial::getAmnt() {
-    double angle = sensor->angle(deg);
-    if (angle <= baseVal) {
-        return 1;
-    } else if (angle >= baseVal + range) {
-        return ticks;
-    } else {
-        angle -= baseVal;
-        angle /= (double)range / (double)ticks;
-        return floor(angle) + 1;
-    }
+    this->fn = fn;
 }
 SelectorArr::FnTp SelectorArr::getVal() {
     vector<int> vals;
@@ -85,4 +73,32 @@ SelectorArr::FnTp SelectorArr::getVal() {
     }
     cout << flush;
     return emptyFn;
+}
+void SelectorArr::setArray(vector<int> count) {
+    if (count.size() != boundDials.size()) {
+        cout
+            << "Warning in SelectorArr: Invalid input size, given array size ("
+            << count.size()
+            << ") does not match dial count of ("
+            << boundDials.size()
+            << ")"
+            << endl;
+    }
+    // Remove the old count from the map
+    toVal.erase(this->count);
+    this->count = count;
+    toVal[count] = fn;
+}
+int PotDial::getAmnt() {
+    double angle = sensor->angle(deg);
+    if (angle <= baseVal) {
+        return 1;
+    } else if (angle >= baseVal + range) {
+        return ticks;
+    } else {
+        angle -= baseVal;
+        angle /= (double)range;
+        angle *= (double)ticks - 1;
+        return round(angle) + 1;
+    }
 }

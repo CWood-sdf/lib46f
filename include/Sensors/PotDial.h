@@ -9,14 +9,46 @@ class SelectorArr {
     static inline vector<PotDial*> boundDials = {};
     static inline map<vector<int>, FnTp> toVal = {};
     vector<int> count;
+    FnTp fn = emptyFn;
     friend class PotDial;
     static void addDial(PotDial* dial);
 
 public:
+    /**
+     * @brief Construct a new Selector Arr object
+     *
+     * @param count The desired value of the dials
+     * @param fn The function to be called when the dials are set to the desired value
+     */
     SelectorArr(vector<int> count, FnTp fn);
+    /**
+     * @brief Construct a new Selector Arr object
+     *
+     * @param count The desired value of the dials
+     */
     SelectorArr(vector<int> count);
+    /**
+     * @brief Construct a new Selector Arr object
+     *
+     */
     // SelectorArr() {}
+    /**
+     * @brief Set the function to be called when the dials are set to the desired value
+     *
+     * @param fn
+     */
     void attachFn(FnTp fn);
+    /**
+     * @brief Set the desired value of the dials
+     *
+     * @param count The desired value of the dials
+     */
+    void setArray(vector<int> count);
+    /**
+     * @brief Get the function to be called given the dials' current values
+     *
+     * @return FnTp
+     */
     static FnTp getVal();
 };
 class PotDial {
@@ -38,15 +70,33 @@ class PotDial {
     }
 
 public:
-public:
+    /**
+     * @brief Construct a new Pot Dial object
+     *
+     * @tparam Args
+     * @param sensor The potentiometer to be used
+     * @param otherArgs The private constructor arguments
+     */
     template <typename... Args>
     PotDial(pot& sensor, Args... otherArgs) : PotDial(otherArgs...) {
         this->sensor = &sensor;
     }
+    /**
+     * @brief Construct a new Pot Dial object
+     *
+     * @tparam Args
+     * @param p The port to be used
+     * @param args The private constructor arguments
+     */
     template <typename... Args>
     PotDial(triport::port& p, Args... args) : PotDial(args...) {
         sensor = new pot(p);
     }
+    /**
+     * @brief Return the value from the potentiometer
+     *
+     * @return int
+     */
     int getAmnt();
 };
 
