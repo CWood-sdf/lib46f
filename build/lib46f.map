@@ -780,7 +780,7 @@ Discarded input sections
  .ARM.exidx.text._ZN5Auton7setNameESs
                 0x00000000        0x8 build/src/AutonInit/Init.o
  .text._ZN5AutonC2Ev
-                0x00000000       0xec build/src/AutonInit/Init.o
+                0x00000000      0x124 build/src/AutonInit/Init.o
  .ARM.exidx.text._ZN5AutonC2Ev
                 0x00000000        0x8 build/src/AutonInit/Init.o
  .text._ZN5AutonC2ESsSt8functionIFvvEE
@@ -788,7 +788,7 @@ Discarded input sections
  .ARM.exidx.text._ZN5AutonC2ESsSt8functionIFvvEE
                 0x00000000        0x8 build/src/AutonInit/Init.o
  .text._ZN5AutonC2ESsSt6vectorIiSaIiEE
-                0x00000000       0xc8 build/src/AutonInit/Init.o
+                0x00000000      0x13c build/src/AutonInit/Init.o
  .ARM.exidx.text._ZN5AutonC2ESsSt6vectorIiSaIiEE
                 0x00000000        0x8 build/src/AutonInit/Init.o
  .group         0x00000000        0xc build/src/AutonInit/Init.o
@@ -801,7 +801,7 @@ Discarded input sections
  .ARM.exidx.text._ZN5Auton4callEv
                 0x00000000        0x8 build/src/AutonInit/Init.o
  .text._ZN5Auton9attachArrESt6vectorIiSaIiEE
-                0x00000000       0xb4 build/src/AutonInit/Init.o
+                0x00000000      0x124 build/src/AutonInit/Init.o
  .ARM.exidx.text._ZN5Auton9attachArrESt6vectorIiSaIiEE
                 0x00000000        0x8 build/src/AutonInit/Init.o
  .text._ZN5Auton7getNameEv
@@ -2914,17 +2914,12 @@ Discarded input sections
  .ARM.exidx.text._ZNSt3mapISt6vectorIiSaIiEESt8functionIFvvEESt4lessIS2_ESaISt4pairIKS2_S5_EEED2Ev
                 0x00000000        0x8 build/src/Sensors/PotDial.o
  .text._ZN11SelectorArr7addDialEP7PotDial
-                0x00000000      0x13c build/src/Sensors/PotDial.o
+                0x00000000      0x118 build/src/Sensors/PotDial.o
  .ARM.exidx.text._ZN11SelectorArr7addDialEP7PotDial
                 0x00000000        0x8 build/src/Sensors/PotDial.o
  .text._ZN11SelectorArrC2ESt6vectorIiSaIiEESt8functionIFvvEE
-                0x00000000      0x138 build/src/Sensors/PotDial.o
+                0x00000000      0x180 build/src/Sensors/PotDial.o
  .ARM.exidx.text._ZN11SelectorArrC2ESt6vectorIiSaIiEESt8functionIFvvEE
-                0x00000000        0x8 build/src/Sensors/PotDial.o
- .group         0x00000000        0xc build/src/Sensors/PotDial.o
- .text._ZNSt3mapISt6vectorIiSaIiEESt8functionIFvvEESt4lessIS2_ESaISt4pairIKS2_S5_EEEixERS9_
-                0x00000000       0xb0 build/src/Sensors/PotDial.o
- .ARM.exidx.text._ZNSt3mapISt6vectorIiSaIiEESt8functionIFvvEESt4lessIS2_ESaISt4pairIKS2_S5_EEEixERS9_
                 0x00000000        0x8 build/src/Sensors/PotDial.o
  .group         0x00000000        0xc build/src/Sensors/PotDial.o
  .text._ZNSt8functionIFvvEEaSERKS1_
@@ -2932,25 +2927,34 @@ Discarded input sections
  .ARM.exidx.text._ZNSt8functionIFvvEEaSERKS1_
                 0x00000000        0x8 build/src/Sensors/PotDial.o
  .group         0x00000000        0xc build/src/Sensors/PotDial.o
+ .text._ZNSt3mapISt6vectorIiSaIiEESt8functionIFvvEESt4lessIS2_ESaISt4pairIKS2_S5_EEEixERS9_
+                0x00000000       0xb0 build/src/Sensors/PotDial.o
+ .ARM.exidx.text._ZNSt3mapISt6vectorIiSaIiEESt8functionIFvvEESt4lessIS2_ESaISt4pairIKS2_S5_EEEixERS9_
+                0x00000000        0x8 build/src/Sensors/PotDial.o
+ .group         0x00000000        0xc build/src/Sensors/PotDial.o
  .text._ZNSt6vectorIiSaIiEEaSERKS1_
                 0x00000000      0x104 build/src/Sensors/PotDial.o
  .ARM.exidx.text._ZNSt6vectorIiSaIiEEaSERKS1_
                 0x00000000        0x8 build/src/Sensors/PotDial.o
  .text._ZN11SelectorArrC2ESt6vectorIiSaIiEE
-                0x00000000      0x12c build/src/Sensors/PotDial.o
+                0x00000000      0x164 build/src/Sensors/PotDial.o
  .ARM.exidx.text._ZN11SelectorArrC2ESt6vectorIiSaIiEE
                 0x00000000        0x8 build/src/Sensors/PotDial.o
  .text._ZN11SelectorArr8attachFnESt8functionIFvvEE
-                0x00000000       0x28 build/src/Sensors/PotDial.o
+                0x00000000       0x38 build/src/Sensors/PotDial.o
  .ARM.exidx.text._ZN11SelectorArr8attachFnESt8functionIFvvEE
+                0x00000000        0x8 build/src/Sensors/PotDial.o
+ .text._ZN11SelectorArr6getValEv
+                0x00000000      0x2d4 build/src/Sensors/PotDial.o
+ .ARM.exidx.text._ZN11SelectorArr6getValEv
                 0x00000000        0x8 build/src/Sensors/PotDial.o
  .text._ZN7PotDial7getAmntEv
                 0x00000000       0x94 build/src/Sensors/PotDial.o
  .ARM.exidx.text._ZN7PotDial7getAmntEv
                 0x00000000        0x8 build/src/Sensors/PotDial.o
- .text._ZN11SelectorArr6getValEv
-                0x00000000      0x2d4 build/src/Sensors/PotDial.o
- .ARM.exidx.text._ZN11SelectorArr6getValEv
+ .text._ZN11SelectorArr8setArrayESt6vectorIiSaIiEE
+                0x00000000      0x130 build/src/Sensors/PotDial.o
+ .ARM.exidx.text._ZN11SelectorArr8setArrayESt6vectorIiSaIiEE
                 0x00000000        0x8 build/src/Sensors/PotDial.o
  .group         0x00000000        0xc build/src/Sensors/PotDial.o
  .text._ZNSt8_Rb_treeIPN3vex5motorESt4pairIKS2_St6vectorIP10MotorGroupSaIS7_EEESt10_Select1stISA_ESt4lessIS2_ESaISA_EE8_M_eraseEPSt13_Rb_tree_nodeISA_E
@@ -3031,6 +3035,26 @@ Discarded input sections
  .text._ZNKSt8_Rb_treeISt6vectorIiSaIiEESt4pairIKS2_St8functionIFvvEEESt10_Select1stIS8_ESt4lessIS2_ESaIS8_EE4findERS4_
                 0x00000000       0x80 build/src/Sensors/PotDial.o
  .ARM.exidx.text._ZNKSt8_Rb_treeISt6vectorIiSaIiEESt4pairIKS2_St8functionIFvvEEESt10_Select1stIS8_ESt4lessIS2_ESaIS8_EE4findERS4_
+                0x00000000        0x8 build/src/Sensors/PotDial.o
+ .group         0x00000000        0xc build/src/Sensors/PotDial.o
+ .text._ZNSt8_Rb_treeISt6vectorIiSaIiEESt4pairIKS2_St8functionIFvvEEESt10_Select1stIS8_ESt4lessIS2_ESaIS8_EE5eraseERS4_
+                0x00000000       0x40 build/src/Sensors/PotDial.o
+ .ARM.exidx.text._ZNSt8_Rb_treeISt6vectorIiSaIiEESt4pairIKS2_St8functionIFvvEEESt10_Select1stIS8_ESt4lessIS2_ESaIS8_EE5eraseERS4_
+                0x00000000        0x8 build/src/Sensors/PotDial.o
+ .group         0x00000000        0xc build/src/Sensors/PotDial.o
+ .text._ZNSt8_Rb_treeISt6vectorIiSaIiEESt4pairIKS2_St8functionIFvvEEESt10_Select1stIS8_ESt4lessIS2_ESaIS8_EE11equal_rangeERS4_
+                0x00000000      0x100 build/src/Sensors/PotDial.o
+ .ARM.exidx.text._ZNSt8_Rb_treeISt6vectorIiSaIiEESt4pairIKS2_St8functionIFvvEEESt10_Select1stIS8_ESt4lessIS2_ESaIS8_EE11equal_rangeERS4_
+                0x00000000        0x8 build/src/Sensors/PotDial.o
+ .group         0x00000000        0xc build/src/Sensors/PotDial.o
+ .text._ZNSt8_Rb_treeISt6vectorIiSaIiEESt4pairIKS2_St8functionIFvvEEESt10_Select1stIS8_ESt4lessIS2_ESaIS8_EE12_M_erase_auxESt23_Rb_tree_const_iteratorIS8_ESG_
+                0x00000000       0x80 build/src/Sensors/PotDial.o
+ .ARM.exidx.text._ZNSt8_Rb_treeISt6vectorIiSaIiEESt4pairIKS2_St8functionIFvvEEESt10_Select1stIS8_ESt4lessIS2_ESaIS8_EE12_M_erase_auxESt23_Rb_tree_const_iteratorIS8_ESG_
+                0x00000000        0x8 build/src/Sensors/PotDial.o
+ .group         0x00000000        0xc build/src/Sensors/PotDial.o
+ .text._ZNSt8_Rb_treeISt6vectorIiSaIiEESt4pairIKS2_St8functionIFvvEEESt10_Select1stIS8_ESt4lessIS2_ESaIS8_EE5eraseB5cxx11ESt23_Rb_tree_const_iteratorIS8_E
+                0x00000000       0x48 build/src/Sensors/PotDial.o
+ .ARM.exidx.text._ZNSt8_Rb_treeISt6vectorIiSaIiEESt4pairIKS2_St8functionIFvvEEESt10_Select1stIS8_ESt4lessIS2_ESaIS8_EE5eraseB5cxx11ESt23_Rb_tree_const_iteratorIS8_E
                 0x00000000        0x8 build/src/Sensors/PotDial.o
  .group         0x00000000        0xc build/src/Sensors/PotDial.o
  .bss._ZN10MotorGroup9ptoMotorsE
@@ -7228,7 +7252,7 @@ Linker script and memory map
 .fini
  *(.fini)
 
-.rodata         0x03803d60      0x2a8
+.rodata         0x03803d60      0x2ac
                 0x03803d60                __rodata_start = .
  *(.rodata)
  *(.rodata.*)
@@ -7246,113 +7270,114 @@ Linker script and memory map
                 0x03803e0a       0x5e build/src/BrainOS/VariableConfig.o
                                  0x7b (size before relaxing)
  .rodata.str1.1
-                0x03803e68      0x10d build/src/Sensors/PotDial.o
-                                0x14e (size before relaxing)
+                0x03803e68      0x110 build/src/Sensors/PotDial.o
+                                0x151 (size before relaxing)
  .rodata.str1.1
-                0x03803f75       0x4d build/src/Sensors/LineCounter.o
+                0x03803f78       0x4d build/src/Sensors/LineCounter.o
                                  0x8c (size before relaxing)
  .rodata.str1.1
-                0x03803fc2       0x2e c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+                0x03803fc5       0x2e c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
  .rodata.str1.1
-                0x03803ff0       0x14 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(vex_thread.cpp.obj)
+                0x03803ff3       0x14 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(vex_thread.cpp.obj)
+ *fill*         0x03804007        0x1 
  .rodata.str1.4
-                0x03804004        0x4 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-impure.o)
+                0x03804008        0x4 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-impure.o)
                                   0x2 (size before relaxing)
  *(.gnu.linkonce.r.*)
-                0x03804008                __rodata_end = .
+                0x0380400c                __rodata_end = .
 
-.rodata1        0x03804008        0x0
-                0x03804008                __rodata1_start = .
+.rodata1        0x0380400c        0x0
+                0x0380400c                __rodata1_start = .
  *(.rodata1)
  *(.rodata1.*)
-                0x03804008                __rodata1_end = .
+                0x0380400c                __rodata1_end = .
 
-.sdata2         0x03804008        0x0
-                0x03804008                __sdata2_start = .
+.sdata2         0x0380400c        0x0
+                0x0380400c                __sdata2_start = .
  *(.sdata2)
  *(.sdata2.*)
  *(.gnu.linkonce.s2.*)
-                0x03804008                __sdata2_end = .
+                0x0380400c                __sdata2_end = .
 
-.sbss2          0x03804008        0x0
-                0x03804008                __sbss2_start = .
+.sbss2          0x0380400c        0x0
+                0x0380400c                __sbss2_start = .
  *(.sbss2)
  *(.sbss2.*)
  *(.gnu.linkonce.sb2.*)
-                0x03804008                __sbss2_end = .
+                0x0380400c                __sbss2_end = .
 
-.data           0x03804008      0x844
-                0x03804008                __data_start = .
+.data           0x03804010      0x844
+                0x03804010                __data_start = .
  *(.data)
  *(.data.*)
  .data.appRunning
-                0x03804008        0x4 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
-                0x03804008                appRunning
- *fill*         0x0380400c        0x4 
+                0x03804010        0x4 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+                0x03804010                appRunning
+ *fill*         0x03804014        0x4 
  .data.impure_data
-                0x03804010      0x428 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-impure.o)
+                0x03804018      0x428 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-impure.o)
  .data._impure_ptr
-                0x03804438        0x4 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-impure.o)
-                0x03804438                _impure_ptr
+                0x03804440        0x4 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-impure.o)
+                0x03804440                _impure_ptr
  .data.__malloc_av_
-                0x0380443c      0x408 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-mallocr.o)
-                0x0380443c                __malloc_av_
+                0x03804444      0x408 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-mallocr.o)
+                0x03804444                __malloc_av_
  .data.__malloc_trim_threshold
-                0x03804844        0x4 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-mallocr.o)
-                0x03804844                __malloc_trim_threshold
+                0x0380484c        0x4 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-mallocr.o)
+                0x0380484c                __malloc_trim_threshold
  .data.__malloc_sbrk_base
-                0x03804848        0x4 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-mallocr.o)
-                0x03804848                __malloc_sbrk_base
+                0x03804850        0x4 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-mallocr.o)
+                0x03804850                __malloc_sbrk_base
  *(.gnu.linkonce.d.*)
  *(.jcr)
  *(.got)
  *(.got.plt)
-                0x0380484c                __data_end = .
+                0x03804854                __data_end = .
 
-.igot.plt       0x0380484c        0x0
+.igot.plt       0x03804854        0x0
  .igot.plt      0x00000000        0x0 build/src/ButtonLatch.o
 
-.data1          0x0380484c        0x0
-                0x0380484c                __data1_start = .
+.data1          0x03804854        0x0
+                0x03804854                __data1_start = .
  *(.data1)
  *(.data1.*)
-                0x0380484c                __data1_end = .
+                0x03804854                __data1_end = .
 
 .got
  *(.got)
 
-.ctors          0x0380484c        0x0
-                0x0380484c                __CTOR_LIST__ = .
-                0x0380484c                ___CTORS_LIST___ = .
+.ctors          0x03804854        0x0
+                0x03804854                __CTOR_LIST__ = .
+                0x03804854                ___CTORS_LIST___ = .
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
  *(.ctors)
-                0x0380484c                __CTOR_END__ = .
-                0x0380484c                ___CTORS_END___ = .
+                0x03804854                __CTOR_END__ = .
+                0x03804854                ___CTORS_END___ = .
 
-.dtors          0x0380484c        0x0
-                0x0380484c                __DTOR_LIST__ = .
-                0x0380484c                ___DTORS_LIST___ = .
+.dtors          0x03804854        0x0
+                0x03804854                __DTOR_LIST__ = .
+                0x03804854                ___DTORS_LIST___ = .
  *crtbegin.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o) .dtors)
  *(SORT(.dtors.*))
  *(.dtors)
-                0x0380484c                __DTOR_END__ = .
-                0x0380484c                ___DTORS_END___ = .
+                0x03804854                __DTOR_END__ = .
+                0x03804854                ___DTORS_END___ = .
 
-.fixup          0x0380484c        0x0
-                0x0380484c                __fixup_start = .
+.fixup          0x03804854        0x0
+                0x03804854                __fixup_start = .
  *(.fixup)
-                0x0380484c                __fixup_end = .
+                0x03804854                __fixup_end = .
 
 .eh_frame
  *(.eh_frame)
 
-.eh_framehdr    0x0380484c        0x0
-                0x0380484c                __eh_framehdr_start = .
+.eh_framehdr    0x03804854        0x0
+                0x03804854                __eh_framehdr_start = .
  *(.eh_framehdr)
-                0x0380484c                __eh_framehdr_end = .
+                0x03804854                __eh_framehdr_end = .
 
 .gcc_except_table
  *(.gcc_except_table)
@@ -7362,648 +7387,649 @@ Linker script and memory map
  *(.mmu_tbl)
                 0x03808000                __mmu_tbl_end = .
 
-.ARM.exidx      0x0380484c        0x8
-                0x0380484c                __exidx_start = .
+.ARM.exidx      0x03804854        0x8
+                0x03804854                __exidx_start = .
  *(.ARM.exidx*)
  .ARM.exidx.text._ZNSt3mapIPN3vex5motorESt6vectorIP10MotorGroupSaIS5_EESt4lessIS2_ESaISt4pairIKS2_S7_EEED2Ev
-                0x0380484c        0x8 build/src/ButtonLatch.o
+                0x03804854        0x8 build/src/ButtonLatch.o
  .ARM.exidx.text._ZNSt8_Rb_treeIPN3vex5motorESt4pairIKS2_St6vectorIP10MotorGroupSaIS7_EEESt10_Select1stISA_ESt4lessIS2_ESaISA_EE8_M_eraseEPSt13_Rb_tree_nodeISA_E
-                0x03804854        0x0 build/src/ButtonLatch.o
+                0x0380485c        0x0 build/src/ButtonLatch.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._GLOBAL__sub_I_ButtonLatch.cpp
-                0x03804854        0x0 build/src/ButtonLatch.o
+                0x0380485c        0x0 build/src/ButtonLatch.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text.main
-                0x03804854        0x0 build/src/main.o
+                0x0380485c        0x0 build/src/main.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._GLOBAL__sub_I_main.cpp
-                0x03804854        0x0 build/src/main.o
+                0x0380485c        0x0 build/src/main.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._GLOBAL__sub_I_Filters.cpp
-                0x03804854        0x0 build/src/Filters.o
+                0x0380485c        0x0 build/src/Filters.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._GLOBAL__sub_I_DriveController.cpp
-                0x03804854        0x0 build/src/DriveController.o
+                0x0380485c        0x0 build/src/DriveController.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZNSt14_Function_baseD2Ev
-                0x03804854        0x0 build/src/connection.o
+                0x0380485c        0x0 build/src/connection.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZNSt6vectorIP7PotDialSaIS1_EED2Ev
-                0x03804854        0x0 build/src/connection.o
+                0x0380485c        0x0 build/src/connection.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZNSt3mapISt6vectorIiSaIiEESt8functionIFvvEESt4lessIS2_ESaISt4pairIKS2_S5_EEED2Ev
-                0x03804854        0x0 build/src/connection.o
+                0x0380485c        0x0 build/src/connection.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZNSt6vectorIP11LineCounterSaIS1_EED2Ev
-                0x03804854        0x0 build/src/connection.o
+                0x0380485c        0x0 build/src/connection.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZNSt6vectorISt5tupleIJSsPN3vex6deviceEbbEESaIS4_EED2Ev
-                0x03804854        0x0 build/src/connection.o
+                0x0380485c        0x0 build/src/connection.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZNSt8_Rb_treeISt6vectorIiSaIiEESt4pairIKS2_St8functionIFvvEEESt10_Select1stIS8_ESt4lessIS2_ESaIS8_EE8_M_eraseEPSt13_Rb_tree_nodeIS8_E
-                0x03804854        0x0 build/src/connection.o
+                0x0380485c        0x0 build/src/connection.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZNSt17_Function_handlerIFvvEN11SelectorArr3$_0EE9_M_invokeERKSt9_Any_data
-                0x03804854        0x0 build/src/connection.o
+                0x0380485c        0x0 build/src/connection.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZNSt14_Function_base13_Base_managerIN11SelectorArr3$_0EE10_M_managerERSt9_Any_dataRKS4_St18_Manager_operation
-                0x03804854        0x0 build/src/connection.o
+                0x0380485c        0x0 build/src/connection.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._GLOBAL__sub_I_connection.cpp
-                0x03804854        0x0 build/src/connection.o
+                0x0380485c        0x0 build/src/connection.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._GLOBAL__sub_I_vex.cpp
-                0x03804854        0x0 build/src/vex.o
+                0x0380485c        0x0 build/src/vex.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._Z1si
-                0x03804854        0x0 build/src/BuildAll.o
+                0x0380485c        0x0 build/src/BuildAll.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZN15BasicLinkedListIP14VariableConfigS1_S1_S0_ED2Ev
-                0x03804854        0x0 build/src/BuildAll.o
+                0x0380485c        0x0 build/src/BuildAll.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZNSt6vectorIP5AutonSaIS1_EED2Ev
-                0x03804854        0x0 build/src/BuildAll.o
+                0x0380485c        0x0 build/src/BuildAll.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZNSt6vectorIP6ButtonSaIS1_EED2Ev
-                0x03804854        0x0 build/src/BuildAll.o
+                0x0380485c        0x0 build/src/BuildAll.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZNSt6vectorISsSaISsEED2Ev
-                0x03804854        0x0 build/src/BuildAll.o
+                0x0380485c        0x0 build/src/BuildAll.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZN14VariableConfigD2Ev
-                0x03804854        0x0 build/src/BuildAll.o
+                0x0380485c        0x0 build/src/BuildAll.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZN15BasicLinkedListI5BosFnRS0_PS0_S0_ED2Ev
-                0x03804854        0x0 build/src/BuildAll.o
+                0x0380485c        0x0 build/src/BuildAll.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZN15BasicLinkedListIP14VariableConfigS1_S1_S0_E10destructorEv
-                0x03804854        0x0 build/src/BuildAll.o
+                0x0380485c        0x0 build/src/BuildAll.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZN15BasicLinkedListIP14VariableConfigS1_S1_S0_E7popBaseEv
-                0x03804854        0x0 build/src/BuildAll.o
+                0x0380485c        0x0 build/src/BuildAll.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZN15BasicLinkedListI5BosFnRS0_PS0_S0_E10destructorEv
-                0x03804854        0x0 build/src/BuildAll.o
+                0x0380485c        0x0 build/src/BuildAll.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZN15BasicLinkedListI5BosFnRS0_PS0_S0_E7popBaseEv
-                0x03804854        0x0 build/src/BuildAll.o
+                0x0380485c        0x0 build/src/BuildAll.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZNSt17_Function_handlerIFvvEN11SelectorArr3$_0EE9_M_invokeERKSt9_Any_data
-                0x03804854        0x0 build/src/BuildAll.o
+                0x0380485c        0x0 build/src/BuildAll.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZNSt14_Function_base13_Base_managerIN11SelectorArr3$_0EE10_M_managerERSt9_Any_dataRKS4_St18_Manager_operation
-                0x03804854        0x0 build/src/BuildAll.o
+                0x0380485c        0x0 build/src/BuildAll.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZNSt17_Function_handlerIFviEPS0_E9_M_invokeERKSt9_Any_datai
-                0x03804854        0x0 build/src/BuildAll.o
+                0x0380485c        0x0 build/src/BuildAll.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZNSt14_Function_base13_Base_managerIPFviEE10_M_managerERSt9_Any_dataRKS4_St18_Manager_operation
-                0x03804854        0x0 build/src/BuildAll.o
+                0x0380485c        0x0 build/src/BuildAll.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._GLOBAL__sub_I_BuildAll.cpp
-                0x03804854        0x0 build/src/BuildAll.o
+                0x0380485c        0x0 build/src/BuildAll.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZN5Auton14configCallbackEi
-                0x03804854        0x0 build/src/AutonInit/Init.o
+                0x0380485c        0x0 build/src/AutonInit/Init.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZNSt17_Function_handlerIFvvEN11SelectorArr3$_0EE9_M_invokeERKSt9_Any_data
-                0x03804854        0x0 build/src/AutonInit/Init.o
+                0x0380485c        0x0 build/src/AutonInit/Init.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZNSt14_Function_base13_Base_managerIN11SelectorArr3$_0EE10_M_managerERSt9_Any_dataRKS4_St18_Manager_operation
-                0x03804854        0x0 build/src/AutonInit/Init.o
+                0x0380485c        0x0 build/src/AutonInit/Init.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._GLOBAL__sub_I_Init.cpp
-                0x03804854        0x0 build/src/AutonInit/Init.o
+                0x0380485c        0x0 build/src/AutonInit/Init.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._GLOBAL__sub_I_ConnectionTest.cpp
-                0x03804854        0x0 build/src/BrainOS/ConnectionTest.o
+                0x0380485c        0x0 build/src/BrainOS/ConnectionTest.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZNSt6vectorI10lv_point_tSaIS0_EEC2ESt16initializer_listIS0_ERKS1_
-                0x03804854        0x0 build/src/BrainOS/BotTracker.o
+                0x0380485c        0x0 build/src/BrainOS/BotTracker.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZNSt6vectorI10lv_point_tSaIS0_EED2Ev
-                0x03804854        0x0 build/src/BrainOS/BotTracker.o
+                0x0380485c        0x0 build/src/BrainOS/BotTracker.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZNSt12_Vector_baseI10lv_point_tSaIS0_EE11_M_allocateEj
-                0x03804854        0x0 build/src/BrainOS/BotTracker.o
+                0x0380485c        0x0 build/src/BrainOS/BotTracker.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._GLOBAL__sub_I_BotTracker.cpp
-                0x03804854        0x0 build/src/BrainOS/BotTracker.o
+                0x0380485c        0x0 build/src/BrainOS/BotTracker.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZN6ButtonC2EiiiiN3vex5colorES1_Ssii
-                0x03804854        0x0 build/src/BrainOS/VariableConfig.o
+                0x0380485c        0x0 build/src/BrainOS/VariableConfig.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZN6ButtonD2Ev
-                0x03804854        0x0 build/src/BrainOS/VariableConfig.o
+                0x0380485c        0x0 build/src/BrainOS/VariableConfig.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZN14VariableConfigC2ESt6vectorISsSaISsEESs
-                0x03804854        0x0 build/src/BrainOS/VariableConfig.o
+                0x0380485c        0x0 build/src/BrainOS/VariableConfig.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZNSt6vectorISsSaISsEEaSERKS1_
-                0x03804854        0x0 build/src/BrainOS/VariableConfig.o
+                0x0380485c        0x0 build/src/BrainOS/VariableConfig.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZN14VariableConfigC2ESt6vectorISsSaISsEESsSt8functionIFviEE
-                0x03804854        0x0 build/src/BrainOS/VariableConfig.o
+                0x0380485c        0x0 build/src/BrainOS/VariableConfig.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZNSt6vectorISsSaISsEEC2ERKS1_
-                0x03804854        0x0 build/src/BrainOS/VariableConfig.o
+                0x0380485c        0x0 build/src/BrainOS/VariableConfig.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZNSt8functionIFviEEaSERKS1_
-                0x03804854        0x0 build/src/BrainOS/VariableConfig.o
+                0x0380485c        0x0 build/src/BrainOS/VariableConfig.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text.__cxx_global_var_init.10
-                0x03804854        0x0 build/src/BrainOS/VariableConfig.o
+                0x0380485c        0x0 build/src/BrainOS/VariableConfig.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZNSt17_Function_handlerIFbvEN14VariableConfig6bypassMUlvE_EE9_M_invokeERKSt9_Any_data
-                0x03804854        0x0 build/src/BrainOS/VariableConfig.o
+                0x0380485c        0x0 build/src/BrainOS/VariableConfig.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZNSt14_Function_base13_Base_managerIN14VariableConfig6bypassMUlvE_EE10_M_managerERSt9_Any_dataRKS4_St18_Manager_operation
-                0x03804854        0x0 build/src/BrainOS/VariableConfig.o
+                0x0380485c        0x0 build/src/BrainOS/VariableConfig.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZNSt17_Function_handlerIFviEN14VariableConfig8callbackMUliE_EE9_M_invokeERKSt9_Any_datai
-                0x03804854        0x0 build/src/BrainOS/VariableConfig.o
+                0x0380485c        0x0 build/src/BrainOS/VariableConfig.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZNSt14_Function_base13_Base_managerIN14VariableConfig8callbackMUliE_EE10_M_managerERSt9_Any_dataRKS4_St18_Manager_operation
-                0x03804854        0x0 build/src/BrainOS/VariableConfig.o
+                0x0380485c        0x0 build/src/BrainOS/VariableConfig.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZNSt6vectorISsSaISsEE20_M_allocate_and_copyIN9__gnu_cxx17__normal_iteratorIPKSsS1_EEEEPSsjT_S9_
-                0x03804854        0x0 build/src/BrainOS/VariableConfig.o
+                0x0380485c        0x0 build/src/BrainOS/VariableConfig.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZNSt12_Vector_baseISsSaISsEE11_M_allocateEj
-                0x03804854        0x0 build/src/BrainOS/VariableConfig.o
+                0x0380485c        0x0 build/src/BrainOS/VariableConfig.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZN15BasicLinkedListIP14VariableConfigS1_S1_S0_E9basicPushILb1EEEvRS1_
-                0x03804854        0x0 build/src/BrainOS/VariableConfig.o
+                0x0380485c        0x0 build/src/BrainOS/VariableConfig.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._GLOBAL__sub_I_VariableConfig.cpp
-                0x03804854        0x0 build/src/BrainOS/VariableConfig.o
+                0x0380485c        0x0 build/src/BrainOS/VariableConfig.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text.__cxx_global_var_init.8
-                0x03804854        0x0 build/src/BrainOS/BosFn.o
+                0x0380485c        0x0 build/src/BrainOS/BosFn.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._GLOBAL__sub_I_BosFn.cpp
-                0x03804854        0x0 build/src/BrainOS/BosFn.o
+                0x0380485c        0x0 build/src/BrainOS/BosFn.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._GLOBAL__sub_I_Controllers.cpp
-                0x03804854        0x0 build/src/Odometry/Controllers.o
+                0x0380485c        0x0 build/src/Odometry/Controllers.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._GLOBAL__sub_I_EPA_Tracker.cpp
-                0x03804854        0x0 build/src/Odometry/EPA_Tracker.o
+                0x0380485c        0x0 build/src/Odometry/EPA_Tracker.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._GLOBAL__sub_I_Bezier.cpp
-                0x03804854        0x0 build/src/Odometry/Bezier.o
+                0x0380485c        0x0 build/src/Odometry/Bezier.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._GLOBAL__sub_I_EPA_Wheel_Control.cpp
-                0x03804854        0x0 build/src/Odometry/EPA_Wheel_Control.o
+                0x0380485c        0x0 build/src/Odometry/EPA_Wheel_Control.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._GLOBAL__sub_I_PID.cpp
-                0x03804854        0x0 build/src/Odometry/PID.o
+                0x0380485c        0x0 build/src/Odometry/PID.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._GLOBAL__sub_I_Chassis.cpp
-                0x03804854        0x0 build/src/Odometry/Chassis.o
+                0x0380485c        0x0 build/src/Odometry/Chassis.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZNSt17_Function_handlerIFvvEN11SelectorArr3$_0EE9_M_invokeERKSt9_Any_data
-                0x03804854        0x0 build/src/Sensors/PotDial.o
+                0x0380485c        0x0 build/src/Sensors/PotDial.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZNSt14_Function_base13_Base_managerIN11SelectorArr3$_0EE10_M_managerERSt9_Any_dataRKS4_St18_Manager_operation
-                0x03804854        0x0 build/src/Sensors/PotDial.o
+                0x0380485c        0x0 build/src/Sensors/PotDial.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._GLOBAL__sub_I_PotDial.cpp
-                0x03804854        0x0 build/src/Sensors/PotDial.o
+                0x0380485c        0x0 build/src/Sensors/PotDial.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZN11LineCounter6updateEv
-                0x03804854        0x0 build/src/Sensors/LineCounter.o
+                0x0380485c        0x0 build/src/Sensors/LineCounter.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZN11LineCounter3$_18__invokeEv
-                0x03804854        0x0 build/src/Sensors/LineCounter.o
+                0x0380485c        0x0 build/src/Sensors/LineCounter.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZNSt17_Function_handlerIFvvEN11SelectorArr3$_0EE9_M_invokeERKSt9_Any_data
-                0x03804854        0x0 build/src/Sensors/LineCounter.o
+                0x0380485c        0x0 build/src/Sensors/LineCounter.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZNSt14_Function_base13_Base_managerIN11SelectorArr3$_0EE10_M_managerERSt9_Any_dataRKS4_St18_Manager_operation
-                0x03804854        0x0 build/src/Sensors/LineCounter.o
+                0x0380485c        0x0 build/src/Sensors/LineCounter.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._GLOBAL__sub_I_LineCounter.cpp
-                0x03804854        0x0 build/src/Sensors/LineCounter.o
+                0x0380485c        0x0 build/src/Sensors/LineCounter.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._GLOBAL__sub_I_Encoder.cpp
-                0x03804854        0x0 build/src/Sensors/Wrappers/Encoder.o
+                0x0380485c        0x0 build/src/Sensors/Wrappers/Encoder.o
                                   0x8 (size before relaxing)
  *(.gnu.linkonce.armexidix.*.*)
-                0x03804854                __exidx_end = .
+                0x0380485c                __exidx_end = .
 
-.rel.dyn        0x03804854        0x0
+.rel.dyn        0x0380485c        0x0
  .rel.iplt      0x00000000        0x0 build/src/ButtonLatch.o
 
-.preinit_array  0x03804854        0x0
-                0x03804854                __preinit_array_start = .
+.preinit_array  0x0380485c        0x0
+                0x0380485c                __preinit_array_start = .
  *(SORT(.preinit_array.*))
  *(.preinit_array)
-                0x03804854                __preinit_array_end = .
+                0x0380485c                __preinit_array_end = .
 
-.init_array     0x03804854       0x60
-                0x03804854                __init_array_start = .
+.init_array     0x0380485c       0x60
+                0x0380485c                __init_array_start = .
  *(SORT(.init_array.*))
  *(.init_array)
- .init_array    0x03804854        0x4 build/src/ButtonLatch.o
- .init_array    0x03804858        0x4 build/src/main.o
- .init_array    0x0380485c        0x4 build/src/Filters.o
- .init_array    0x03804860        0x4 build/src/DriveController.o
- .init_array    0x03804864        0x4 build/src/connection.o
- .init_array    0x03804868        0x4 build/src/vex.o
- .init_array    0x0380486c        0x4 build/src/BuildAll.o
- .init_array    0x03804870        0x4 build/src/AutonInit/Init.o
- .init_array    0x03804874        0x4 build/src/BrainOS/ConnectionTest.o
- .init_array    0x03804878        0x4 build/src/BrainOS/BotTracker.o
- .init_array    0x0380487c        0x4 build/src/BrainOS/VariableConfig.o
- .init_array    0x03804880        0x4 build/src/BrainOS/VariableConfig.o
- .init_array    0x03804884        0x4 build/src/BrainOS/BosFn.o
- .init_array    0x03804888        0x4 build/src/BrainOS/BosFn.o
- .init_array    0x0380488c        0x4 build/src/Odometry/Controllers.o
- .init_array    0x03804890        0x4 build/src/Odometry/EPA_Tracker.o
- .init_array    0x03804894        0x4 build/src/Odometry/Bezier.o
- .init_array    0x03804898        0x4 build/src/Odometry/EPA_Wheel_Control.o
- .init_array    0x0380489c        0x4 build/src/Odometry/PID.o
- .init_array    0x038048a0        0x4 build/src/Odometry/Chassis.o
- .init_array    0x038048a4        0x4 build/src/Sensors/PotDial.o
- .init_array    0x038048a8        0x4 build/src/Sensors/LineCounter.o
- .init_array    0x038048ac        0x4 build/src/Sensors/Wrappers/Encoder.o
- .init_array    0x038048b0        0x4 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(vex_color.cpp.obj)
-                0x038048b4                __init_array_end = .
+ .init_array    0x0380485c        0x4 build/src/ButtonLatch.o
+ .init_array    0x03804860        0x4 build/src/main.o
+ .init_array    0x03804864        0x4 build/src/Filters.o
+ .init_array    0x03804868        0x4 build/src/DriveController.o
+ .init_array    0x0380486c        0x4 build/src/connection.o
+ .init_array    0x03804870        0x4 build/src/vex.o
+ .init_array    0x03804874        0x4 build/src/BuildAll.o
+ .init_array    0x03804878        0x4 build/src/AutonInit/Init.o
+ .init_array    0x0380487c        0x4 build/src/BrainOS/ConnectionTest.o
+ .init_array    0x03804880        0x4 build/src/BrainOS/BotTracker.o
+ .init_array    0x03804884        0x4 build/src/BrainOS/VariableConfig.o
+ .init_array    0x03804888        0x4 build/src/BrainOS/VariableConfig.o
+ .init_array    0x0380488c        0x4 build/src/BrainOS/BosFn.o
+ .init_array    0x03804890        0x4 build/src/BrainOS/BosFn.o
+ .init_array    0x03804894        0x4 build/src/Odometry/Controllers.o
+ .init_array    0x03804898        0x4 build/src/Odometry/EPA_Tracker.o
+ .init_array    0x0380489c        0x4 build/src/Odometry/Bezier.o
+ .init_array    0x038048a0        0x4 build/src/Odometry/EPA_Wheel_Control.o
+ .init_array    0x038048a4        0x4 build/src/Odometry/PID.o
+ .init_array    0x038048a8        0x4 build/src/Odometry/Chassis.o
+ .init_array    0x038048ac        0x4 build/src/Sensors/PotDial.o
+ .init_array    0x038048b0        0x4 build/src/Sensors/LineCounter.o
+ .init_array    0x038048b4        0x4 build/src/Sensors/Wrappers/Encoder.o
+ .init_array    0x038048b8        0x4 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(vex_color.cpp.obj)
+                0x038048bc                __init_array_end = .
 
-.fini_array     0x038048b4        0x0
-                0x038048b4                __fini_array_start = .
+.fini_array     0x038048bc        0x0
+                0x038048bc                __fini_array_start = .
  *(SORT(.fini_array.*))
  *(.fini_array)
-                0x038048b4                __fini_array_end = .
+                0x038048bc                __fini_array_end = .
 
 .ARM.attributes
-                0x038048b4       0x3a
-                0x038048b4                __ARM.attributes_start = .
+                0x038048bc       0x3a
+                0x038048bc                __ARM.attributes_start = .
  *(.ARM.attributes)
  .ARM.attributes
-                0x038048b4       0x3a build/src/ButtonLatch.o
+                0x038048bc       0x3a build/src/ButtonLatch.o
  .ARM.attributes
-                0x038048ee       0x3a build/src/main.o
+                0x038048f6       0x3a build/src/main.o
  .ARM.attributes
-                0x03804928       0x3a build/src/Filters.o
+                0x03804930       0x3a build/src/Filters.o
  .ARM.attributes
-                0x03804962       0x3a build/src/DriveController.o
+                0x0380496a       0x3a build/src/DriveController.o
  .ARM.attributes
-                0x0380499c       0x3a build/src/connection.o
+                0x038049a4       0x3a build/src/connection.o
  .ARM.attributes
-                0x038049d6       0x3a build/src/vex.o
+                0x038049de       0x3a build/src/vex.o
  .ARM.attributes
-                0x03804a10       0x3a build/src/BuildAll.o
+                0x03804a18       0x3a build/src/BuildAll.o
  .ARM.attributes
-                0x03804a4a       0x3a build/src/AutonInit/Init.o
+                0x03804a52       0x3a build/src/AutonInit/Init.o
  .ARM.attributes
-                0x03804a84       0x3a build/src/BrainOS/ConnectionTest.o
+                0x03804a8c       0x3a build/src/BrainOS/ConnectionTest.o
  .ARM.attributes
-                0x03804abe       0x3a build/src/BrainOS/BotTracker.o
+                0x03804ac6       0x3a build/src/BrainOS/BotTracker.o
  .ARM.attributes
-                0x03804af8       0x3a build/src/BrainOS/VariableConfig.o
+                0x03804b00       0x3a build/src/BrainOS/VariableConfig.o
  .ARM.attributes
-                0x03804b32       0x3a build/src/BrainOS/BosFn.o
+                0x03804b3a       0x3a build/src/BrainOS/BosFn.o
  .ARM.attributes
-                0x03804b6c       0x3a build/src/Odometry/Controllers.o
+                0x03804b74       0x3a build/src/Odometry/Controllers.o
  .ARM.attributes
-                0x03804ba6       0x3a build/src/Odometry/EPA_Tracker.o
+                0x03804bae       0x3a build/src/Odometry/EPA_Tracker.o
  .ARM.attributes
-                0x03804be0       0x3a build/src/Odometry/Bezier.o
+                0x03804be8       0x3a build/src/Odometry/Bezier.o
  .ARM.attributes
-                0x03804c1a       0x3a build/src/Odometry/EPA_Wheel_Control.o
+                0x03804c22       0x3a build/src/Odometry/EPA_Wheel_Control.o
  .ARM.attributes
-                0x03804c54       0x3a build/src/Odometry/PID.o
+                0x03804c5c       0x3a build/src/Odometry/PID.o
  .ARM.attributes
-                0x03804c8e       0x3a build/src/Odometry/Chassis.o
+                0x03804c96       0x3a build/src/Odometry/Chassis.o
  .ARM.attributes
-                0x03804cc8       0x3a build/src/Sensors/PotDial.o
+                0x03804cd0       0x3a build/src/Sensors/PotDial.o
  .ARM.attributes
-                0x03804d02       0x3a build/src/Sensors/LineCounter.o
+                0x03804d0a       0x3a build/src/Sensors/LineCounter.o
  .ARM.attributes
-                0x03804d3c       0x3a build/src/Sensors/Wrappers/Encoder.o
+                0x03804d44       0x3a build/src/Sensors/Wrappers/Encoder.o
  .ARM.attributes
-                0x03804d76       0x35 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+                0x03804d7e       0x35 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
  .ARM.attributes
-                0x03804dab       0x35 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_util.c.obj)
+                0x03804db3       0x35 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_util.c.obj)
  .ARM.attributes
-                0x03804de0       0x35 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
+                0x03804de8       0x35 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apijump.c.obj)
  .ARM.attributes
-                0x03804e15       0x35 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apiversions.c.obj)
+                0x03804e1d       0x35 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apiversions.c.obj)
  .ARM.attributes
-                0x03804e4a       0x35 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(vex_task.cpp.obj)
+                0x03804e52       0x35 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(vex_task.cpp.obj)
  .ARM.attributes
-                0x03804e7f       0x35 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(vex_thread.cpp.obj)
+                0x03804e87       0x35 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(vex_thread.cpp.obj)
  .ARM.attributes
-                0x03804eb4       0x35 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(vex_triport.cpp.obj)
+                0x03804ebc       0x35 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(vex_triport.cpp.obj)
  .ARM.attributes
-                0x03804ee9       0x35 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(vex_color.cpp.obj)
+                0x03804ef1       0x35 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(vex_color.cpp.obj)
  .ARM.attributes
-                0x03804f1e       0x35 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apiuser.c.obj)
+                0x03804f26       0x35 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_apiuser.c.obj)
  .ARM.attributes
-                0x03804f53       0x19 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-aeabi_memmove-soft.o)
+                0x03804f5b       0x19 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-aeabi_memmove-soft.o)
  .ARM.attributes
-                0x03804f6c       0x2b c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-fini.o)
+                0x03804f74       0x2b c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-fini.o)
  .ARM.attributes
-                0x03804f97       0x2b c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-impure.o)
+                0x03804f9f       0x2b c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-impure.o)
  .ARM.attributes
-                0x03804fc2       0x2b c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-init.o)
+                0x03804fca       0x2b c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-init.o)
  .ARM.attributes
-                0x03804fed       0x2b c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-malloc.o)
+                0x03804ff5       0x2b c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-malloc.o)
  .ARM.attributes
-                0x03805018       0x2b c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-mallocr.o)
+                0x03805020       0x2b c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-mallocr.o)
  .ARM.attributes
-                0x03805043       0x2b c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-mlock.o)
+                0x0380504b       0x2b c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-mlock.o)
  .ARM.attributes
-                0x0380506e       0x2b c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-sbrkr.o)
+                0x03805076       0x2b c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-sbrkr.o)
  .ARM.attributes
-                0x03805099       0x2b c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-freer.o)
-                0x038050c4                __ARM.attributes_end = .
+                0x038050a1       0x2b c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-freer.o)
+                0x038050cc                __ARM.attributes_end = .
 
-.sdata          0x038048b4        0x0
-                0x038048b4                __sdata_start = .
+.sdata          0x038048bc        0x0
+                0x038048bc                __sdata_start = .
  *(.sdata)
  *(.sdata.*)
  *(.gnu.linkonce.s.*)
-                0x038048b4                __sdata_end = .
+                0x038048bc                __sdata_end = .
 
-.sbss           0x038048b4        0x0
-                0x038048b4                __sbss_start = .
+.sbss           0x038048bc        0x0
+                0x038048bc                __sbss_start = .
  *(.sbss)
  *(.sbss.*)
  *(.gnu.linkonce.sb.*)
-                0x038048b4                __sbss_end = .
+                0x038048bc                __sbss_end = .
 
-.tdata          0x038048b4        0x0
-                0x038048b4                __tdata_start = .
+.tdata          0x038048bc        0x0
+                0x038048bc                __tdata_start = .
  *(.tdata)
  *(.tdata.*)
  *(.gnu.linkonce.td.*)
-                0x038048b4                __tdata_end = .
+                0x038048bc                __tdata_end = .
 
-.tbss           0x038048b4        0x0
-                0x038048b4                __tbss_start = .
+.tbss           0x038048bc        0x0
+                0x038048bc                __tbss_start = .
  *(.tbss)
  *(.tbss.*)
  *(.gnu.linkonce.tb.*)
-                0x038048b4                __tbss_end = .
+                0x038048bc                __tbss_end = .
 
-.bss            0x038048b4      0x27c
-                0x038048b4                __bss_start = .
+.bss            0x038048bc      0x27c
+                0x038048bc                __bss_start = .
  *(.bss)
  *(.bss.*)
  .bss._ZStL8__ioinit
-                0x038048b4        0x1 build/src/ButtonLatch.o
- *fill*         0x038048b5        0x3 
+                0x038048bc        0x1 build/src/ButtonLatch.o
+ *fill*         0x038048bd        0x3 
  .bss._ZN10MotorGroup9ptoMotorsE
-                0x038048b8       0x18 build/src/ButtonLatch.o
-                0x038048b8                MotorGroup::ptoMotors
+                0x038048c0       0x18 build/src/ButtonLatch.o
+                0x038048c0                MotorGroup::ptoMotors
  .bss._ZGVN10MotorGroup9ptoMotorsE
-                0x038048d0        0x4 build/src/ButtonLatch.o
-                0x038048d0                guard variable for MotorGroup::ptoMotors
+                0x038048d8        0x4 build/src/ButtonLatch.o
+                0x038048d8                guard variable for MotorGroup::ptoMotors
  .bss._ZStL8__ioinit
-                0x038048d4        0x1 build/src/main.o
+                0x038048dc        0x1 build/src/main.o
  .bss._ZStL8__ioinit
-                0x038048d5        0x1 build/src/Filters.o
+                0x038048dd        0x1 build/src/Filters.o
  .bss._ZStL8__ioinit
-                0x038048d6        0x1 build/src/DriveController.o
+                0x038048de        0x1 build/src/DriveController.o
  .bss._ZStL8__ioinit
-                0x038048d7        0x1 build/src/connection.o
+                0x038048df        0x1 build/src/connection.o
  .bss._ZN11SelectorArr7emptyFnE
-                0x038048d8       0x10 build/src/connection.o
-                0x038048d8                SelectorArr::emptyFn
+                0x038048e0       0x10 build/src/connection.o
+                0x038048e0                SelectorArr::emptyFn
  .bss._ZGVN11SelectorArr7emptyFnE
-                0x038048e8        0x4 build/src/connection.o
-                0x038048e8                guard variable for SelectorArr::emptyFn
+                0x038048f0        0x4 build/src/connection.o
+                0x038048f0                guard variable for SelectorArr::emptyFn
  .bss._ZN11SelectorArr10boundDialsE
-                0x038048ec        0xc build/src/connection.o
-                0x038048ec                SelectorArr::boundDials
+                0x038048f4        0xc build/src/connection.o
+                0x038048f4                SelectorArr::boundDials
  .bss._ZGVN11SelectorArr10boundDialsE
-                0x038048f8        0x4 build/src/connection.o
-                0x038048f8                guard variable for SelectorArr::boundDials
+                0x03804900        0x4 build/src/connection.o
+                0x03804900                guard variable for SelectorArr::boundDials
  .bss._ZN11SelectorArr5toValE
-                0x038048fc       0x18 build/src/connection.o
-                0x038048fc                SelectorArr::toVal
+                0x03804904       0x18 build/src/connection.o
+                0x03804904                SelectorArr::toVal
  .bss._ZGVN11SelectorArr5toValE
-                0x03804914        0x4 build/src/connection.o
-                0x03804914                guard variable for SelectorArr::toVal
+                0x0380491c        0x4 build/src/connection.o
+                0x0380491c                guard variable for SelectorArr::toVal
  .bss._ZN11LineCounter9instancesE
-                0x03804918        0xc build/src/connection.o
-                0x03804918                LineCounter::instances
+                0x03804920        0xc build/src/connection.o
+                0x03804920                LineCounter::instances
  .bss._ZGVN11LineCounter9instancesE
-                0x03804924        0x4 build/src/connection.o
-                0x03804924                guard variable for LineCounter::instances
+                0x0380492c        0x4 build/src/connection.o
+                0x0380492c                guard variable for LineCounter::instances
  .bss.connectedDevices
-                0x03804928        0xc build/src/connection.o
-                0x03804928                connectedDevices
+                0x03804930        0xc build/src/connection.o
+                0x03804930                connectedDevices
  .bss._ZStL8__ioinit
-                0x03804934        0x1 build/src/vex.o
+                0x0380493c        0x1 build/src/vex.o
  .bss._ZStL8__ioinit
-                0x03804935        0x1 build/src/BuildAll.o
- *fill*         0x03804936        0x2 
+                0x0380493d        0x1 build/src/BuildAll.o
+ *fill*         0x0380493e        0x2 
  .bss._ZN14VariableConfig9variablesE
-                0x03804938       0x10 build/src/BuildAll.o
-                0x03804938                VariableConfig::variables
+                0x03804940       0x10 build/src/BuildAll.o
+                0x03804940                VariableConfig::variables
  .bss._ZGVN14VariableConfig9variablesE
-                0x03804948        0x4 build/src/BuildAll.o
-                0x03804948                guard variable for VariableConfig::variables
+                0x03804950        0x4 build/src/BuildAll.o
+                0x03804950                guard variable for VariableConfig::variables
  .bss._ZN5Auton7refListE
-                0x0380494c        0xc build/src/BuildAll.o
-                0x0380494c                Auton::refList
+                0x03804954        0xc build/src/BuildAll.o
+                0x03804954                Auton::refList
  .bss._ZGVN5Auton7refListE
-                0x03804958        0x4 build/src/BuildAll.o
-                0x03804958                guard variable for Auton::refList
+                0x03804960        0x4 build/src/BuildAll.o
+                0x03804960                guard variable for Auton::refList
  .bss._ZN5Auton7buttonsE
-                0x0380495c        0xc build/src/BuildAll.o
-                0x0380495c                Auton::buttons
+                0x03804964        0xc build/src/BuildAll.o
+                0x03804964                Auton::buttons
  .bss._ZGVN5Auton7buttonsE
-                0x03804968        0x4 build/src/BuildAll.o
-                0x03804968                guard variable for Auton::buttons
+                0x03804970        0x4 build/src/BuildAll.o
+                0x03804970                guard variable for Auton::buttons
  .bss._ZN5Auton4confE
-                0x0380496c       0x48 build/src/BuildAll.o
-                0x0380496c                Auton::conf
+                0x03804974       0x48 build/src/BuildAll.o
+                0x03804974                Auton::conf
  .bss._ZGVN5Auton4confE
-                0x038049b4        0x4 build/src/BuildAll.o
-                0x038049b4                guard variable for Auton::conf
+                0x038049bc        0x4 build/src/BuildAll.o
+                0x038049bc                guard variable for Auton::conf
  .bss._ZN5BosFn6bosFnsE
-                0x038049b8       0x10 build/src/BuildAll.o
-                0x038049b8                BosFn::bosFns
+                0x038049c0       0x10 build/src/BuildAll.o
+                0x038049c0                BosFn::bosFns
  .bss._ZGVN5BosFn6bosFnsE
-                0x038049c8        0x4 build/src/BuildAll.o
-                0x038049c8                guard variable for BosFn::bosFns
+                0x038049d0        0x4 build/src/BuildAll.o
+                0x038049d0                guard variable for BosFn::bosFns
  .bss._ZStL8__ioinit
-                0x038049cc        0x1 build/src/AutonInit/Init.o
- *fill*         0x038049cd        0x3 
- .bss._ZN5Auton5autonE
-                0x038049d0        0x4 build/src/AutonInit/Init.o
-                0x038049d0                Auton::auton
- .bss._ZN5Auton13autonSelectedE
                 0x038049d4        0x1 build/src/AutonInit/Init.o
-                0x038049d4                Auton::autonSelected
+ *fill*         0x038049d5        0x3 
+ .bss._ZN5Auton5autonE
+                0x038049d8        0x4 build/src/AutonInit/Init.o
+                0x038049d8                Auton::auton
+ .bss._ZN5Auton13autonSelectedE
+                0x038049dc        0x1 build/src/AutonInit/Init.o
+                0x038049dc                Auton::autonSelected
  .bss._ZN5Auton5readyE
-                0x038049d5        0x1 build/src/AutonInit/Init.o
-                0x038049d5                Auton::ready
+                0x038049dd        0x1 build/src/AutonInit/Init.o
+                0x038049dd                Auton::ready
  .bss._ZStL8__ioinit
-                0x038049d6        0x1 build/src/BrainOS/ConnectionTest.o
+                0x038049de        0x1 build/src/BrainOS/ConnectionTest.o
  .bss._ZStL8__ioinit
-                0x038049d7        0x1 build/src/BrainOS/BotTracker.o
- .bss.pts       0x038049d8        0xc build/src/BrainOS/BotTracker.o
-                0x038049d8                pts
+                0x038049df        0x1 build/src/BrainOS/BotTracker.o
+ .bss.pts       0x038049e0        0xc build/src/BrainOS/BotTracker.o
+                0x038049e0                pts
  .bss.actualPts
-                0x038049e4        0xc build/src/BrainOS/BotTracker.o
-                0x038049e4                actualPts
- .bss.pathPts   0x038049f0        0xc build/src/BrainOS/BotTracker.o
-                0x038049f0                pathPts
+                0x038049ec        0xc build/src/BrainOS/BotTracker.o
+                0x038049ec                actualPts
+ .bss.pathPts   0x038049f8        0xc build/src/BrainOS/BotTracker.o
+                0x038049f8                pathPts
  .bss._ZStL8__ioinit
-                0x038049fc        0x1 build/src/BrainOS/VariableConfig.o
- *fill*         0x038049fd        0x3 
+                0x03804a04        0x1 build/src/BrainOS/VariableConfig.o
+ *fill*         0x03804a05        0x3 
  .bss._ZN14VariableConfig7confirmE
-                0x03804a00       0x30 build/src/BrainOS/VariableConfig.o
-                0x03804a00                VariableConfig::confirm
+                0x03804a08       0x30 build/src/BrainOS/VariableConfig.o
+                0x03804a08                VariableConfig::confirm
  .bss._ZN14VariableConfig4denyE
-                0x03804a30       0x30 build/src/BrainOS/VariableConfig.o
-                0x03804a30                VariableConfig::deny
+                0x03804a38       0x30 build/src/BrainOS/VariableConfig.o
+                0x03804a38                VariableConfig::deny
  .bss._ZN15BasicLinkedListIP14VariableConfigS1_S1_S0_E9emptyNodeE
-                0x03804a60        0x4 build/src/BrainOS/VariableConfig.o
-                0x03804a60                BasicLinkedList<VariableConfig*, VariableConfig*, VariableConfig*, VariableConfig>::emptyNode
+                0x03804a68        0x4 build/src/BrainOS/VariableConfig.o
+                0x03804a68                BasicLinkedList<VariableConfig*, VariableConfig*, VariableConfig*, VariableConfig>::emptyNode
  .bss._ZGVN15BasicLinkedListIP14VariableConfigS1_S1_S0_E9emptyNodeE
-                0x03804a64        0x4 build/src/BrainOS/VariableConfig.o
-                0x03804a64                guard variable for BasicLinkedList<VariableConfig*, VariableConfig*, VariableConfig*, VariableConfig>::emptyNode
+                0x03804a6c        0x4 build/src/BrainOS/VariableConfig.o
+                0x03804a6c                guard variable for BasicLinkedList<VariableConfig*, VariableConfig*, VariableConfig*, VariableConfig>::emptyNode
  .bss._ZStL8__ioinit
-                0x03804a68        0x1 build/src/BrainOS/BosFn.o
- *fill*         0x03804a69        0x3 
+                0x03804a70        0x1 build/src/BrainOS/BosFn.o
+ *fill*         0x03804a71        0x3 
  .bss._ZN15BasicLinkedListI5BosFnRS0_PS0_S0_E9emptyNodeE
-                0x03804a6c        0x4 build/src/BrainOS/BosFn.o
-                0x03804a6c                BasicLinkedList<BosFn, BosFn&, BosFn*, BosFn>::emptyNode
+                0x03804a74        0x4 build/src/BrainOS/BosFn.o
+                0x03804a74                BasicLinkedList<BosFn, BosFn&, BosFn*, BosFn>::emptyNode
  .bss._ZGVN15BasicLinkedListI5BosFnRS0_PS0_S0_E9emptyNodeE
-                0x03804a70        0x4 build/src/BrainOS/BosFn.o
-                0x03804a70                guard variable for BasicLinkedList<BosFn, BosFn&, BosFn*, BosFn>::emptyNode
+                0x03804a78        0x4 build/src/BrainOS/BosFn.o
+                0x03804a78                guard variable for BasicLinkedList<BosFn, BosFn&, BosFn*, BosFn>::emptyNode
  .bss._ZStL8__ioinit
-                0x03804a74        0x1 build/src/Odometry/Controllers.o
+                0x03804a7c        0x1 build/src/Odometry/Controllers.o
  .bss._ZStL8__ioinit
-                0x03804a75        0x1 build/src/Odometry/EPA_Tracker.o
+                0x03804a7d        0x1 build/src/Odometry/EPA_Tracker.o
  .bss._ZStL8__ioinit
-                0x03804a76        0x1 build/src/Odometry/Bezier.o
+                0x03804a7e        0x1 build/src/Odometry/Bezier.o
  .bss._ZStL8__ioinit
-                0x03804a77        0x1 build/src/Odometry/EPA_Wheel_Control.o
+                0x03804a7f        0x1 build/src/Odometry/EPA_Wheel_Control.o
  .bss._ZStL8__ioinit
-                0x03804a78        0x1 build/src/Odometry/PID.o
+                0x03804a80        0x1 build/src/Odometry/PID.o
  .bss._ZStL8__ioinit
-                0x03804a79        0x1 build/src/Odometry/Chassis.o
+                0x03804a81        0x1 build/src/Odometry/Chassis.o
  .bss._ZStL8__ioinit
-                0x03804a7a        0x1 build/src/Sensors/PotDial.o
+                0x03804a82        0x1 build/src/Sensors/PotDial.o
  .bss._ZStL8__ioinit
-                0x03804a7b        0x1 build/src/Sensors/LineCounter.o
+                0x03804a83        0x1 build/src/Sensors/LineCounter.o
  .bss._ZN11LineCounter7updaterE
-                0x03804a7c        0x8 build/src/Sensors/LineCounter.o
-                0x03804a7c                LineCounter::updater
+                0x03804a84        0x8 build/src/Sensors/LineCounter.o
+                0x03804a84                LineCounter::updater
  .bss._ZStL8__ioinit
-                0x03804a84        0x1 build/src/Sensors/Wrappers/Encoder.o
- *fill*         0x03804a85        0x3 
+                0x03804a8c        0x1 build/src/Sensors/Wrappers/Encoder.o
+ *fill*         0x03804a8d        0x3 
  .bss.__dso_handle
-                0x03804a88        0x4 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
-                0x03804a88                __dso_handle
+                0x03804a90        0x4 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+                0x03804a90                __dso_handle
  .bss.heap.8509
-                0x03804a8c        0x4 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+                0x03804a94        0x4 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
  .bss._ZN3vex6thread8_labelIdE
-                0x03804a90        0x4 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(vex_thread.cpp.obj)
-                0x03804a90                vex::thread::_labelId
+                0x03804a98        0x4 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(vex_thread.cpp.obj)
+                0x03804a98                vex::thread::_labelId
  .bss._ZN3vex5color6orangeE
-                0x03804a94        0x8 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(vex_color.cpp.obj)
-                0x03804a94                vex::color::orange
- .bss._ZN3vex5color5blackE
                 0x03804a9c        0x8 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(vex_color.cpp.obj)
-                0x03804a9c                vex::color::black
- .bss._ZN3vex5color6yellowE
+                0x03804a9c                vex::color::orange
+ .bss._ZN3vex5color5blackE
                 0x03804aa4        0x8 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(vex_color.cpp.obj)
-                0x03804aa4                vex::color::yellow
- .bss._ZN3vex5color5greenE
+                0x03804aa4                vex::color::black
+ .bss._ZN3vex5color6yellowE
                 0x03804aac        0x8 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(vex_color.cpp.obj)
-                0x03804aac                vex::color::green
- .bss._ZN3vex5color6purpleE
+                0x03804aac                vex::color::yellow
+ .bss._ZN3vex5color5greenE
                 0x03804ab4        0x8 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(vex_color.cpp.obj)
-                0x03804ab4                vex::color::purple
- .bss._ZN3vex5color4cyanE
+                0x03804ab4                vex::color::green
+ .bss._ZN3vex5color6purpleE
                 0x03804abc        0x8 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(vex_color.cpp.obj)
-                0x03804abc                vex::color::cyan
- .bss._ZN3vex5color4blueE
+                0x03804abc                vex::color::purple
+ .bss._ZN3vex5color4cyanE
                 0x03804ac4        0x8 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(vex_color.cpp.obj)
-                0x03804ac4                vex::color::blue
- .bss._ZN3vex5color3redE
+                0x03804ac4                vex::color::cyan
+ .bss._ZN3vex5color4blueE
                 0x03804acc        0x8 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(vex_color.cpp.obj)
-                0x03804acc                vex::color::red
- .bss._ZN3vex5color11transparentE
+                0x03804acc                vex::color::blue
+ .bss._ZN3vex5color3redE
                 0x03804ad4        0x8 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(vex_color.cpp.obj)
-                0x03804ad4                vex::color::transparent
- .bss._ZN3vex5color5whiteE
+                0x03804ad4                vex::color::red
+ .bss._ZN3vex5color11transparentE
                 0x03804adc        0x8 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(vex_color.cpp.obj)
-                0x03804adc                vex::color::white
+                0x03804adc                vex::color::transparent
+ .bss._ZN3vex5color5whiteE
+                0x03804ae4        0x8 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(vex_color.cpp.obj)
+                0x03804ae4                vex::color::white
  .bss.__malloc_max_total_mem
-                0x03804ae4        0x4 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-mallocr.o)
-                0x03804ae4                __malloc_max_total_mem
- .bss.__malloc_max_sbrked_mem
-                0x03804ae8        0x4 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-mallocr.o)
-                0x03804ae8                __malloc_max_sbrked_mem
- .bss.__malloc_top_pad
                 0x03804aec        0x4 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-mallocr.o)
-                0x03804aec                __malloc_top_pad
+                0x03804aec                __malloc_max_total_mem
+ .bss.__malloc_max_sbrked_mem
+                0x03804af0        0x4 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-mallocr.o)
+                0x03804af0                __malloc_max_sbrked_mem
+ .bss.__malloc_top_pad
+                0x03804af4        0x4 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-mallocr.o)
+                0x03804af4                __malloc_top_pad
  .bss.__malloc_current_mallinfo
-                0x03804af0       0x28 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-mallocr.o)
-                0x03804af0                __malloc_current_mallinfo
+                0x03804af8       0x28 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/gcc/libs\libc.a(lib_a-mallocr.o)
+                0x03804af8                __malloc_current_mallinfo
  *(.gnu.linkonce.b.*)
  *(COMMON)
- COMMON         0x03804b18       0x18 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
-                0x03804b1c                __vex_critical_section
-                0x03804b30                __bss_end = .
-                0x038048b4                _SDA_BASE_ = (__sdata_start + ((__sbss_end - __sdata_start) / 0x2))
-                0x03804008                _SDA2_BASE_ = (__sdata2_start + ((__sbss2_end - __sdata2_start) / 0x2))
+ COMMON         0x03804b20       0x18 c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5\libv5rt.a(v5_startup.c.obj)
+                0x03804b24                __vex_critical_section
+                0x03804b38                __bss_end = .
+                0x038048bc                _SDA_BASE_ = (__sdata_start + ((__sbss_end - __sdata_start) / 0x2))
+                0x0380400c                _SDA2_BASE_ = (__sdata2_start + ((__sbss2_end - __sdata2_start) / 0x2))
 
-.heap           0x03804b30   0xa00000
-                0x03804b30                . = ALIGN (0x10)
-                0x03804b30                _heap = .
-                0x03804b30                HeapBase = .
-                0x03804b30                _heap_start = .
-                0x04204b30                . = (. + _HEAP_SIZE)
- *fill*         0x03804b30   0xa00000 
-                0x04204b30                _heap_end = .
-                0x04204b30                HeapLimit = .
+.heap           0x03804b38   0xa00008
+                0x03804b40                . = ALIGN (0x10)
+ *fill*         0x03804b38        0x8 
+                0x03804b40                _heap = .
+                0x03804b40                HeapBase = .
+                0x03804b40                _heap_start = .
+                0x04204b40                . = (. + _HEAP_SIZE)
+ *fill*         0x03804b40   0xa00000 
+                0x04204b40                _heap_end = .
+                0x04204b40                HeapLimit = .
 
-.stack          0x04204b30     0x3800
-                0x04204b30                . = ALIGN (0x10)
-                0x04204b30                _stack_end = .
-                0x04206b30                . = (. + _STACK_SIZE)
- *fill*         0x04204b30     0x2000 
-                0x04206b30                . = ALIGN (0x10)
-                0x04206b30                _stack = .
-                0x04206b30                __stack = _stack
-                0x04206b30                . = ALIGN (0x10)
-                0x04206b30                _irq_stack_end = .
-                0x04206f30                . = (. + _IRQ_STACK_SIZE)
- *fill*         0x04206b30      0x400 
-                0x04206f30                . = ALIGN (0x10)
-                0x04206f30                __irq_stack = .
-                0x04206f30                _supervisor_stack_end = .
-                0x04207730                . = (. + _SUPERVISOR_STACK_SIZE)
- *fill*         0x04206f30      0x800 
-                0x04207730                . = ALIGN (0x10)
-                0x04207730                __supervisor_stack = .
-                0x04207730                _abort_stack_end = .
-                0x04207b30                . = (. + _ABORT_STACK_SIZE)
- *fill*         0x04207730      0x400 
-                0x04207b30                . = ALIGN (0x10)
-                0x04207b30                __abort_stack = .
-                0x04207b30                _fiq_stack_end = .
-                0x04207f30                . = (. + _FIQ_STACK_SIZE)
- *fill*         0x04207b30      0x400 
-                0x04207f30                . = ALIGN (0x10)
-                0x04207f30                __fiq_stack = .
-                0x04207f30                _undef_stack_end = .
-                0x04208330                . = (. + _UNDEF_STACK_SIZE)
- *fill*         0x04207f30      0x400 
-                0x04208330                . = ALIGN (0x10)
-                0x04208330                __undef_stack = .
-                0x04208330                _end = .
+.stack          0x04204b40     0x3800
+                0x04204b40                . = ALIGN (0x10)
+                0x04204b40                _stack_end = .
+                0x04206b40                . = (. + _STACK_SIZE)
+ *fill*         0x04204b40     0x2000 
+                0x04206b40                . = ALIGN (0x10)
+                0x04206b40                _stack = .
+                0x04206b40                __stack = _stack
+                0x04206b40                . = ALIGN (0x10)
+                0x04206b40                _irq_stack_end = .
+                0x04206f40                . = (. + _IRQ_STACK_SIZE)
+ *fill*         0x04206b40      0x400 
+                0x04206f40                . = ALIGN (0x10)
+                0x04206f40                __irq_stack = .
+                0x04206f40                _supervisor_stack_end = .
+                0x04207740                . = (. + _SUPERVISOR_STACK_SIZE)
+ *fill*         0x04206f40      0x800 
+                0x04207740                . = ALIGN (0x10)
+                0x04207740                __supervisor_stack = .
+                0x04207740                _abort_stack_end = .
+                0x04207b40                . = (. + _ABORT_STACK_SIZE)
+ *fill*         0x04207740      0x400 
+                0x04207b40                . = ALIGN (0x10)
+                0x04207b40                __abort_stack = .
+                0x04207b40                _fiq_stack_end = .
+                0x04207f40                . = (. + _FIQ_STACK_SIZE)
+ *fill*         0x04207b40      0x400 
+                0x04207f40                . = ALIGN (0x10)
+                0x04207f40                __fiq_stack = .
+                0x04207f40                _undef_stack_end = .
+                0x04208340                . = (. + _UNDEF_STACK_SIZE)
+ *fill*         0x04207f40      0x400 
+                0x04208340                . = ALIGN (0x10)
+                0x04208340                __undef_stack = .
+                0x04208340                _end = .
 LOAD c:\Users\Student.EGR_03_LAPTOP.001\AppData\Roaming\Code\User\globalStorage\vexrobotics.vexcode\sdk\cpp\V5\V5_20220726_10_00_00/vexv5/stdlib_0.lib
 LOAD build/src/ButtonLatch.o
 LOAD build/src/main.o

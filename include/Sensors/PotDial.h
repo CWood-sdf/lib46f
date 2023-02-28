@@ -31,7 +31,7 @@ public:
      * @brief Construct a new Selector Arr object
      *
      */
-    // SelectorArr() {}
+    SelectorArr() {}
     /**
      * @brief Set the function to be called when the dials are set to the desired value
      *
@@ -98,6 +98,10 @@ public:
      * @return int
      */
     int getAmnt();
+
+    int raw() {
+        return sensor->angle(degrees);
+    }
 };
 
 #endif // POTDIAL_H

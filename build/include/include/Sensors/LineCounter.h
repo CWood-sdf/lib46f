@@ -13,8 +13,8 @@ class LineCounter {
     friend class LineGroup;
     line* sensor;
     bool isActive = false;
-    static const int highThresholdPolycarb = 75;
-    static const int lowThresholdPolycarb = 55;
+    static const int highThresholdPolycarb = 90;
+    static const int lowThresholdPolycarb = 80;
     static const int highThresholdAir = 15;
     static const int lowThresholdAir = 13;
     int startThreshold = highThresholdAir;
